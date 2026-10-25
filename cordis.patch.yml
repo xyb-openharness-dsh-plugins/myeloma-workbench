@@ -1,0 +1,5 @@
+- insert:
+    - id: myeloma-workbench-main
+      name: "@xyb-community/myeloma-workbench"
+      config:
+        root: !!js dshHomePath('myeloma-workbench')

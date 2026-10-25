@@ -1,0 +1,57 @@
+{
+  "name": "@xyb-community/myeloma-workbench",
+  "version": "0.1.0",
+  "description": "面向多发性骨髓瘤患者与照护者的本机病程资料、M 蛋白与游离轻链监测、治疗线循环、自体移植档案、骨事件与骨保护、感染与疫苗工作台设计项目",
+  "private": true,
+  "type": "module",
+  "main": "./dsh/index.js",
+  "exports": {
+    ".": "./dsh/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "dsh",
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "NOTICE.md"
+  ],
+  "scripts": {
+    "check": "node --check dsh/index.js && node --check lib/client.js && node scripts/check-workbench-package.mjs .",
+    "test": "node --test test/*.test.mjs",
+    "audit": "node scripts/check-conformance.mjs .",
+    "release:check": "npm run check && npm run test && npm run audit",
+    "pack:check": "npm pack --dry-run",
+    "probe:artifact": "node scripts/serve-artifact.mjs",
+    "probe:tabs": "python3 scripts/verify-tabs-on-artifact.py",
+    "probe:page-view": "node scripts/probe-page-view.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "dsh-desktop-workbenches"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xyb-openharness-dsh-plugins/myeloma-workbench"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.1 <5",
+    "@deepseek-ai/dsh-client-connection": ">=0.1.0-rc.0 <0.3.0-0",
+    "@deepseek-ai/dsh-host-webserver": ">=0.1.0-rc.0 <0.3.0-0",
+    "@deepseek-ai/schemastery": ">=3.18.1 <4"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "UNLICENSED"
+}
