@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f5f2">
+<link rel="icon" href="data:,">
+<title>小浆宝 MyeloPal · 多发性骨髓瘤患者工作台原型</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+<div class="prototype-banner">
+  <strong>交互原型 · 合成档案</strong>
+  <span>本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。</span>
+</div>
+<div class="app-shell" id="app">
+  <aside class="sidebar" aria-label="工作台导航">
+    <div class="brand-lockup"><span class="brand-mark" aria-hidden="true">浆</span><div><strong>小浆宝</strong><small>MyeloPal · 多发性骨髓瘤</small></div></div>
+    <button class="profile-switch" id="profileSwitch" type="button" aria-label="切换演示档案">
+      <span class="avatar" id="profileAvatar">林</span><span class="profile-copy"><b id="profileName">林先生的资料</b><small id="profileMeta">68 岁 · 患者自报</small></span><span aria-hidden="true">⌄</span>
+    </button>
+    <nav class="primary-nav" id="primaryNav" aria-label="主要功能">
+      <button class="nav-item is-active" data-view="home" aria-current="page"><span class="nav-icon">⌂</span>看板</button>
+      <button class="nav-item" data-view="metrics"><span class="nav-icon">⌁</span>指标趋势</button>
+      <button class="nav-item" data-view="calendar"><span class="nav-icon">▦</span>病程日历</button>
+      <button class="nav-item" data-view="treatment"><span class="nav-icon">↻</span>治疗线</button>
+      <button class="nav-item" data-view="transplant"><span class="nav-icon">◉</span>移植档案</button>
+      <button class="nav-item" data-view="bone"><span class="nav-icon">◇</span>骨事件</button>
+      <button class="nav-item" data-view="infection"><span class="nav-icon">＋</span>感染与疫苗</button>
+      <button class="nav-item" data-view="support"><span class="nav-icon">◎</span>照护支持</button>
+      <button class="nav-item" data-view="visit"><span class="nav-icon">▤</span>复诊准备</button>
+      <button class="nav-item" data-view="trials"><span class="nav-icon">⌕</span>临床试验</button>
+      <button class="nav-item" data-view="records"><span class="nav-icon">▧</span>资料核对</button>
+    </nav>
+    <div class="sidebar-note"><span class="eyebrow">记录原则</span><p>患者自报与家属代记并列；确认前的内容仍是候选。</p></div>
+  </aside>
+
+  <div class="workspace">
+    <header class="topbar">
+      <div class="top-brand"><b>小浆宝</b><span id="versionTop" class="version-chip">v0.1.0</span></div>
+      <p class="top-context" id="topContext">把病程资料放在一起，复诊时更容易找到。</p>
+      <div class="top-actions">
+        <button class="quiet-button primer-shortcut" id="primerButton" type="button" data-primer-open aria-haspopup="dialog" aria-controls="pageView" aria-label="疾病概要：定义、指南、治疗全景与发展趋势">?</button>
+        <button class="quiet-button" id="fontToggle" aria-pressed="false" type="button">大字 Aa</button>
+        <button class="quiet-button" id="aboutButton" type="button">关于</button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1" class="main-content"></main>
+    <footer class="app-footer"><span>只记录、整理和准备沟通；不作诊断或治疗建议。</span><span>小浆宝 MyeloPal <b id="versionBottom">v0.1.0</b></span></footer>
+  </div>
+</div>
+
+<div class="page-view" id="pageView" hidden aria-modal="true" role="dialog" aria-labelledby="pageViewTitle">
+  <header class="page-view-head">
+    <button class="button secondary" id="pageBack" type="button">← 返回</button>
+    <div class="page-view-title"><small id="pageCrumb">看板</small><h2 id="pageViewTitle">详情</h2></div>
+    <button class="button secondary" id="pageClose" type="button" aria-label="关闭并回到看板">关闭并回到看板</button>
+  </header>
+  <div class="page-view-body" id="pageViewBody" tabindex="-1"></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="demo-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

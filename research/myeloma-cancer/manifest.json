@@ -1,0 +1,49 @@
+{
+  "topic": "myeloma",
+  "year": "2026",
+  "snapshotDate": "2026-10-25",
+  "tool": "unified-trial-mcp @ /Users/qinxiaoqiang/Downloads/unified_search_trials/dist/src/cli/main.js",
+  "queries": [
+    {
+      "keyword": "多发性骨髓瘤",
+      "note": "中文标准名"
+    },
+    {
+      "keyword": "骨髓瘤",
+      "note": "中文宽口径"
+    },
+    {
+      "keyword": "浆细胞瘤",
+      "note": "相关中文"
+    },
+    {
+      "keyword": "multiple myeloma",
+      "note": "英文标准名"
+    },
+    {
+      "keyword": "myeloma",
+      "note": "英文宽口径"
+    },
+    {
+      "keyword": "plasma cell myeloma",
+      "note": "英文正式名"
+    }
+  ],
+  "perSourceLimit": 200,
+  "recordCount": 257,
+  "dbCount": 257,
+  "sourceStatusRows": 36,
+  "honesty": {
+    "offlineCorpora": "ChiCTR/CDE/CTV 离线语料仅胰腺癌覆盖；MM 只依赖在线通道终态，见 source_statuses 表",
+    "statusWording": "登记 ≠ 有效 ≠ 安全 ≠ 可入组；状态一律\"登记状态，未核实\"",
+    "mergeRule": "仅同一登记号（NCT/ChiCTR/CDE 等）合并，其余并排保留来源"
+  },
+  "files": {
+    "trials-2026.jsonl": {
+      "sha256": "1db9cb1cd4306f401c5ccb6c27528d54b79b050dd4ecb08338528074667f7284"
+    },
+    "myeloma_cancer_trials_2026.sqlite": {
+      "sha256": "00378990e5976c8534595abde97ea9cff9a11285c575f8b7db5d0832e3127cf1"
+    }
+  }
+}

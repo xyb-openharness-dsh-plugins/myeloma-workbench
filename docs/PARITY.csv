@@ -1,2 +1,9 @@
 id,原型版本与定位,原型内容或行为,当前实现,差异,偏离原因及依据,替代方案,组件与API,验收证据,状态
-EXAMPLE-ID,文件hash/Tab/模块,最近值→翻转→最近五次折线,待评估,待评估,无依据时视为实现缺口,待定,待定,未验证,待核对
+MM-HOME-01,M2 v0.2 / 看板,双主体入口与MM任务卡,已实现,无已知视觉偏差,以BRIEF与M2路径草案为准,无,仅原型模拟,Playwright 390×844 与 1280×900 预览 2026-10-26；首屏 v0.1.0；截图 output/playwright/myeloma-home-390.png,待用户确认
+MM-TREAT-01,M2 v0.2 / 治疗线,默认摘要+五块折叠细节+计划实际表,已实现,仍待用户评价内容密度,docs/32-TREATMENT-PATHWAY-FOLDOUT.md,无,details原生结构,浏览器已打开治疗线路径；窄屏需用户评审,待用户确认
+MM-TRIAL-01,M2 v0.2 / 临床-匹配线索,已确认入库字段参与并附分层证据,已实现合成条件演示,未接实时来源/临床数据,docs/35-TRIAL-MATCHING.md,无,原型只读线索与内存交互,断言器正/负自检通过；npm run check 通过,待用户确认
+MM-TRIAL-02,M2 v0.2 / 临床-检索快照,快照日期/登记未核实/在线状态逐来源显示,已实现静态摘录与历史状态,不代表实时状态；状态按来源和原因码分别计数,docs/35-TRIAL-MATCHING.md + CLINICAL-DATA-2026.md,无,静态快照+来源状态样例,浏览器核对 6 个来源/8 组状态；按来源状态显示coverage与限制；详情刷新及返回通过；截图 output/playwright/myeloma-clinical-match-390.png 与 myeloma-clinical-snapshot-390.png,待用户确认
+MM-TRIAL-03,M2 v0.2 / 临床-已收藏,候选线索收藏与问题回顾,已实现,收藏与问题暂时合并显示在该页,收藏不代表资格判断,无,内存态模拟,Playwright 点击收藏并加问题后可回看；刷新后清除,待用户确认交互
+MM-TRIAL-04,M2 v0.2 / 详情页,整页显示来源与条件原文,已实现,真实快照不含资格条件,32号整页视图约束,无,仅原型,真实快照详情显示无法自动匹配原因；应用返回/浏览器后退各退一层,待用户确认
+MM-SHELL-01,M2 v0.2 / 版本与窄宽,首屏版本可见/键盘焦点/窄宽降列,已实现,Desktop P2 未验证,DEV-REQUIREMENTS-2026-10-25 + docs/30-RESPONSIVE-RULES.md,无,prototype shell,390×844 下 document/main 宽度均 390；浏览器控制台 0 errors / 0 warnings；截图 output/playwright/myeloma-home-390.png,待用户确认
+MM-PRIMER-01,M2 v0.2 / 疾病概要,首页卡片与顶栏?入口；四段整页；官方/二次来源链接,已实现,Starter P1–P8 探针结构不兼容，P2/P3/P5/P8 未被有效覆盖；完整验收待项目适配探针,docs/36-DISEASE-PRIMER.md + prompts/PRIMER-BACKFILL.md,保留项目既有#pageView导航与内嵌primerView；README与浮窗人工同步,仅原型整页与外链,Playwright 390×844/768×1024/1280×900 无页面横向溢出；11个外链 target=_blank 且 noopener noreferrer；章节内滚动保留#page=primer；Esc/浏览器返回关闭；scrollY=260关闭后焦点回#primerButton且滚动恢复,待用户确认

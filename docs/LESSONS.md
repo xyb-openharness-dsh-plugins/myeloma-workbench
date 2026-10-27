@@ -352,3 +352,9 @@ history 是导航栈的**唯一真源**：
 - 注入的 CSS 缺陷会被后续 `page.goto` 冲掉 → 用注入缺陷做反向对照时，缺陷必须落在**同一份文档**的断言上。
 
 所以反向对照（`--self-test`）不是形式主义：它证明的是**闸门抓得住缺陷**，而不只是"现在跑绿了"。
+
+## 2026-10-26 · M4 临床快照：行数与摘要通过仍可能丢字段
+
+多发性骨髓瘤快照的 manifest、JSONL、SQLite 数量均为 257，hash 与文件一致，SQLite `integrity_check` 为 `ok`，但 49 条 CTV 记录的 JSONL `sponsor` 未映射到 SQLite `sponsors`。按 record ID 的只读逐字段检查发现问题；只验计数、hash 或数据库结构会漏掉语义数据丢失。
+
+经验回流到 Starter `templates/check-trial-snapshot.mjs`、生成项目 check 链和正反例测试。检查报告失败时保留研究材料，修复须另行授权并创建新快照版本，不重采或覆盖来让检查变绿。Starter 的本地测试 66/66 通过；最终自检结果记录于本轮交接。

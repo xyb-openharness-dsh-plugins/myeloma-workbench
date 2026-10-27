@@ -24,3 +24,8 @@ R1 dsh 七件套 + 真客户端链路（cervical 底本）；R2 schema 冻结（
 
 ## 五、默认值（G1 可改）
 双主体（老年代记为主）/ 全病程含复发循环 / MinerU 接入 / 品牌小浆宝 / 样板 cervical+breast / 模型路由 GLM-5.3+Flash。
+
+## 六、M4 临床快照一致性（2026-10-26 核验补充）
+- manifest 数量与摘要、JSONL/SQLite 行数相等、SQLite integrity 通过，仍不足以证明字段映射正确；按稳定 `record_id` 对所有共享业务字段逐条比对，并检查来源状态表数量与重复键。
+- 本项目现存快照 257 条中发现 49 条 CTV 记录的 JSONL `sponsor` 有值、SQLite `sponsors` 为 NULL。原快照受保护：不得重采、重建或覆盖来消除失败；任何修复另行授权，并写入新版本快照及其 manifest。
+- 可复用检查器：`scripts/check-trial-snapshot.mjs`，只读 SQLite。命令 `node scripts/check-trial-snapshot.mjs .`；失败是 M4 的真实验收结果，不得以跳过选项、计数通过或本地测试通过代替。

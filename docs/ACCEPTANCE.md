@@ -9,7 +9,7 @@ Agent 是否运行在目标 Desktop 内：...
 | ID | 层级 | 操作和预期 | 真实结果 | 证据文件/命令 | 通过/失败/未验证/不适用 |
 | --- | --- | --- | --- | --- | --- |
 | ACC-00 | 静态 | `dsh-wb-cli audit` 无 fail；warn 逐条给结论 | | | 未验证 |
-| ACC-01 | 静态 | 语法/类型/包合同/清单 | | | 未验证 |
+| ACC-01 | 静态 | 语法/类型/包合同/清单 | `npm run check`：staticPass=true、errors=[]；试验匹配自检与项目合同检查通过；2 条既有配置/发行物警告仍需独立核验 | `npm run check`，2026-10-26 | 通过（静态范围） |
 | ACC-02 | 集成 | 代表业务链与迁移/主体隔离 | | | 未验证 |
 | ACC-03 | 包 | 从实际 tgz 安装，版本/hash 一致 | | | 未验证 |
 | ACC-04 | UI | 已安装列表→左侧入口→业务页 | | | 未验证 |
@@ -19,9 +19,11 @@ Agent 是否运行在目标 Desktop 内：...
 | ACC-08 | 跨页 | 单一事实新增后各页一致 | | | 未验证 |
 | ACC-09 | 文件 | 预览/解析/确认/导出真实格式/回顾 | | | 未验证 |
 | ACC-10 | 外部 | API/MCP/cron 实际链路与失败恢复 | | | 未验证 |
+| ACC-32 | 数据 | 只读核验 manifest、JSONL、SQLite 的数量、hash、主键、逐字段映射与来源状态 | 257 JSONL / 257 SQLite；主键集合一致；manifest 数量/hash 一致；SQLite integrity=ok；36 条 source_statuses；49 条 CTV sponsor 在 SQLite sponsors 为 NULL | `node scripts/check-trial-snapshot.mjs .`，2026-10-26 | 失败：字段映射不一致，M4 未通过 |
+| ACC-33 | 回流 | Starter 快照检查器回归及完整自检 | Starter `npm test`：66/66 通过；`npm run check` 与 `check-starter`：202 项检查通过、errors=[]；CSS 资产摘要按实际 tracked 文件字节更新 | Starter 工作区本地检查，2026-10-26 | 本地自检通过；M9 因明确禁止提交而未关闭 |
 
 附官方规范第 8 节每条适用项的责任、证据与结果，不适用写理由。只跑静态不能把 ACC-04 以后勾通过。
-限制/失败/需要用户完成的重启步骤：...
+限制/失败/需要用户完成的重启步骤：M4 因 49 条 sponsor 字段映射差异未通过；保留原快照，待单独授权后以新版本修复。M1/G1 与 M2/G2 尚未签认，M3/G3、M5–M8 未完成或受限。当前明确禁止提交、推送、安装、发布和外部投稿；因此 M9 本地回流已验收，但提交清单条件未完成。
 
 ## 设计与混合数据补充
 
