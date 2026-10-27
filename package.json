@@ -20,7 +20,8 @@
     "NOTICE.md"
   ],
   "scripts": {
-    "check": "node --check dsh/index.js && node --check lib/client.js && node scripts/check-workbench-package.mjs . && node scripts/check-trial-matching.mjs . && node scripts/check-primer-links.mjs",
+    "build:demo": "node demo/build-demo-data.mjs",
+    "check": "node --check dsh/index.js && node --check lib/client.js && node --check scripts/fetch-myeloma-trials-2026.mjs && node --check scripts/trial-snapshot-storage.mjs && node --check scripts/copy-corrected-trial-snapshot.mjs && node scripts/check-workbench-package.mjs . && node scripts/check-trial-snapshot.mjs research/myeloma-cancer-20261027-corrected && node scripts/check-trial-matching.mjs . && node scripts/check-primer-links.mjs",
     "test": "node --test test/*.test.mjs",
     "audit": "node scripts/check-conformance.mjs .",
     "release:check": "npm run check && npm run test && npm run audit",

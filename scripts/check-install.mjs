@@ -140,8 +140,8 @@ if (!ok) {
   if (live) {
     lines.push(`  export DSH_HOME="${live.home}"`);
     lines.push(`  export PATH="$DSH_HOME/.desktop-bin:$PATH"   # 用 app 自带的 pnpm / node`);
-    lines.push(`  NODE_OPTIONS= npx --yes pnpm@10.15.0 --dir "$DSH_HOME/profiles/${live.profile}" add -w ./release/<包名>-<版本>.tgz`);
-    lines.push(`  再把 ${NAME} 加进 "$DSH_HOME/profiles/${live.profile}/package.json" 的 dsh.profile.bundles，重启 Harness。`);
+    lines.push(`  dsh plugin --profile ${live.profile} add -w --save-exact "file:/absolute/path/to/<包名>-<版本>.tgz"`);
+    lines.push(`  此命令会同时登记依赖与 dsh.profile.bundles；若 Desktop 当前已运行，请完整退出后手动重启以加载新版本。`);
   }
   lines.push('不要装到 ~/.dsh/profiles/*——Desktop 不读那里，装上也只是「配置层有了」。');
 }

@@ -24,7 +24,8 @@
 
 ## 一致性与复核
 
-- 2026-10-26 使用只读检查器 `node scripts/check-trial-snapshot.mjs .` 核对：manifest 文件 SHA-256、recordCount/dbCount、JSONL 与 SQLite 主键及共享字段、SQLite `integrity_check`、source_statuses 数量和重复项。
-- 实测：JSONL 257 行、SQLite 257 条，主键集合一致；manifest 数量和各文件 SHA-256 一致；SQLite integrity 为 `ok`；来源状态 36 行且无重复键。检查器仅报告 49 条 CTV 记录的 `sponsor` 与 SQLite `sponsors` 不一致（SQLite 为 NULL），因此字段一致性失败，M4 未通过。检查器输出列出 49 个 record_id；详见 `docs/ACCEPTANCE.md` 与 `docs/HANDOFF.md`。
-- 快照状态固定写“登记状态，未核实”；后续刷新需产生新的采集日期和文件摘要，不覆盖本说明所指历史证据。
-- 当前项目快照为研究材料，更新之前先审阅采集口径和上游版本；保留未提交文件与既有历史。发现差异后保留原件，修复需单独授权并生成新版本快照。
+- 2026-10-26 使用只读检查器核对原始快照：manifest 文件 SHA-256、recordCount/dbCount、JSONL 与 SQLite 主键及共享字段、SQLite `integrity_check`、source_statuses 数量和重复项。
+- 原始 `research/myeloma-cancer/` 结果：JSONL 257 行、SQLite 257 条，主键集合一致；manifest 数量与 hash 一致；SQLite integrity 为 `ok`；来源状态 36 行且无重复键。49 条 CTV 记录 `sponsor` 与 SQLite `sponsors` 不一致（旧 SQLite 为 NULL），原快照字段验收未通过。原始目录保持不变。
+- 2026-10-27 修正采集器字段映射，并从原始 JSONL 和来源状态表生成独立副本 `research/myeloma-cancer-20261027-corrected/`。`node scripts/check-trial-snapshot.mjs research/myeloma-cancer-20261027-corrected` 实测 `records=257/257 sourceStatuses=36`、PASS；新副本保留原快照日期 2026-10-25，并在 manifest 标明修正时间、来源目录和修正说明。此为字段映射修复，不是重新检索。
+- 快照状态固定写“登记状态，未核实”；后续采集默认写入全新时间戳目录，目标已存在则拒绝覆盖；`--output-dir` 仅接受项目 `research/` 内的新路径。
+- 原始研究材料仍保留；后续更新须先审阅采集口径和上游版本，不覆盖本说明所指历史证据。
