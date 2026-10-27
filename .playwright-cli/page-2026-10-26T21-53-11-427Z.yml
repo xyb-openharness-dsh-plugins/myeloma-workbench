@@ -1,0 +1,215 @@
+- generic [active] [ref=e1]:
+  - link "跳到主要内容" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e3]:
+    - strong [ref=e4]: 交互原型 · 合成档案
+    - generic [ref=e5]: 本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。
+  - generic [ref=e6]:
+    - complementary "工作台导航" [ref=e7]:
+      - generic [ref=e8]:
+        - generic [aria-hidden] [ref=e9]: 浆
+        - generic [ref=e10]:
+          - strong [ref=e11]: 小浆宝
+          - generic [ref=e12]: MyeloPal · 多发性骨髓瘤
+      - button "切换演示档案" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: 林
+        - generic [ref=e15]:
+          - generic [ref=e16]: 林先生的资料
+          - generic [ref=e17]: 68 岁 · 患者自报
+        - generic [aria-hidden] [ref=e18]: ⌄
+      - navigation "主要功能" [ref=e19]:
+        - button "⌂ 看板" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: ⌂
+          - text: 看板
+        - button "⌁ 指标趋势" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: ⌁
+          - text: 指标趋势
+        - button "▦ 病程日历" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: ▦
+          - text: 病程日历
+        - button "↻ 治疗线" [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: ↻
+          - text: 治疗线
+        - button "◉ 移植档案" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: ◉
+          - text: 移植档案
+        - button "◇ 骨事件" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: ◇
+          - text: 骨事件
+        - button "＋ 感染与疫苗" [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]: ＋
+          - text: 感染与疫苗
+        - button "◎ 照护支持" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: ◎
+          - text: 照护支持
+        - button "▤ 复诊准备" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: ▤
+          - text: 复诊准备
+        - button "⌕ 临床试验" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: ⌕
+          - text: 临床试验
+        - button "▧ 资料核对" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: ▧
+          - text: 资料核对
+      - generic [ref=e42]:
+        - text: 记录原则
+        - paragraph [ref=e43]: 患者自报与家属代记并列；确认前的内容仍是候选。
+    - generic [ref=e44]:
+      - banner [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]: 小浆宝
+          - generic [ref=e48]: v0.1.0
+        - paragraph [ref=e49]: 把病程资料放在一起，复诊时更容易找到。
+        - generic [ref=e50]:
+          - button "大字 Aa" [ref=e51] [cursor=pointer]
+          - button "关于" [ref=e52] [cursor=pointer]
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]:
+              - generic [ref=e57]: ✿
+              - text: MYELOPAL · 患者自报
+            - heading "病程资料，慢慢理清。" [level=1] [ref=e58]
+            - paragraph [ref=e59]: 按治疗线、指标和重要事件整理。内容全部为合成演示，不包含真实患者信息。
+          - button "整理一份报告" [ref=e60] [cursor=pointer]
+        - region "病程状态摘要" [ref=e61]:
+          - button "当前治疗线 第 2 线 · 移植后维持 2026-07-15 · 原文与来源待核" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: 当前治疗线
+            - generic [ref=e64]: 第 2 线 · 移植后维持
+            - generic [ref=e65]: 2026-07-15 · 原文与来源待核
+          - button "档案核对 3 项已确认 未确认候选不会参与试验线索对照" [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: 档案核对
+            - generic [ref=e68]: 3 项已确认
+            - generic [ref=e69]: 未确认候选不会参与试验线索对照
+          - button "已登记日历事项 0 条 尚无已登记预约" [ref=e70] [cursor=pointer]:
+            - generic [ref=e71]: 已登记日历事项
+            - generic [ref=e72]: 0 条
+            - generic [ref=e73]: 尚无已登记预约
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e76]: ✿
+            - text: MYELOMA · 长期病程记录
+          - heading "复查、治疗与生活， 都留下一份可回看的记录。" [level=2] [ref=e77]: 复查、治疗与生活，都留下一份可回看的记录。
+          - paragraph [ref=e78]: 患者自己记，家人也可以代记。每条内容都会保留来源与记录者；确认前，它仍是一条候选。
+          - generic [ref=e79]:
+            - generic [ref=e80]: 68 岁
+            - generic [ref=e81]: 患者自报
+            - generic [ref=e82]: 本地演示档案
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - heading "多发性骨髓瘤病情介绍" [level=2] [ref=e85]
+            - paragraph [ref=e86]: 疾病概要按定义、指南情况、治疗全景与资料趋势四段整理。
+          - button "打开病情介绍" [ref=e87] [cursor=pointer]
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - heading "最近的记录" [level=2] [ref=e90]
+            - paragraph [ref=e91]: 看时间、看来源；不把单个数值当作结论。
+          - button "看完整趋势 →" [ref=e92] [cursor=pointer]
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]:
+                - heading "指标概览" [level=2] [ref=e97]
+                - paragraph [ref=e98]: 报告日期与检测结果并列
+              - generic [ref=e99]: 记录视图
+            - generic [ref=e100]:
+              - generic [ref=e101]:
+                - generic [ref=e102]:
+                  - generic [ref=e103]:
+                    - heading "M 蛋白" [level=2] [ref=e104]
+                    - paragraph [ref=e105]: 演示记录 · 单位 g/L
+                  - generic [ref=e106]: 5 次
+                - generic [ref=e107]:
+                  - generic [ref=e108]: 8.1 g/L
+                  - generic [ref=e109]: 2026-10-08
+                - img "M 蛋白示例曲线，单位 g/L" [ref=e110]
+                - paragraph [ref=e117]: 仅并列同一示例方法的记录；不据此判断复发或疗效。
+                - group [ref=e118]:
+                  - generic "查看日期与来源" [ref=e119]
+              - generic [ref=e120]:
+                - generic [ref=e121]:
+                  - generic [ref=e122]:
+                    - heading "游离轻链 κ/λ" [level=2] [ref=e123]
+                    - paragraph [ref=e124]: 演示记录 · 单位 比值
+                  - generic [ref=e125]: 5 次
+                - generic [ref=e126]:
+                  - generic [ref=e127]: 18 比值
+                  - generic [ref=e128]: 2026-10-08
+                - img "游离轻链 κ/λ示例曲线，单位 比值" [ref=e129]
+                - paragraph [ref=e136]: 单位与检测方法需以原始报告为准。
+                - group [ref=e137]:
+                  - generic "查看日期与来源" [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - heading "病程中的节点" [level=2] [ref=e142]
+                - paragraph [ref=e143]: 治疗线和支持事件分开记录
+              - generic [ref=e144]: 慢性循环
+            - generic [ref=e145]:
+              - generic [ref=e146]:
+                - generic [ref=e147]: 2026-10-08
+                - generic [ref=e148]: ●
+                - generic [ref=e149]:
+                  - generic [ref=e150]: M 蛋白记录 · 8.1 g/L
+                  - generic [ref=e151]: 来源日期 · 合成演示档案
+              - generic [ref=e152]:
+                - generic [ref=e153]: 2026-10-08
+                - generic [ref=e154]: ●
+                - generic [ref=e155]:
+                  - generic [ref=e156]: 游离轻链记录 · 18 比值
+                  - generic [ref=e157]: 请核对检测方法与单位
+              - generic [ref=e158]:
+                - generic [ref=e159]: 2026-07-15
+                - generic [ref=e160]: ●
+                - generic [ref=e161]:
+                  - generic [ref=e162]: 第 2 线 · 移植后维持
+                  - generic [ref=e163]: 治疗阶段记录 · 日期待核原件
+            - button "打开治疗线" [ref=e164] [cursor=pointer]
+        - generic [ref=e166]:
+          - heading "从这里继续" [level=2] [ref=e167]
+          - paragraph [ref=e168]: 按眼前要做的事进入，完成后可回到看板。
+        - generic [ref=e169]:
+          - button "↻ 治疗线时间轴 按日期查看阶段和原始记录" [ref=e170] [cursor=pointer]:
+            - generic [ref=e171]: ↻
+            - generic [ref=e172]: 治疗线时间轴
+            - generic [ref=e173]: 按日期查看阶段和原始记录
+          - button "▦ 病程日历 仅显示档案中已登记的日期" [ref=e174] [cursor=pointer]:
+            - generic [ref=e175]: ▦
+            - generic [ref=e176]: 病程日历
+            - generic [ref=e177]: 仅显示档案中已登记的日期
+          - button "◉ 移植旅程 采集、回输、植入与出院节点" [ref=e178] [cursor=pointer]:
+            - generic [ref=e179]: ◉
+            - generic [ref=e180]: 移植旅程
+            - generic [ref=e181]: 采集、回输、植入与出院节点
+          - button "◇ 骨事件与骨保护 事件、用药和牙科事实记录" [ref=e182] [cursor=pointer]:
+            - generic [ref=e183]: ◇
+            - generic [ref=e184]: 骨事件与骨保护
+            - generic [ref=e185]: 事件、用药和牙科事实记录
+          - button "＋ 感染与疫苗 感染、Ig 指标和既往接种记录" [ref=e186] [cursor=pointer]:
+            - generic [ref=e187]: ＋
+            - generic [ref=e188]: 感染与疫苗
+            - generic [ref=e189]: 感染、Ig 指标和既往接种记录
+          - button "▤ 复诊准备 整理记录摘要与待问医生的问题" [ref=e190] [cursor=pointer]:
+            - generic [ref=e191]: ▤
+            - generic [ref=e192]: 复诊准备
+            - generic [ref=e193]: 整理记录摘要与待问医生的问题
+          - button "⌕ 临床试验线索 查看来源、快照和可追溯证据" [ref=e194] [cursor=pointer]:
+            - generic [ref=e195]: ⌕
+            - generic [ref=e196]: 临床试验线索
+            - generic [ref=e197]: 查看来源、快照和可追溯证据
+        - generic [ref=e199]:
+          - heading "记录由谁提供" [level=2] [ref=e200]
+          - paragraph [ref=e201]: 自报和代报是两种视角，并列保留。
+        - generic [ref=e203]:
+          - generic [ref=e204]:
+            - generic [ref=e205]: 记录主体
+            - generic [ref=e206]: 患者自报
+            - generic [ref=e207]: 女儿（照护者代记） · 陪同复诊观察
+          - generic [ref=e208]:
+            - generic [ref=e209]: 可见范围
+            - generic [ref=e210]: 患者可见范围待确认
+            - generic [ref=e211]: 原型不模拟真实权限保存；未确认的私密内容不进入复诊摘要。
+      - contentinfo [ref=e212]:
+        - generic [ref=e213]: 只记录、整理和准备沟通；不作诊断或治疗建议。
+        - generic [ref=e214]: 小浆宝 MyeloPal v0.1.0
+  - status

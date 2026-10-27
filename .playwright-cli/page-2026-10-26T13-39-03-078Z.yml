@@ -1,0 +1,808 @@
+- generic [active] [ref=f2e1]:
+  - link "跳到主要内容" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f2e3]:
+    - strong [ref=f2e4]: 交互原型 · 合成档案
+    - generic [ref=f2e5]: 本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。
+  - generic [ref=f2e6]:
+    - complementary "工作台导航" [ref=f2e7]:
+      - button "切换演示档案" [ref=f2e8] [cursor=pointer]:
+        - generic [ref=f2e9]: 林
+        - generic [ref=f2e10]:
+          - generic [ref=f2e11]: 林先生的资料
+          - generic [ref=f2e12]: 68 岁 · 患者自报
+        - generic [aria-hidden] [ref=f2e13]: ⌄
+      - navigation "主要功能" [ref=f2e14]:
+        - button "⌂ 看板" [ref=f2e15] [cursor=pointer]:
+          - generic [ref=f2e16]: ⌂
+          - text: 看板
+        - button "⌁ 指标趋势" [ref=f2e17] [cursor=pointer]:
+          - generic [ref=f2e18]: ⌁
+          - text: 指标趋势
+        - button "↻ 治疗线" [ref=f2e19] [cursor=pointer]:
+          - generic [ref=f2e20]: ↻
+          - text: 治疗线
+        - button "◉ 移植档案" [ref=f2e21] [cursor=pointer]:
+          - generic [ref=f2e22]: ◉
+          - text: 移植档案
+        - button "◇ 骨事件" [ref=f2e23] [cursor=pointer]:
+          - generic [ref=f2e24]: ◇
+          - text: 骨事件
+        - button "＋ 感染与疫苗" [ref=f2e25] [cursor=pointer]:
+          - generic [ref=f2e26]: ＋
+          - text: 感染与疫苗
+        - button "◎ 照护支持" [ref=f2e27] [cursor=pointer]:
+          - generic [ref=f2e28]: ◎
+          - text: 照护支持
+        - button "▤ 复诊准备" [ref=f2e29] [cursor=pointer]:
+          - generic [ref=f2e30]: ▤
+          - text: 复诊准备
+        - button "⌕ 临床试验" [ref=f2e31] [cursor=pointer]:
+          - generic [ref=f2e32]: ⌕
+          - text: 临床试验
+        - button "▧ 资料核对" [ref=f2e33] [cursor=pointer]:
+          - generic [ref=f2e34]: ▧
+          - text: 资料核对
+    - generic [ref=f2e35]:
+      - banner [ref=f2e36]:
+        - generic [ref=f2e37]:
+          - generic [ref=f2e38]: 小浆宝
+          - generic [ref=f2e39]: v0.1.0
+        - generic [ref=f2e40]:
+          - button "大字 Aa" [ref=f2e41] [cursor=pointer]
+          - button "关于" [ref=f2e42] [cursor=pointer]
+      - main [ref=f2e43]:
+        - generic [ref=f2e366]:
+          - generic [ref=f2e367]:
+            - generic [ref=f2e368]:
+              - generic [ref=f2e369]: ✿
+              - text: MYELOPAL · 患者自报
+            - heading "临床试验线索" [level=1] [ref=f2e370]
+            - paragraph [ref=f2e371]: 从已确认档案开始，查看来源和证据。候选线索不是入组判断。
+          - button "示例：整理一条待问问题" [ref=f2e372] [cursor=pointer]
+        - generic [ref=f2e373]:
+          - strong [ref=f2e374]: 四段链路：
+          - text: 已确认建档 → 本地快照/在线来源 → 分层证据 → 收藏候选。登记状态未核实；登记不等于有效、安全或可入组。
+        - tablist "临床试验功能" [ref=f2e375]:
+          - tab "匹配线索" [ref=f2e376] [cursor=pointer]
+          - tab "检索快照" [selected] [ref=f2e377] [cursor=pointer]
+          - tab "已收藏" [ref=f2e378] [cursor=pointer]
+        - tabpanel "检索快照" [ref=f2e379]:
+          - generic [ref=f2e380]:
+            - generic [ref=f2e381]:
+              - generic [ref=f2e382]:
+                - heading "检索本地快照" [level=2] [ref=f2e383]
+                - paragraph [ref=f2e384]: 按标题/登记号/来源词筛选。搜索结果不是资格判断。
+              - generic [ref=f2e385]: snapshotDate 2026-10-25
+            - generic [ref=f2e386]:
+              - generic [ref=f2e387]: 搜索本地临床试验快照
+              - searchbox "搜索本地临床试验快照" [ref=f2e388]
+              - button "清空" [ref=f2e389] [cursor=pointer]
+            - paragraph [ref=f2e390]: 快照记录 257 条；本页展示相关标题摘录。快照可能过期，登记状态均未核实。
+          - generic [ref=f2e392]:
+            - heading "本地结果（48）" [level=2] [ref=f2e393]
+            - paragraph [ref=f2e394]: 只显示快照已有字段；条件文本缺失时不自动匹配。
+          - article [ref=f2e395]:
+            - generic [ref=f2e396]:
+              - generic [ref=f2e397]:
+                - generic [ref=f2e398]:
+                  - generic [ref=f2e399]: chinadrugtrials
+                  - generic [ref=f2e400]: snapshotDate 2026-10-25
+                  - generic [ref=f2e401]: 登记状态，未核实
+                - heading "全人抗BCMA-CAR T细胞注射液治疗r/r MM的安全性和有效性的I/II期临床研究" [level=3] [ref=f2e402]
+                - paragraph [ref=f2e403]: chinadrugtrials:CTR20190955 · CTR CTR20190955
+              - button "查看来源" [ref=f2e404] [cursor=pointer]
+            - paragraph [ref=f2e405]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e406]:
+              - link "打开来源 ↗" [ref=f2e407] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e408] [cursor=pointer]
+          - article [ref=f2e409]:
+            - generic [ref=f2e410]:
+              - generic [ref=f2e411]:
+                - generic [ref=f2e412]:
+                  - generic [ref=f2e413]: chinadrugtrials
+                  - generic [ref=f2e414]: snapshotDate 2026-10-25
+                  - generic [ref=f2e415]: 登记状态，未核实
+                - heading "抗人BCMA T细胞注射液在R/R MM受试者中的安全性及有效性研究" [level=3] [ref=f2e416]
+                - paragraph [ref=f2e417]: chinadrugtrials:CTR20191141 · CTR CTR20191141
+              - button "查看来源" [ref=f2e418] [cursor=pointer]
+            - paragraph [ref=f2e419]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e420]:
+              - link "打开来源 ↗" [ref=f2e421] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e422] [cursor=pointer]
+          - article [ref=f2e423]:
+            - generic [ref=f2e424]:
+              - generic [ref=f2e425]:
+                - generic [ref=f2e426]:
+                  - generic [ref=f2e427]: chinadrugtrials
+                  - generic [ref=f2e428]: snapshotDate 2026-10-25
+                  - generic [ref=f2e429]: 登记状态，未核实
+                - heading "观察TJ202治疗多发性骨髓瘤的疗效和安全性、耐受性" [level=3] [ref=f2e430]
+                - paragraph [ref=f2e431]: chinadrugtrials:CTR20192344 · CTR CTR20192344
+              - button "查看来源" [ref=f2e432] [cursor=pointer]
+            - paragraph [ref=f2e433]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e434]:
+              - link "打开来源 ↗" [ref=f2e435] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e436] [cursor=pointer]
+          - article [ref=f2e437]:
+            - generic [ref=f2e438]:
+              - generic [ref=f2e439]:
+                - generic [ref=f2e440]:
+                  - generic [ref=f2e441]: chinadrugtrials
+                  - generic [ref=f2e442]: snapshotDate 2026-10-25
+                  - generic [ref=f2e443]: 登记状态，未核实
+                - heading "Belantamab mafodotin对复发/难治性多发性骨髓瘤中国受试者的影响研究" [level=3] [ref=f2e444]
+                - paragraph [ref=f2e445]: chinadrugtrials:CTR20192380 · CTR CTR20192380
+              - button "查看来源" [ref=f2e446] [cursor=pointer]
+            - paragraph [ref=f2e447]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e448]:
+              - link "打开来源 ↗" [ref=f2e449] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e450] [cursor=pointer]
+          - article [ref=f2e451]:
+            - generic [ref=f2e452]:
+              - generic [ref=f2e453]:
+                - generic [ref=f2e454]:
+                  - generic [ref=f2e455]: chinadrugtrials
+                  - generic [ref=f2e456]: snapshotDate 2026-10-25
+                  - generic [ref=f2e457]: 登记状态，未核实
+                - heading "在中国多发性骨髓瘤受试者中评估Daratumumab皮下给药的临床研究" [level=3] [ref=f2e458]
+                - paragraph [ref=f2e459]: chinadrugtrials:CTR20192481 · CTR CTR20192481
+              - button "查看来源" [ref=f2e460] [cursor=pointer]
+            - paragraph [ref=f2e461]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e462]:
+              - link "打开来源 ↗" [ref=f2e463] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e464] [cursor=pointer]
+          - article [ref=f2e465]:
+            - generic [ref=f2e466]:
+              - generic [ref=f2e467]:
+                - generic [ref=f2e468]:
+                  - generic [ref=f2e469]: chinadrugtrials
+                  - generic [ref=f2e470]: snapshotDate 2026-10-25
+                  - generic [ref=f2e471]: 登记状态，未核实
+                - heading "全人源BCMA CART治疗复发/难治性多发性骨髓瘤患者的I/II 期临床研究" [level=3] [ref=f2e472]
+                - paragraph [ref=f2e473]: chinadrugtrials:CTR20192510 · CTR CTR20192510
+              - button "查看来源" [ref=f2e474] [cursor=pointer]
+            - paragraph [ref=f2e475]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e476]:
+              - link "打开来源 ↗" [ref=f2e477] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e478] [cursor=pointer]
+          - article [ref=f2e479]:
+            - generic [ref=f2e480]:
+              - generic [ref=f2e481]:
+                - generic [ref=f2e482]:
+                  - generic [ref=f2e483]: chinadrugtrials
+                  - generic [ref=f2e484]: snapshotDate 2026-10-25
+                  - generic [ref=f2e485]: 登记状态，未核实
+                - heading "观察TJ202治疗多发性骨髓瘤的疗效性和安全性" [level=3] [ref=f2e486]
+                - paragraph [ref=f2e487]: chinadrugtrials:CTR20192600 · CTR CTR20192600
+              - button "查看来源" [ref=f2e488] [cursor=pointer]
+            - paragraph [ref=f2e489]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e490]:
+              - link "打开来源 ↗" [ref=f2e491] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e492] [cursor=pointer]
+          - article [ref=f2e493]:
+            - generic [ref=f2e494]:
+              - generic [ref=f2e495]:
+                - generic [ref=f2e496]:
+                  - generic [ref=f2e497]: chinadrugtrials
+                  - generic [ref=f2e498]: snapshotDate 2026-10-25
+                  - generic [ref=f2e499]: 登记状态，未核实
+                - heading "比较venetoclax 与泊马度胺治疗多发性骨髓瘤的研究" [level=3] [ref=f2e500]
+                - paragraph [ref=f2e501]: chinadrugtrials:CTR20200081 · CTR CTR20200081
+              - button "查看来源" [ref=f2e502] [cursor=pointer]
+            - paragraph [ref=f2e503]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e504]:
+              - link "打开来源 ↗" [ref=f2e505] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e506] [cursor=pointer]
+          - article [ref=f2e507]:
+            - generic [ref=f2e508]:
+              - generic [ref=f2e509]:
+                - generic [ref=f2e510]:
+                  - generic [ref=f2e511]: chinadrugtrials
+                  - generic [ref=f2e512]: snapshotDate 2026-10-25
+                  - generic [ref=f2e513]: 登记状态，未核实
+                - heading "骨髓瘤受试者中使用美法仑进行预处理的上市后研究" [level=3] [ref=f2e514]
+                - paragraph [ref=f2e515]: chinadrugtrials:CTR20200252 · CTR CTR20200252
+              - button "查看来源" [ref=f2e516] [cursor=pointer]
+            - paragraph [ref=f2e517]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e518]:
+              - link "打开来源 ↗" [ref=f2e519] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e520] [cursor=pointer]
+          - article [ref=f2e521]:
+            - generic [ref=f2e522]:
+              - generic [ref=f2e523]:
+                - generic [ref=f2e524]:
+                  - generic [ref=f2e525]: chinadrugtrials
+                  - generic [ref=f2e526]: snapshotDate 2026-10-25
+                  - generic [ref=f2e527]: 登记状态，未核实
+                - heading "使用AMD3100（普乐沙福）联合G-CSF在多发性骨髓瘤患者中动员干细胞" [level=3] [ref=f2e528]
+                - paragraph [ref=f2e529]: chinadrugtrials:CTR20200882 · CTR CTR20200882
+              - button "查看来源" [ref=f2e530] [cursor=pointer]
+            - paragraph [ref=f2e531]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e532]:
+              - link "打开来源 ↗" [ref=f2e533] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e534] [cursor=pointer]
+          - article [ref=f2e535]:
+            - generic [ref=f2e536]:
+              - generic [ref=f2e537]:
+                - generic [ref=f2e538]:
+                  - generic [ref=f2e539]: chinadrugtrials
+                  - generic [ref=f2e540]: snapshotDate 2026-10-25
+                  - generic [ref=f2e541]: 登记状态，未核实
+                - heading "评估Belantamab Mafodotin、硼替佐米和地塞米松 （B-Vd）联合用药相较于达雷妥尤单抗、硼替佐米和地塞米松（D-Vd）联合用药治疗复发性/难治性多发性骨髓瘤受试者的安全和有效性研究" [level=3] [ref=f2e542]
+                - paragraph [ref=f2e543]: chinadrugtrials:CTR20201106 · CTR CTR20201106
+              - button "查看来源" [ref=f2e544] [cursor=pointer]
+            - paragraph [ref=f2e545]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e546]:
+              - link "打开来源 ↗" [ref=f2e547] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e548] [cursor=pointer]
+          - article [ref=f2e549]:
+            - generic [ref=f2e550]:
+              - generic [ref=f2e551]:
+                - generic [ref=f2e552]:
+                  - generic [ref=f2e553]: chinadrugtrials
+                  - generic [ref=f2e554]: snapshotDate 2026-10-25
+                  - generic [ref=f2e555]: 登记状态，未核实
+                - heading "Isatuximab联合来那度胺和地塞米松治疗高危冒烟型多发性骨髓瘤" [level=3] [ref=f2e556]
+                - paragraph [ref=f2e557]: chinadrugtrials:CTR20201825 · CTR CTR20201825
+              - button "查看来源" [ref=f2e558] [cursor=pointer]
+            - paragraph [ref=f2e559]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e560]:
+              - link "打开来源 ↗" [ref=f2e561] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e562] [cursor=pointer]
+          - article [ref=f2e563]:
+            - generic [ref=f2e564]:
+              - generic [ref=f2e565]:
+                - generic [ref=f2e566]:
+                  - generic [ref=f2e567]: chinadrugtrials
+                  - generic [ref=f2e568]: snapshotDate 2026-10-25
+                  - generic [ref=f2e569]: 登记状态，未核实
+                - heading "CART-BCMA在BCMA阳性的复发/难治多发性骨髓瘤患者I期临床研究" [level=3] [ref=f2e570]
+                - paragraph [ref=f2e571]: chinadrugtrials:CTR20201885 · CTR CTR20201885
+              - button "查看来源" [ref=f2e572] [cursor=pointer]
+            - paragraph [ref=f2e573]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e574]:
+              - link "打开来源 ↗" [ref=f2e575] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e576] [cursor=pointer]
+          - article [ref=f2e577]:
+            - generic [ref=f2e578]:
+              - generic [ref=f2e579]:
+                - generic [ref=f2e580]:
+                  - generic [ref=f2e581]: chinadrugtrials
+                  - generic [ref=f2e582]: snapshotDate 2026-10-25
+                  - generic [ref=f2e583]: 登记状态，未核实
+                - heading "泊马度胺胶囊联合低剂量地塞米松治疗复发难治性多发性骨髓瘤的临床试验" [level=3] [ref=f2e584]
+                - paragraph [ref=f2e585]: chinadrugtrials:CTR20202125 · CTR CTR20202125
+              - button "查看来源" [ref=f2e586] [cursor=pointer]
+            - paragraph [ref=f2e587]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e588]:
+              - link "打开来源 ↗" [ref=f2e589] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e590] [cursor=pointer]
+          - article [ref=f2e591]:
+            - generic [ref=f2e592]:
+              - generic [ref=f2e593]:
+                - generic [ref=f2e594]:
+                  - generic [ref=f2e595]: chinadrugtrials
+                  - generic [ref=f2e596]: snapshotDate 2026-10-25
+                  - generic [ref=f2e597]: 登记状态，未核实
+                - heading "评估CX13-608用于复发或难治性多发性骨髓瘤受试者的开放标签的单臂II期临床研究" [level=3] [ref=f2e598]
+                - paragraph [ref=f2e599]: chinadrugtrials:CTR20202322 · CTR CTR20202322
+              - button "查看来源" [ref=f2e600] [cursor=pointer]
+            - paragraph [ref=f2e601]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e602]:
+              - link "打开来源 ↗" [ref=f2e603] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e604] [cursor=pointer]
+          - article [ref=f2e605]:
+            - generic [ref=f2e606]:
+              - generic [ref=f2e607]:
+                - generic [ref=f2e608]:
+                  - generic [ref=f2e609]: chinadrugtrials
+                  - generic [ref=f2e610]: snapshotDate 2026-10-25
+                  - generic [ref=f2e611]: 登记状态，未核实
+                - heading "APG-2575单药或联合来那度胺/地塞米松治疗复发或难治性多发性骨髓瘤患者的Ⅰb/II期临床研究" [level=3] [ref=f2e612]
+                - paragraph [ref=f2e613]: chinadrugtrials:CTR20202584 · CTR CTR20202584
+              - button "查看来源" [ref=f2e614] [cursor=pointer]
+            - paragraph [ref=f2e615]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e616]:
+              - link "打开来源 ↗" [ref=f2e617] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e618] [cursor=pointer]
+          - article [ref=f2e619]:
+            - generic [ref=f2e620]:
+              - generic [ref=f2e621]:
+                - generic [ref=f2e622]:
+                  - generic [ref=f2e623]: chinadrugtrials
+                  - generic [ref=f2e624]: snapshotDate 2026-10-25
+                  - generic [ref=f2e625]: 登记状态，未核实
+                - heading "泊马度胺胶囊联合低剂量地塞米松治疗复发性和难治性多发性骨髓瘤受试者的有效性和安全性的多中心、开放、单臂临床研究" [level=3] [ref=f2e626]
+                - paragraph [ref=f2e627]: chinadrugtrials:CTR20210452 · CTR CTR20210452
+              - button "查看来源" [ref=f2e628] [cursor=pointer]
+            - paragraph [ref=f2e629]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e630]:
+              - link "打开来源 ↗" [ref=f2e631] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e632] [cursor=pointer]
+          - article [ref=f2e633]:
+            - generic [ref=f2e634]:
+              - generic [ref=f2e635]:
+                - generic [ref=f2e636]:
+                  - generic [ref=f2e637]: chinadrugtrials
+                  - generic [ref=f2e638]: snapshotDate 2026-10-25
+                  - generic [ref=f2e639]: 登记状态，未核实
+                - heading "CM313注射液治疗复发难治性多发性骨髓瘤、淋巴瘤等血液肿瘤患者的I期临床研究" [level=3] [ref=f2e640]
+                - paragraph [ref=f2e641]: chinadrugtrials:CTR20210469 · CTR CTR20210469
+              - button "查看来源" [ref=f2e642] [cursor=pointer]
+            - paragraph [ref=f2e643]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e644]:
+              - link "打开来源 ↗" [ref=f2e645] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e646] [cursor=pointer]
+          - article [ref=f2e647]:
+            - generic [ref=f2e648]:
+              - generic [ref=f2e649]:
+                - generic [ref=f2e650]:
+                  - generic [ref=f2e651]: chinadrugtrials
+                  - generic [ref=f2e652]: snapshotDate 2026-10-25
+                  - generic [ref=f2e653]: 登记状态，未核实
+                - heading "初步观察C-4-29细胞制剂治疗复发/难治性多发性骨髓瘤的长期有效性" [level=3] [ref=f2e654]
+                - paragraph [ref=f2e655]: chinadrugtrials:CTR20210564 · CTR CTR20210564
+              - button "查看来源" [ref=f2e656] [cursor=pointer]
+            - paragraph [ref=f2e657]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e658]:
+              - link "打开来源 ↗" [ref=f2e659] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e660] [cursor=pointer]
+          - article [ref=f2e661]:
+            - generic [ref=f2e662]:
+              - generic [ref=f2e663]:
+                - generic [ref=f2e664]:
+                  - generic [ref=f2e665]: chinadrugtrials
+                  - generic [ref=f2e666]: snapshotDate 2026-10-25
+                  - generic [ref=f2e667]: 登记状态，未核实
+                - heading "多中心、开放、剂量递增的I期临床研究评估注射用重组抗CD38和CD3双特异性抗体（Y150）在复发或难治性多发性骨髓瘤患者中的安全耐受性和药代/药效学特征" [level=3] [ref=f2e668]
+                - paragraph [ref=f2e669]: chinadrugtrials:CTR20211184 · CTR CTR20211184
+              - button "查看来源" [ref=f2e670] [cursor=pointer]
+            - paragraph [ref=f2e671]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e672]:
+              - link "打开来源 ↗" [ref=f2e673] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e674] [cursor=pointer]
+          - article [ref=f2e675]:
+            - generic [ref=f2e676]:
+              - generic [ref=f2e677]:
+                - generic [ref=f2e678]:
+                  - generic [ref=f2e679]: chinadrugtrials
+                  - generic [ref=f2e680]: snapshotDate 2026-10-25
+                  - generic [ref=f2e681]: 登记状态，未核实
+                - heading "评价ATG-010（Selinexor）、硼替佐米和地塞米松（SVd）方案对比硼替佐米和地塞米松（Vd）方案治疗复发或难治性多发性骨髓瘤（RRMM）的安全性与有效性研究" [level=3] [ref=f2e682]
+                - paragraph [ref=f2e683]: chinadrugtrials:CTR20211431 · CTR CTR20211431
+              - button "查看来源" [ref=f2e684] [cursor=pointer]
+            - paragraph [ref=f2e685]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e686]:
+              - link "打开来源 ↗" [ref=f2e687] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e688] [cursor=pointer]
+          - article [ref=f2e689]:
+            - generic [ref=f2e690]:
+              - generic [ref=f2e691]:
+                - generic [ref=f2e692]:
+                  - generic [ref=f2e693]: chinadrugtrials
+                  - generic [ref=f2e694]: snapshotDate 2026-10-25
+                  - generic [ref=f2e695]: 登记状态，未核实
+                - heading "F182112治疗复发或难治性多发性骨髓瘤患者的Ⅰ期临床研究" [level=3] [ref=f2e696]
+                - paragraph [ref=f2e697]: chinadrugtrials:CTR20211432 · CTR CTR20211432
+              - button "查看来源" [ref=f2e698] [cursor=pointer]
+            - paragraph [ref=f2e699]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e700]:
+              - link "打开来源 ↗" [ref=f2e701] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e702] [cursor=pointer]
+          - article [ref=f2e703]:
+            - generic [ref=f2e704]:
+              - generic [ref=f2e705]:
+                - generic [ref=f2e706]:
+                  - generic [ref=f2e707]: chinadrugtrials
+                  - generic [ref=f2e708]: snapshotDate 2026-10-25
+                  - generic [ref=f2e709]: 登记状态，未核实
+                - heading "盐酸米托蒽醌脂质体注射液联合硼替佐米、地塞米松治疗复发/难治多发性骨髓瘤的Ⅰ期临床试验" [level=3] [ref=f2e710]
+                - paragraph [ref=f2e711]: chinadrugtrials:CTR20212318 · CTR CTR20212318
+              - button "查看来源" [ref=f2e712] [cursor=pointer]
+            - paragraph [ref=f2e713]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e714]:
+              - link "打开来源 ↗" [ref=f2e715] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e716] [cursor=pointer]
+          - article [ref=f2e717]:
+            - generic [ref=f2e718]:
+              - generic [ref=f2e719]:
+                - generic [ref=f2e720]:
+                  - generic [ref=f2e721]: chinadrugtrials
+                  - generic [ref=f2e722]: snapshotDate 2026-10-25
+                  - generic [ref=f2e723]: 登记状态，未核实
+                - heading "注射用卡非佐米在复发性或难治性多发性骨髓瘤患者中随机、开放、两序列、四周期交叉生物等效性及延长用药疗效分析预试验" [level=3] [ref=f2e724]
+                - paragraph [ref=f2e725]: chinadrugtrials:CTR20212410 · CTR CTR20212410
+              - button "查看来源" [ref=f2e726] [cursor=pointer]
+            - paragraph [ref=f2e727]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e728]:
+              - link "打开来源 ↗" [ref=f2e729] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e730] [cursor=pointer]
+          - article [ref=f2e731]:
+            - generic [ref=f2e732]:
+              - generic [ref=f2e733]:
+                - generic [ref=f2e734]:
+                  - generic [ref=f2e735]: chinadrugtrials
+                  - generic [ref=f2e736]: snapshotDate 2026-10-25
+                  - generic [ref=f2e737]: 登记状态，未核实
+                - heading "EMB-06在复发或难治性多发性骨髓瘤患者中的研究" [level=3] [ref=f2e738]
+                - paragraph [ref=f2e739]: chinadrugtrials:CTR20212633 · CTR CTR20212633
+              - button "查看来源" [ref=f2e740] [cursor=pointer]
+            - paragraph [ref=f2e741]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e742]:
+              - link "打开来源 ↗" [ref=f2e743] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e744] [cursor=pointer]
+          - article [ref=f2e745]:
+            - generic [ref=f2e746]:
+              - generic [ref=f2e747]:
+                - generic [ref=f2e748]:
+                  - generic [ref=f2e749]: chinadrugtrials
+                  - generic [ref=f2e750]: snapshotDate 2026-10-25
+                  - generic [ref=f2e751]: 登记状态，未核实
+                - heading "talquetamab治疗复发或难治性多发性骨髓瘤的临床研究" [level=3] [ref=f2e752]
+                - paragraph [ref=f2e753]: chinadrugtrials:CTR20212970 · CTR CTR20212970
+              - button "查看来源" [ref=f2e754] [cursor=pointer]
+            - paragraph [ref=f2e755]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e756]:
+              - link "打开来源 ↗" [ref=f2e757] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e758] [cursor=pointer]
+          - article [ref=f2e759]:
+            - generic [ref=f2e760]:
+              - generic [ref=f2e761]:
+                - generic [ref=f2e762]:
+                  - generic [ref=f2e763]: chinadrugtrials
+                  - generic [ref=f2e764]: snapshotDate 2026-10-25
+                  - generic [ref=f2e765]: 登记状态，未核实
+                - heading "在对至少一种 PI、一种 IMiD 和一种抗 CD38 mAb 难治的中国多发性骨髓瘤（三重难治性 MM）受试者中评价 Elranatamab (PF-06863135) 的安全性、药代动力学、药效学和疗效的 Ib/II 期研究" [level=3] [ref=f2e766]
+                - paragraph [ref=f2e767]: chinadrugtrials:CTR20212979 · CTR CTR20212979
+              - button "查看来源" [ref=f2e768] [cursor=pointer]
+            - paragraph [ref=f2e769]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e770]:
+              - link "打开来源 ↗" [ref=f2e771] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e772] [cursor=pointer]
+          - article [ref=f2e773]:
+            - generic [ref=f2e774]:
+              - generic [ref=f2e775]:
+                - generic [ref=f2e776]:
+                  - generic [ref=f2e777]: chinadrugtrials
+                  - generic [ref=f2e778]: snapshotDate 2026-10-25
+                  - generic [ref=f2e779]: 登记状态，未核实
+                - heading "CM336用于多发性骨髓瘤的I/Ⅱ期临床研究" [level=3] [ref=f2e780]
+                - paragraph [ref=f2e781]: chinadrugtrials:CTR20220308 · CTR CTR20220308
+              - button "查看来源" [ref=f2e782] [cursor=pointer]
+            - paragraph [ref=f2e783]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e784]:
+              - link "打开来源 ↗" [ref=f2e785] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e786] [cursor=pointer]
+          - article [ref=f2e787]:
+            - generic [ref=f2e788]:
+              - generic [ref=f2e789]:
+                - generic [ref=f2e790]:
+                  - generic [ref=f2e791]: chinadrugtrials
+                  - generic [ref=f2e792]: snapshotDate 2026-10-25
+                  - generic [ref=f2e793]: 登记状态，未核实
+                - heading "GR1803注射液在复发/难治的多发性骨髓瘤患者中的临床研究" [level=3] [ref=f2e794]
+                - paragraph [ref=f2e795]: chinadrugtrials:CTR20220402 · CTR CTR20220402
+              - button "查看来源" [ref=f2e796] [cursor=pointer]
+            - paragraph [ref=f2e797]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e798]:
+              - link "打开来源 ↗" [ref=f2e799] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e800] [cursor=pointer]
+          - article [ref=f2e801]:
+            - generic [ref=f2e802]:
+              - generic [ref=f2e803]:
+                - generic [ref=f2e804]:
+                  - generic [ref=f2e805]: chinadrugtrials
+                  - generic [ref=f2e806]: snapshotDate 2026-10-25
+                  - generic [ref=f2e807]: 登记状态，未核实
+                - heading "HRS-3738在复发难治的非霍奇金淋巴瘤和多发性骨髓瘤患者中的I期临床试验" [level=3] [ref=f2e808]
+                - paragraph [ref=f2e809]: chinadrugtrials:CTR20221007 · CTR CTR20221007
+              - button "查看来源" [ref=f2e810] [cursor=pointer]
+            - paragraph [ref=f2e811]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e812]:
+              - link "打开来源 ↗" [ref=f2e813] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e814] [cursor=pointer]
+          - article [ref=f2e815]:
+            - generic [ref=f2e816]:
+              - generic [ref=f2e817]:
+                - generic [ref=f2e818]:
+                  - generic [ref=f2e819]: chinadrugtrials
+                  - generic [ref=f2e820]: snapshotDate 2026-10-25
+                  - generic [ref=f2e821]: 登记状态，未核实
+                - heading "在复发或难治性的多发性骨髓瘤受试者中，比较teclistamab联合达雷妥尤单抗(Tec-Dara)与达雷妥尤单抗、泊马度胺和地塞米松(DPd)或达雷妥尤单抗、硼替佐米（万珂）和地塞米松(DVd)的疗效和安全性研究" [level=3] [ref=f2e822]
+                - paragraph [ref=f2e823]: chinadrugtrials:CTR20221039 · CTR CTR20221039
+              - button "查看来源" [ref=f2e824] [cursor=pointer]
+            - paragraph [ref=f2e825]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e826]:
+              - link "打开来源 ↗" [ref=f2e827] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e828] [cursor=pointer]
+          - article [ref=f2e829]:
+            - generic [ref=f2e830]:
+              - generic [ref=f2e831]:
+                - generic [ref=f2e832]:
+                  - generic [ref=f2e833]: chinadrugtrials
+                  - generic [ref=f2e834]: snapshotDate 2026-10-25
+                  - generic [ref=f2e835]: 登记状态，未核实
+                - heading "MagnetisMM-5：一项在复发/难治性多发性骨髓瘤研究参与者中 elranatamab (PF-06863135) 单药治疗和 elranatamab + 达雷妥尤单抗对比达雷妥尤单抗 + 泊马度胺 + 地塞米松的III 期研究" [level=3] [ref=f2e836]
+                - paragraph [ref=f2e837]: chinadrugtrials:CTR20221192 · CTR CTR20221192
+              - button "查看来源" [ref=f2e838] [cursor=pointer]
+            - paragraph [ref=f2e839]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e840]:
+              - link "打开来源 ↗" [ref=f2e841] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e842] [cursor=pointer]
+          - article [ref=f2e843]:
+            - generic [ref=f2e844]:
+              - generic [ref=f2e845]:
+                - generic [ref=f2e846]:
+                  - generic [ref=f2e847]: chinadrugtrials
+                  - generic [ref=f2e848]: snapshotDate 2026-10-25
+                  - generic [ref=f2e849]: 登记状态，未核实
+                - heading "嵌合抗原受体T细胞（C-CAR088）治疗复发或难治性多发性骨髓瘤患者的安全性和有效性研究" [level=3] [ref=f2e850]
+                - paragraph [ref=f2e851]: chinadrugtrials:CTR20221467 · CTR CTR20221467
+              - button "查看来源" [ref=f2e852] [cursor=pointer]
+            - paragraph [ref=f2e853]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e854]:
+              - link "打开来源 ↗" [ref=f2e855] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e856] [cursor=pointer]
+          - article [ref=f2e857]:
+            - generic [ref=f2e858]:
+              - generic [ref=f2e859]:
+                - generic [ref=f2e860]:
+                  - generic [ref=f2e861]: chinadrugtrials
+                  - generic [ref=f2e862]: snapshotDate 2026-10-25
+                  - generic [ref=f2e863]: 登记状态，未核实
+                - heading "一项belantamab mafodotin联合泊马度胺与地塞米松方案相比泊马 度胺加硼替佐米与地塞米松方案治疗复发性/难治性多发性骨髓瘤受试者的III期研究" [level=3] [ref=f2e864]
+                - paragraph [ref=f2e865]: chinadrugtrials:CTR20221556 · CTR CTR20221556
+              - button "查看来源" [ref=f2e866] [cursor=pointer]
+            - paragraph [ref=f2e867]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e868]:
+              - link "打开来源 ↗" [ref=f2e869] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e870] [cursor=pointer]
+          - article [ref=f2e871]:
+            - generic [ref=f2e872]:
+              - generic [ref=f2e873]:
+                - generic [ref=f2e874]:
+                  - generic [ref=f2e875]: chinadrugtrials
+                  - generic [ref=f2e876]: snapshotDate 2026-10-25
+                  - generic [ref=f2e877]: 登记状态，未核实
+                - heading "抗人BCMA T细胞治疗复发/难治性多发性骨髓瘤的有效性和安全性研究" [level=3] [ref=f2e878]
+                - paragraph [ref=f2e879]: chinadrugtrials:CTR20221684 · CTR CTR20221684
+              - button "查看来源" [ref=f2e880] [cursor=pointer]
+            - paragraph [ref=f2e881]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e882]:
+              - link "打开来源 ↗" [ref=f2e883] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e884] [cursor=pointer]
+          - article [ref=f2e885]:
+            - generic [ref=f2e886]:
+              - generic [ref=f2e887]:
+                - generic [ref=f2e888]:
+                  - generic [ref=f2e889]: chinadrugtrials
+                  - generic [ref=f2e890]: snapshotDate 2026-10-25
+                  - generic [ref=f2e891]: 登记状态，未核实
+                - heading "抗CD38抗体偶联药物（STI-6129）在复发性或难治性多发性骨髓瘤患者中的安全性和有效性研究" [level=3] [ref=f2e892]
+                - paragraph [ref=f2e893]: chinadrugtrials:CTR20222476 · CTR CTR20222476
+              - button "查看来源" [ref=f2e894] [cursor=pointer]
+            - paragraph [ref=f2e895]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e896]:
+              - link "打开来源 ↗" [ref=f2e897] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e898] [cursor=pointer]
+          - article [ref=f2e899]:
+            - generic [ref=f2e900]:
+              - generic [ref=f2e901]:
+                - generic [ref=f2e902]:
+                  - generic [ref=f2e903]: chinadrugtrials
+                  - generic [ref=f2e904]: snapshotDate 2026-10-25
+                  - generic [ref=f2e905]: 登记状态，未核实
+                - heading "一项在复发性或难治性多发性骨髓瘤（RRMM）受试者中比Iberdomide、达雷妥尤单抗和地塞米松（IberDd）与达雷妥尤单抗、硼替佐米和地塞米松（DVd）的两阶段、随机、多中心、开放标签、3期研究" [level=3] [ref=f2e906]
+                - paragraph [ref=f2e907]: chinadrugtrials:CTR20222913 · CTR CTR20222913
+              - button "查看来源" [ref=f2e908] [cursor=pointer]
+            - paragraph [ref=f2e909]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e910]:
+              - link "打开来源 ↗" [ref=f2e911] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e912] [cursor=pointer]
+          - article [ref=f2e913]:
+            - generic [ref=f2e914]:
+              - generic [ref=f2e915]:
+                - generic [ref=f2e916]:
+                  - generic [ref=f2e917]: chinadrugtrials
+                  - generic [ref=f2e918]: snapshotDate 2026-10-25
+                  - generic [ref=f2e919]: 登记状态，未核实
+                - heading "LM-305治疗复发或难治性多发性骨髓瘤及其它浆细胞疾病患者I/II期临床研究" [level=3] [ref=f2e920]
+                - paragraph [ref=f2e921]: chinadrugtrials:CTR20223084 · CTR CTR20223084
+              - button "查看来源" [ref=f2e922] [cursor=pointer]
+            - paragraph [ref=f2e923]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e924]:
+              - link "打开来源 ↗" [ref=f2e925] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e926] [cursor=pointer]
+          - article [ref=f2e927]:
+            - generic [ref=f2e928]:
+              - generic [ref=f2e929]:
+                - generic [ref=f2e930]:
+                  - generic [ref=f2e931]: chinadrugtrials
+                  - generic [ref=f2e932]: snapshotDate 2026-10-25
+                  - generic [ref=f2e933]: 登记状态，未核实
+                - heading "评价ICP-490单药及联合地塞米松在复发和/或难治性多发性骨髓瘤患者中的安全性、耐受性" [level=3] [ref=f2e934]
+                - paragraph [ref=f2e935]: chinadrugtrials:CTR20223160 · CTR CTR20223160
+              - button "查看来源" [ref=f2e936] [cursor=pointer]
+            - paragraph [ref=f2e937]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e938]:
+              - link "打开来源 ↗" [ref=f2e939] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e940] [cursor=pointer]
+          - article [ref=f2e941]:
+            - generic [ref=f2e942]:
+              - generic [ref=f2e943]:
+                - generic [ref=f2e944]:
+                  - generic [ref=f2e945]: chinadrugtrials
+                  - generic [ref=f2e946]: snapshotDate 2026-10-25
+                  - generic [ref=f2e947]: 登记状态，未核实
+                - heading "一项比较Talquetamab联合达雷妥尤单抗或联合达雷妥尤单抗和泊马度胺与达雷妥尤单抗联合泊马度胺和地塞米松治疗复发或难治性多发性骨髓瘤的研究" [level=3] [ref=f2e948]
+                - paragraph [ref=f2e949]: chinadrugtrials:CTR20223266 · CTR CTR20223266
+              - button "查看来源" [ref=f2e950] [cursor=pointer]
+            - paragraph [ref=f2e951]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e952]:
+              - link "打开来源 ↗" [ref=f2e953] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e954] [cursor=pointer]
+          - article [ref=f2e955]:
+            - generic [ref=f2e956]:
+              - generic [ref=f2e957]:
+                - generic [ref=f2e958]:
+                  - generic [ref=f2e959]: chinadrugtrials
+                  - generic [ref=f2e960]: snapshotDate 2026-10-25
+                  - generic [ref=f2e961]: 登记状态，未核实
+                - heading "评估注射用TQB2934在多发性骨髓瘤受试者中的临床试验" [level=3] [ref=f2e962]
+                - paragraph [ref=f2e963]: chinadrugtrials:CTR20223310 · CTR CTR20223310
+              - button "查看来源" [ref=f2e964] [cursor=pointer]
+            - paragraph [ref=f2e965]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e966]:
+              - link "打开来源 ↗" [ref=f2e967] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e968] [cursor=pointer]
+          - article [ref=f2e969]:
+            - generic [ref=f2e970]:
+              - generic [ref=f2e971]:
+                - generic [ref=f2e972]:
+                  - generic [ref=f2e973]: chinadrugtrials
+                  - generic [ref=f2e974]: snapshotDate 2026-10-25
+                  - generic [ref=f2e975]: 登记状态，未核实
+                - heading "复发性或难治性多发性骨髓瘤（RRMM）的3期临床试验" [level=3] [ref=f2e976]
+                - paragraph [ref=f2e977]: chinadrugtrials:CTR20223338 · CTR CTR20223338
+              - button "查看来源" [ref=f2e978] [cursor=pointer]
+            - paragraph [ref=f2e979]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e980]:
+              - link "打开来源 ↗" [ref=f2e981] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e982] [cursor=pointer]
+          - article [ref=f2e983]:
+            - generic [ref=f2e984]:
+              - generic [ref=f2e985]:
+                - generic [ref=f2e986]:
+                  - generic [ref=f2e987]: chinadrugtrials
+                  - generic [ref=f2e988]: snapshotDate 2026-10-25
+                  - generic [ref=f2e989]: 登记状态，未核实
+                - heading "CART-BCMA 治疗复发/难治性多发性骨髓瘤的II期临床研究" [level=3] [ref=f2e990]
+                - paragraph [ref=f2e991]: chinadrugtrials:CTR20230238 · CTR CTR20230238
+              - button "查看来源" [ref=f2e992] [cursor=pointer]
+            - paragraph [ref=f2e993]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e994]:
+              - link "打开来源 ↗" [ref=f2e995] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e996] [cursor=pointer]
+          - article [ref=f2e997]:
+            - generic [ref=f2e998]:
+              - generic [ref=f2e999]:
+                - generic [ref=f2e1000]:
+                  - generic [ref=f2e1001]: chinadrugtrials
+                  - generic [ref=f2e1002]: snapshotDate 2026-10-25
+                  - generic [ref=f2e1003]: 登记状态，未核实
+                - heading "评价CGT-1881片在健康受试者和非霍奇金淋巴瘤或多发性骨髓瘤患者中的安全性、耐受性、食物对药物的影响以及PK/PD特征" [level=3] [ref=f2e1004]
+                - paragraph [ref=f2e1005]: chinadrugtrials:CTR20230392 · CTR CTR20230392
+              - button "查看来源" [ref=f2e1006] [cursor=pointer]
+            - paragraph [ref=f2e1007]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e1008]:
+              - link "打开来源 ↗" [ref=f2e1009] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e1010] [cursor=pointer]
+          - article [ref=f2e1011]:
+            - generic [ref=f2e1012]:
+              - generic [ref=f2e1013]:
+                - generic [ref=f2e1014]:
+                  - generic [ref=f2e1015]: chinadrugtrials
+                  - generic [ref=f2e1016]: snapshotDate 2026-10-25
+                  - generic [ref=f2e1017]: 登记状态，未核实
+                - heading "评估注射用DXC009 在难治复发性多发性骨髓瘤患者中的安全性、 耐受性、药代动力学特征以及初步疗效的开放、多中心、首次人体、 剂量递增和扩大入组的I 期临床研究。" [level=3] [ref=f2e1018]
+                - paragraph [ref=f2e1019]: chinadrugtrials:CTR20230428 · CTR CTR20230428
+              - button "查看来源" [ref=f2e1020] [cursor=pointer]
+            - paragraph [ref=f2e1021]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e1022]:
+              - link "打开来源 ↗" [ref=f2e1023] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e1024] [cursor=pointer]
+          - article [ref=f2e1025]:
+            - generic [ref=f2e1026]:
+              - generic [ref=f2e1027]:
+                - generic [ref=f2e1028]:
+                  - generic [ref=f2e1029]: chinadrugtrials
+                  - generic [ref=f2e1030]: snapshotDate 2026-10-25
+                  - generic [ref=f2e1031]: 登记状态，未核实
+                - heading "评价Mezigdomide（BMS-986348）联合卡非佐米和地塞米松治疗复发或难治性多发性骨髓瘤的III期研究" [level=3] [ref=f2e1032]
+                - paragraph [ref=f2e1033]: chinadrugtrials:CTR20230483 · CTR CTR20230483
+              - button "查看来源" [ref=f2e1034] [cursor=pointer]
+            - paragraph [ref=f2e1035]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e1036]:
+              - link "打开来源 ↗" [ref=f2e1037] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e1038] [cursor=pointer]
+          - article [ref=f2e1039]:
+            - generic [ref=f2e1040]:
+              - generic [ref=f2e1041]:
+                - generic [ref=f2e1042]:
+                  - generic [ref=f2e1043]: chinadrugtrials
+                  - generic [ref=f2e1044]: snapshotDate 2026-10-25
+                  - generic [ref=f2e1045]: 登记状态，未核实
+                - heading "泊马度胺胶囊联合低剂量地塞米松治疗复发难治性多发性骨髓瘤患者的临床试验" [level=3] [ref=f2e1046]
+                - paragraph [ref=f2e1047]: chinadrugtrials:CTR20230801 · CTR CTR20230801
+              - button "查看来源" [ref=f2e1048] [cursor=pointer]
+            - paragraph [ref=f2e1049]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e1050]:
+              - link "打开来源 ↗" [ref=f2e1051] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e1052] [cursor=pointer]
+          - article [ref=f2e1053]:
+            - generic [ref=f2e1054]:
+              - generic [ref=f2e1055]:
+                - generic [ref=f2e1056]:
+                  - generic [ref=f2e1057]: chinadrugtrials
+                  - generic [ref=f2e1058]: snapshotDate 2026-10-25
+                  - generic [ref=f2e1059]: 登记状态，未核实
+                - heading "KYS202002A单抗注射液在复发或难治性多发性骨髓瘤患者中的I期临床研究" [level=3] [ref=f2e1060]
+                - paragraph [ref=f2e1061]: chinadrugtrials:CTR20230879 · CTR CTR20230879
+              - button "查看来源" [ref=f2e1062] [cursor=pointer]
+            - paragraph [ref=f2e1063]: 条件文本、招募状态、中心与充分详细记录不在此快照中，无法自动匹配。
+            - generic [ref=f2e1064]:
+              - link "打开来源 ↗" [ref=f2e1065] [cursor=pointer]:
+                - /url: https://www.chinadrugtrials.org.cn/clinicaltrials.searchlistdetail.dhtml
+              - button "收藏线索" [ref=f2e1066] [cursor=pointer]
+      - contentinfo [ref=f2e180]:
+        - generic [ref=f2e181]: 只记录、整理和准备沟通；不作诊断或治疗建议。
+        - generic [ref=f2e182]: 小浆宝 MyeloPal v0.1.0
+  - status

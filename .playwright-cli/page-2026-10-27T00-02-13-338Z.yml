@@ -1,0 +1,134 @@
+- generic [ref=f2e1]:
+  - link "跳到主要内容" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f2e3]:
+    - strong [ref=f2e4]: 交互原型 · 合成档案
+    - generic [ref=f2e5]: 本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。
+  - generic [ref=f2e6]:
+    - complementary "工作台导航" [ref=f2e7]:
+      - button "切换演示档案" [ref=f2e8] [cursor=pointer]:
+        - generic [ref=f2e9]: 林
+        - generic [ref=f2e10]:
+          - generic [ref=f2e11]: 林先生的资料
+          - generic [ref=f2e12]: 68 岁 · 患者自报
+        - generic [aria-hidden] [ref=f2e13]: ⌄
+      - navigation "主要功能" [ref=f2e14]:
+        - button "⌂ 看板" [ref=f2e15] [cursor=pointer]:
+          - generic [ref=f2e16]: ⌂
+          - text: 看板
+        - button "⌁ 指标趋势" [ref=f2e17] [cursor=pointer]:
+          - generic [ref=f2e18]: ⌁
+          - text: 指标趋势
+        - button "▦ 病程日历" [active] [ref=f2e19] [cursor=pointer]:
+          - generic [ref=f2e20]: ▦
+          - text: 病程日历
+        - button "↻ 治疗线" [ref=f2e21] [cursor=pointer]:
+          - generic [ref=f2e22]: ↻
+          - text: 治疗线
+        - button "◉ 移植档案" [ref=f2e23] [cursor=pointer]:
+          - generic [ref=f2e24]: ◉
+          - text: 移植档案
+        - button "◇ 骨事件" [ref=f2e25] [cursor=pointer]:
+          - generic [ref=f2e26]: ◇
+          - text: 骨事件
+        - button "＋ 感染与疫苗" [ref=f2e27] [cursor=pointer]:
+          - generic [ref=f2e28]: ＋
+          - text: 感染与疫苗
+        - button "◎ 照护支持" [ref=f2e29] [cursor=pointer]:
+          - generic [ref=f2e30]: ◎
+          - text: 照护支持
+        - button "▤ 复诊准备" [ref=f2e31] [cursor=pointer]:
+          - generic [ref=f2e32]: ▤
+          - text: 复诊准备
+        - button "⌕ 临床试验" [ref=f2e33] [cursor=pointer]:
+          - generic [ref=f2e34]: ⌕
+          - text: 临床试验
+        - button "▧ 资料核对" [ref=f2e35] [cursor=pointer]:
+          - generic [ref=f2e36]: ▧
+          - text: 资料核对
+    - generic [ref=f2e37]:
+      - banner [ref=f2e38]:
+        - generic [ref=f2e39]:
+          - generic [ref=f2e40]: 小浆宝
+          - generic [ref=f2e41]: v0.1.0
+        - generic [ref=f2e42]:
+          - button "大字 Aa" [ref=f2e43] [cursor=pointer]
+          - button "关于" [ref=f2e44] [cursor=pointer]
+      - main [ref=f2e45]:
+        - generic [ref=f2e208]:
+          - generic [ref=f2e209]:
+            - generic [ref=f2e210]: ✿
+            - text: MYELOPAL · 患者自报
+          - heading "病程日历" [level=1] [ref=f2e211]
+          - paragraph [ref=f2e212]: 只把已有治疗、检查和照护记录按来源日期放入日历；未登记的安排保持空白。
+        - generic [ref=f2e213]: 此处没有根据周期文本推算每日给药或预约日期。尚未记录的事项不会被补成日程。
+        - generic [ref=f2e214]:
+          - generic [ref=f2e215]:
+            - button "上一个月" [ref=f2e216] [cursor=pointer]: 上个月
+            - heading "2026 年 10 月" [level=2] [ref=f2e217]
+            - button "下一个月" [ref=f2e218] [cursor=pointer]: 下个月
+          - generic [ref=f2e219]:
+            - generic [ref=f2e220]: 一
+            - generic [ref=f2e221]: 二
+            - generic [ref=f2e222]: 三
+            - generic [ref=f2e223]: 四
+            - generic [ref=f2e224]: 五
+            - generic [ref=f2e225]: 六
+            - generic [ref=f2e226]: 日
+          - generic [ref=f2e227]:
+            - button "1" [ref=f2e231] [cursor=pointer]
+            - button "2" [ref=f2e233] [cursor=pointer]
+            - button "3" [ref=f2e235] [cursor=pointer]
+            - button "4" [ref=f2e237] [cursor=pointer]
+            - button "5" [ref=f2e239] [cursor=pointer]
+            - button "6" [ref=f2e241] [cursor=pointer]
+            - button "7" [ref=f2e243] [cursor=pointer]
+            - button "8 检查 检查" [ref=f2e245] [cursor=pointer]:
+              - generic [ref=f2e246]: "8"
+              - generic [ref=f2e247]: 检查
+              - generic [ref=f2e248]: 检查
+            - button "9" [ref=f2e249] [cursor=pointer]
+            - button "10" [ref=f2e251] [cursor=pointer]
+            - button "11" [ref=f2e253] [cursor=pointer]
+            - button "12" [ref=f2e255] [cursor=pointer]
+            - button "13" [ref=f2e257] [cursor=pointer]
+            - button "14" [ref=f2e259] [cursor=pointer]
+            - button "15" [ref=f2e261] [cursor=pointer]
+            - button "16" [ref=f2e263] [cursor=pointer]
+            - button "17" [ref=f2e265] [cursor=pointer]
+            - button "18" [ref=f2e267] [cursor=pointer]
+            - button "19" [ref=f2e269] [cursor=pointer]
+            - button "20" [ref=f2e271] [cursor=pointer]
+            - button "21" [ref=f2e273] [cursor=pointer]
+            - button "22" [ref=f2e275] [cursor=pointer]
+            - button "23" [ref=f2e277] [cursor=pointer]
+            - button "24" [ref=f2e279] [cursor=pointer]
+            - button "25" [ref=f2e281] [cursor=pointer]
+            - button "26" [ref=f2e283] [cursor=pointer]
+            - button "27" [ref=f2e285] [cursor=pointer]
+            - button "28" [ref=f2e287] [cursor=pointer]
+            - button "29" [ref=f2e289] [cursor=pointer]
+            - button "30" [ref=f2e291] [cursor=pointer]
+            - button "31" [ref=f2e293] [cursor=pointer]
+        - generic [ref=f2e296]:
+          - generic [ref=f2e297]:
+            - generic [ref=f2e298]:
+              - heading "2026-10" [level=2] [ref=f2e299]
+              - paragraph [ref=f2e300]: 档案已登记事件
+            - generic [ref=f2e301]: 2 条
+          - generic [ref=f2e302]:
+            - time [ref=f2e303]: 2026-10-08
+            - generic [ref=f2e304]:
+              - text: M 蛋白检查
+              - paragraph [ref=f2e305]: 8.1 g/L
+              - text: 检查 · 来源：合成演示报告
+          - generic [ref=f2e306]:
+            - time [ref=f2e307]: 2026-10-08
+            - generic [ref=f2e308]:
+              - text: 游离轻链 κ/λ检查
+              - paragraph [ref=f2e309]: 18 比值
+              - text: 检查 · 来源：合成演示报告
+      - contentinfo [ref=f2e204]:
+        - generic [ref=f2e205]: 只记录、整理和准备沟通；不作诊断或治疗建议。
+        - generic [ref=f2e206]: 小浆宝 MyeloPal v0.1.0
+  - status

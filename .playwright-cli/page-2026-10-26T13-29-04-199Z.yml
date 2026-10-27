@@ -1,0 +1,119 @@
+- generic [ref=e1]:
+  - link "跳到主要内容" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e3]:
+    - strong [ref=e4]: 交互原型 · 合成档案
+    - generic [ref=e5]: 本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。
+  - generic [ref=e6]:
+    - complementary "工作台导航" [ref=e7]:
+      - generic [ref=e8]:
+        - generic [aria-hidden] [ref=e9]: 浆
+        - generic [ref=e10]:
+          - strong [ref=e11]: 小浆宝
+          - generic [ref=e12]: MyeloPal · 多发性骨髓瘤
+      - button "切换演示档案" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: 林
+        - generic [ref=e15]:
+          - generic [ref=e16]: 林先生的资料
+          - generic [ref=e17]: 68 岁 · 患者自报
+        - generic [aria-hidden] [ref=e18]: ⌄
+      - navigation "主要功能" [ref=e19]:
+        - button "⌂ 看板" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: ⌂
+          - text: 看板
+        - button "⌁ 指标趋势" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: ⌁
+          - text: 指标趋势
+        - button "↻ 治疗线" [active] [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: ↻
+          - text: 治疗线
+        - button "◉ 移植档案" [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: ◉
+          - text: 移植档案
+        - button "◇ 骨事件" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: ◇
+          - text: 骨事件
+        - button "＋ 感染与疫苗" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: ＋
+          - text: 感染与疫苗
+        - button "◎ 照护支持" [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]: ◎
+          - text: 照护支持
+        - button "▤ 复诊准备" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: ▤
+          - text: 复诊准备
+        - button "⌕ 临床试验" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: ⌕
+          - text: 临床试验
+        - button "▧ 资料核对" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: ▧
+          - text: 资料核对
+      - generic [ref=e40]:
+        - text: 记录原则
+        - paragraph [ref=e41]: 患者自报与家属代记并列；确认前的内容仍是候选。
+    - generic [ref=e42]:
+      - banner [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: 小浆宝
+          - generic [ref=e46]: v0.1.0
+        - paragraph [ref=e47]: 每条线先看阶段概要；需要时展开治疗、指标、影像、副作用和支持记录。
+        - generic [ref=e48]:
+          - button "大字 Aa" [ref=e49] [cursor=pointer]
+          - button "关于" [ref=e50] [cursor=pointer]
+      - main [ref=e51]:
+        - generic [ref=e374]:
+          - generic [ref=e375]:
+            - generic [ref=e376]:
+              - generic [ref=e377]: ✿
+              - text: MYELOPAL · 患者自报
+            - heading "治疗线档案" [level=1] [ref=e378]
+            - paragraph [ref=e379]: 默认显示阶段和日期；展开后可查看阶段内的原始记录。
+          - button "示例：整理治疗记录" [ref=e380] [cursor=pointer]
+        - generic [ref=e381]: 每条治疗线显示计划与实际。影像和副作用保留病历原文；支持措施效果只记录患者原话。
+        - generic [ref=e382]:
+          - generic [ref=e383]:
+            - heading "按线序回看" [level=2] [ref=e384]
+            - paragraph [ref=e385]: 2 条演示记录 · 默认折叠
+          - button "⋯ 更多" [ref=e386] [cursor=pointer]
+        - generic [ref=e387]:
+          - group [ref=e388]:
+            - generic "第 1 线 · 诱导治疗 · 2026-02-20—2026-06-20 VRd 方案记录；周期日期以治疗记录为准。 展开细节" [ref=e389] [cursor=pointer]:
+              - generic [ref=e390]:
+                - strong [ref=e391]: 第 1 线 · 诱导治疗 · 2026-02-20—2026-06-20
+                - generic [ref=e392]: VRd 方案记录；周期日期以治疗记录为准。
+              - generic [ref=e393]: 展开细节
+              - generic [aria-hidden] [ref=e394]: ⌄
+            - text: · · · · · · · · · · · ·
+          - group [ref=e395]:
+            - generic "第 2 线 · 移植后维持 · 2026-07-15—至今 移植后维持阶段；下次评估日期待医生记录。 展开细节" [ref=e396] [cursor=pointer]:
+              - generic [ref=e397]:
+                - strong [ref=e398]: 第 2 线 · 移植后维持 · 2026-07-15—至今
+                - generic [ref=e399]: 移植后维持阶段；下次评估日期待医生记录。
+              - generic [ref=e400]: 展开细节
+              - generic [aria-hidden] [ref=e401]: ⌄
+            - text: · · · · · · · · · ·
+        - generic [ref=e403]:
+          - heading "计划 vs 实际" [level=2] [ref=e404]
+          - paragraph [ref=e405]: 按已记录信息对照，不自动补齐缺失周期。
+        - table [ref=e407]:
+          - rowgroup [ref=e408]:
+            - row [ref=e409]:
+              - columnheader "阶段" [ref=e410]
+              - columnheader "计划记录" [ref=e411]
+              - columnheader "实际记录" [ref=e412]
+              - columnheader "来源状态" [ref=e413]
+          - rowgroup [ref=e414]:
+            - row [ref=e415]:
+              - cell "第 1 线 · 诱导治疗" [ref=e416]
+              - cell "按医生记录核对" [ref=e417]
+              - cell "2026-02-20—2026-06-20" [ref=e418]
+              - cell "演示记录" [ref=e419]
+            - row [ref=e421]:
+              - cell "第 2 线 · 移植后维持" [ref=e422]
+              - cell "按医生记录核对" [ref=e423]
+              - cell "2026-07-15—至今" [ref=e424]
+              - cell "演示记录" [ref=e425]
+      - contentinfo [ref=e188]:
+        - generic [ref=e189]: 只记录、整理和准备沟通；不作诊断或治疗建议。
+        - generic [ref=e190]: 小浆宝 MyeloPal v0.1.0
+  - status

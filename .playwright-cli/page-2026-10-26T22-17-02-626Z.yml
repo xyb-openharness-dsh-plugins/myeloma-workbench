@@ -1,0 +1,112 @@
+- generic [ref=e1]:
+  - link "跳到主要内容" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e3]:
+    - strong [ref=e4]: 交互原型 · 合成档案
+    - generic [ref=e5]: 本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。
+  - generic [ref=e6]:
+    - complementary "工作台导航" [ref=e7]:
+      - button "切换演示档案" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: 林
+        - generic [ref=e15]:
+          - generic [ref=e16]: 林先生的资料
+          - generic [ref=e17]: 68 岁 · 患者自报
+        - generic [aria-hidden] [ref=e18]: ⌄
+      - navigation "主要功能" [ref=e19]:
+        - button "⌂ 看板" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: ⌂
+          - text: 看板
+        - button "⌁ 指标趋势" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: ⌁
+          - text: 指标趋势
+        - button "▦ 病程日历" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: ▦
+          - text: 病程日历
+        - button "↻ 治疗线" [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: ↻
+          - text: 治疗线
+        - button "◉ 移植档案" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: ◉
+          - text: 移植档案
+        - button "◇ 骨事件" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: ◇
+          - text: 骨事件
+        - button "＋ 感染与疫苗" [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]: ＋
+          - text: 感染与疫苗
+        - button "◎ 照护支持" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: ◎
+          - text: 照护支持
+        - button "▤ 复诊准备" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: ▤
+          - text: 复诊准备
+        - button "⌕ 临床试验" [active] [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: ⌕
+          - text: 临床试验
+        - button "▧ 资料核对" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: ▧
+          - text: 资料核对
+    - generic [ref=e44]:
+      - banner [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]: 小浆宝
+          - generic [ref=e48]: v0.1.0
+        - generic [ref=e50]:
+          - button "大字 Aa" [ref=e51] [cursor=pointer]
+          - button "关于" [ref=e52] [cursor=pointer]
+      - main [ref=e53]:
+        - generic [ref=e216]:
+          - generic [ref=e217]:
+            - generic [ref=e218]: ✿
+            - text: MYELOPAL · 患者自报
+          - heading "临床试验线索" [level=1] [ref=e219]
+          - paragraph [ref=e220]: 建档、检索、匹配结果；每条来源和限制都可回看。
+        - generic [ref=e221]:
+          - strong [ref=e222]: 本地快照不是实时在线查询。
+          - text: 真实快照只用于检索与来源展示；合成条件示例单独标记。登记状态未核实，登记不等于有效、安全或可入组。
+        - tablist "临床试验功能" [ref=e223]:
+          - tab "建档" [selected] [ref=e224] [cursor=pointer]
+          - tab "检索" [ref=e225] [cursor=pointer]
+          - tab "匹配结果" [ref=e226] [cursor=pointer]
+        - tabpanel "建档" [ref=e227]:
+          - generic [ref=e228]: 建档字段需要逐项确认。只有具有来源和日期的已确认病理、细胞遗传或 IHC 记录用于合成条件示例；未确认候选不会参与。这里没有真实在线查询。
+          - generic [ref=e229]:
+            - generic [ref=e230]:
+              - generic [ref=e231]:
+                - heading "可用于条件对照的档案字段" [level=2] [ref=e232]
+                - paragraph [ref=e233]: 当前选择的演示档案；来源、日期与核对状态并列显示。
+              - generic [ref=e234]: 3 项已确认
+            - generic [ref=e235]:
+              - generic [ref=e236]:
+                - generic [ref=e237]: 病理类型 · 已确认入库
+                - generic [ref=e238]: IgG-κ 型浆细胞肿瘤
+                - generic [ref=e239]: 骨髓病理报告（合成） · 2026-02-18
+              - generic [ref=e240]:
+                - generic [ref=e241]: 细胞遗传学 · 已确认入库
+                - generic [ref=e242]: t(11;14) 检出
+                - generic [ref=e243]: FISH 报告（合成） · 2026-02-18
+              - generic [ref=e244]:
+                - generic [ref=e245]: IHC · 已确认入库
+                - generic [ref=e246]: CD138 阳性（原报告记录）
+                - generic [ref=e247]: 骨髓病理报告（合成） · 2026-02-18
+            - generic [ref=e249]:
+              - heading "待核对或缺少来源的字段" [level=3] [ref=e250]
+              - paragraph [ref=e251]: 这些字段不会参与对照
+            - generic [ref=e253]:
+              - generic [ref=e254]: del(17p) · 未参与对照
+              - generic [ref=e255]: 待核对原报告
+              - generic [ref=e256]: 导入候选（合成） · 2026-02-18
+            - paragraph [ref=e257]: 患者偏好、所在城市与就诊便利度不进入符合度分子或分母。
+            - paragraph [ref=e258]:
+              - button "管理病理 / 基因 / IHC 档案" [ref=e259] [cursor=pointer]
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - generic [ref=e262]:
+                - heading "匹配结果说明" [level=2] [ref=e263]
+                - paragraph [ref=e264]: 比例仅在合成条件示例中展示。
+              - generic [ref=e265]: 展示层派生值
+            - paragraph [ref=e266]: 粗筛符合度 = 符合条件数 ÷ 全部已对照条件数。待确认项不计入符合项，但保留在分母；硬性条件不满足单独列出。四档标签为“高度符合、部分符合、需补充信息、硬性条件不满足”。这不是入组资格，也不代表疗效。
+      - contentinfo [ref=e212]:
+        - generic [ref=e213]: 只记录、整理和准备沟通；不作诊断或治疗建议。
+        - generic [ref=e214]: 小浆宝 MyeloPal v0.1.0
+  - status

@@ -17,7 +17,8 @@
     "assets",
     "cordis.patch.yml",
     "README.md",
-    "NOTICE.md"
+    "NOTICE.md",
+    "public"
   ],
   "scripts": {
     "build:demo": "node demo/build-demo-data.mjs",

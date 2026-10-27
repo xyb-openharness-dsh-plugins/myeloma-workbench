@@ -1,0 +1,248 @@
+- generic [ref=f2e1]:
+  - link "跳到主要内容" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f2e3]:
+    - strong [ref=f2e4]: 交互原型 · 合成档案
+    - generic [ref=f2e5]: 本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。
+  - generic [ref=f2e6]:
+    - complementary "工作台导航" [ref=f2e7]:
+      - button "切换演示档案" [ref=f2e8] [cursor=pointer]:
+        - generic [ref=f2e9]: 林
+        - generic [ref=f2e10]:
+          - generic [ref=f2e11]: 林先生的资料
+          - generic [ref=f2e12]: 68 岁 · 患者自报
+        - generic [aria-hidden] [ref=f2e13]: ⌄
+      - navigation "主要功能" [ref=f2e14]:
+        - button "⌂ 看板" [ref=f2e15] [cursor=pointer]:
+          - generic [ref=f2e16]: ⌂
+          - text: 看板
+        - button "⌁ 指标趋势" [ref=f2e17] [cursor=pointer]:
+          - generic [ref=f2e18]: ⌁
+          - text: 指标趋势
+        - button "↻ 治疗线" [ref=f2e19] [cursor=pointer]:
+          - generic [ref=f2e20]: ↻
+          - text: 治疗线
+        - button "◉ 移植档案" [ref=f2e21] [cursor=pointer]:
+          - generic [ref=f2e22]: ◉
+          - text: 移植档案
+        - button "◇ 骨事件" [ref=f2e23] [cursor=pointer]:
+          - generic [ref=f2e24]: ◇
+          - text: 骨事件
+        - button "＋ 感染与疫苗" [ref=f2e25] [cursor=pointer]:
+          - generic [ref=f2e26]: ＋
+          - text: 感染与疫苗
+        - button "◎ 照护支持" [ref=f2e27] [cursor=pointer]:
+          - generic [ref=f2e28]: ◎
+          - text: 照护支持
+        - button "▤ 复诊准备" [ref=f2e29] [cursor=pointer]:
+          - generic [ref=f2e30]: ▤
+          - text: 复诊准备
+        - button "⌕ 临床试验" [active] [ref=f2e31] [cursor=pointer]:
+          - generic [ref=f2e32]: ⌕
+          - text: 临床试验
+        - button "▧ 资料核对" [ref=f2e33] [cursor=pointer]:
+          - generic [ref=f2e34]: ▧
+          - text: 资料核对
+    - generic [ref=f2e35]:
+      - banner [ref=f2e36]:
+        - generic [ref=f2e37]:
+          - generic [ref=f2e38]: 小浆宝
+          - generic [ref=f2e39]: v0.1.0
+        - generic [ref=f2e40]:
+          - button "大字 Aa" [ref=f2e41] [cursor=pointer]
+          - button "关于" [ref=f2e42] [cursor=pointer]
+      - main [ref=f2e43]:
+        - generic [ref=f2e183]:
+          - generic [ref=f2e184]:
+            - generic [ref=f2e185]:
+              - generic [ref=f2e186]: ✿
+              - text: MYELOPAL · 患者自报
+            - heading "临床试验线索" [level=1] [ref=f2e187]
+            - paragraph [ref=f2e188]: 从已确认档案开始，查看来源和证据。候选线索不是入组判断。
+          - button "示例：整理一条待问问题" [ref=f2e189] [cursor=pointer]
+        - generic [ref=f2e190]:
+          - strong [ref=f2e191]: 四段链路：
+          - text: 已确认建档 → 本地快照/在线来源 → 分层证据 → 收藏候选。登记状态未核实；登记不等于有效、安全或可入组。
+        - tablist "临床试验功能" [ref=f2e192]:
+          - tab "匹配线索" [selected] [ref=f2e193] [cursor=pointer]
+          - tab "检索快照" [ref=f2e194] [cursor=pointer]
+          - tab "已收藏" [ref=f2e195] [cursor=pointer]
+        - tabpanel "匹配线索" [ref=f2e196]:
+          - generic [ref=f2e197]:
+            - strong [ref=f2e198]: 演示状态，未发起实时查询。
+            - text: 下面的在线来源终态来自 2026-10-25 快照采集记录，不能代表当前在线状态；FAILED、DENIED、未配置或超时不算“查过”，也不计成功覆盖。
+          - generic [ref=f2e199]:
+            - generic [ref=f2e200]:
+              - heading "第 1 段 · 只用已确认档案字段" [level=2] [ref=f2e201]
+              - paragraph [ref=f2e202]: 患者档案由你确认；待核对候选不会参加匹配。
+            - button "管理资料核对 →" [ref=f2e203] [cursor=pointer]
+          - generic [ref=f2e204]:
+            - generic [ref=f2e205]:
+              - generic [ref=f2e206]:
+                - generic [ref=f2e207]: 病理类型 · 已确认入库
+                - generic [ref=f2e208]: IgG-κ 型浆细胞肿瘤
+                - generic [ref=f2e209]: 骨髓病理报告（合成） · 2026-02-18
+              - generic [ref=f2e210]:
+                - generic [ref=f2e211]: 细胞遗传学 · 已确认入库
+                - generic [ref=f2e212]: t(11;14) 检出
+                - generic [ref=f2e213]: FISH 报告（合成） · 2026-02-18
+              - generic [ref=f2e214]:
+                - generic [ref=f2e215]: IHC · 已确认入库
+                - generic [ref=f2e216]: CD138 阳性（原报告记录）
+                - generic [ref=f2e217]: 骨髓病理报告（合成） · 2026-02-18
+            - paragraph [ref=f2e218]: 仍有未确认候选：del(17p)。这些字段不会参与线索匹配。
+          - generic [ref=f2e219]:
+            - generic [ref=f2e220]:
+              - heading "第 2 段 · 双通道检索状态" [level=2] [ref=f2e221]
+              - paragraph [ref=f2e222]: 本地快照与在线来源分开显示；终态逐来源可见。
+            - generic [ref=f2e223]: 历史状态
+          - generic [ref=f2e224]:
+            - generic [ref=f2e225]:
+              - generic [ref=f2e226]:
+                - generic [ref=f2e227]:
+                  - heading "本地研究快照" [level=2] [ref=f2e228]
+                  - paragraph [ref=f2e229]: 来自研究采集文件；可能过期。
+                - generic [ref=f2e230]: snapshotDate 2026-10-25
+              - generic [ref=f2e231]:
+                - generic [ref=f2e232]:
+                  - generic [ref=f2e233]: 快照记录
+                  - generic [ref=f2e234]: "257"
+                  - generic [ref=f2e235]: 全量记录数
+                - generic [ref=f2e236]:
+                  - generic [ref=f2e237]: 来源状态行
+                  - generic [ref=f2e238]: "36"
+                  - generic [ref=f2e239]: 跨关键词汇总
+                - generic [ref=f2e240]:
+                  - generic [ref=f2e241]: 本页摘录
+                  - generic [ref=f2e242]: "48"
+                  - generic [ref=f2e243]: 相关标题节选
+              - paragraph [ref=f2e244]: 本快照不含入组/排除条件和当前招募状态；标题命中不能作资格证据。
+              - button "浏览本地快照" [ref=f2e245] [cursor=pointer]
+            - generic [ref=f2e246]:
+              - generic [ref=f2e247]:
+                - generic [ref=f2e248]:
+                  - heading "在线来源终态" [level=2] [ref=f2e249]
+                  - paragraph [ref=f2e250]: 按采集时记录显示；没有启动实时检索。
+                - generic [ref=f2e251]: 非实时
+              - generic [ref=f2e252]:
+                - generic [ref=f2e253]:
+                  - generic [ref=f2e254]: "!"
+                  - generic [ref=f2e255]:
+                    - generic [ref=f2e256]: chictr_online · FAILED · UPSTREAM_UNKNOWN_ERROR
+                    - generic [ref=f2e257]: "失败：本地快照的历史采集终态；不计成功覆盖。来源返回记录 200 条 xyb_chinadrugtrials_archive: 已跳过 2 个不可用数据包：B7-H3_CD276_招募中（缺少 summary.json 清单，视为未完成的采集快照）；FG-M108（缺少 summary.json 清单，视为未完成的采集快照）。这些包内的记录未纳入本次检索。 xyb_chinadrugtrials_archive: 本数据包数据截止 2026-09-29，记录抓取时间跨度为 2026-08-14 至 2026-09-29；该日期之后登记的试验在包内不可见，零结果不能证明不存在。数据包由小胰宝社区共同维护，可用 doctor 查看并更新。 该查询中未成功覆盖来源：chictr_online、chictr_pancreatic_archive、ictrp。"
+                - generic [ref=f2e258]:
+                  - generic [ref=f2e259]: …
+                  - generic [ref=f2e260]:
+                    - generic [ref=f2e261]: chictr_pancreatic_archive · NEEDS_SETUP · PATH_MISSING
+                    - generic [ref=f2e262]: "未配置：该离线语料无 MM 覆盖；不计查过。来源返回记录 200 条 xyb_chinadrugtrials_archive: 已跳过 2 个不可用数据包：B7-H3_CD276_招募中（缺少 summary.json 清单，视为未完成的采集快照）；FG-M108（缺少 summary.json 清单，视为未完成的采集快照）。这些包内的记录未纳入本次检索。 xyb_chinadrugtrials_archive: 本数据包数据截止 2026-09-29，记录抓取时间跨度为 2026-08-14 至 2026-09-29；该日期之后登记的试验在包内不可见，零结果不能证明不存在。数据包由小胰宝社区共同维护，可用 doctor 查看并更新。 该查询中未成功覆盖来源：chictr_online、chictr_pancreatic_archive、ictrp。"
+                - generic [ref=f2e263]:
+                  - generic [ref=f2e264]: ○
+                  - generic [ref=f2e265]:
+                    - generic [ref=f2e266]: chinadrugtrials · NO_RESULTS · EMPTY_RESULT_SET
+                    - generic [ref=f2e267]: "该次有限查询无结果；不表示没有相关研究。来源返回记录 45 条 chinadrugtrials: ChinaDrugTrials 结果表格为空；已确认检索执行，但未命中任何记录。 xyb_chinadrugtrials_archive: 已跳过 2 个不可用数据包：B7-H3_CD276_招募中（缺少 summary.json 清单，视为未完成的采集快照）；FG-M108（缺少 summary.json 清单，视为未完成的采集快照）。这些包内的记录未纳入本次检索。 该查询中未成功覆盖来源：chictr_online、chictr_pancreatic_archive、ictrp。"
+                - generic [ref=f2e268]:
+                  - generic [ref=f2e269]: ✓
+                  - generic [ref=f2e270]:
+                    - generic [ref=f2e271]: chinadrugtrials · SUCCESS · OK
+                    - generic [ref=f2e272]: "历史查询成功 3 次；来源相关成功记录共 200 条；这是采集时状态，不代表当前实时可用。来源返回记录 200 条 chinadrugtrials: ChinaDrugTrials 结果表格为空；已确认检索执行，但未命中任何记录。 xyb_chinadrugtrials_archive: 已跳过 2 个不可用数据包：B7-H3_CD276_招募中（缺少 summary.json 清单，视为未完成的采集快照）；FG-M108（缺少 summary.json 清单，视为未完成的采集快照）。这些包内的记录未纳入本次检索。 该查询中未成功覆盖来源：chictr_online、chictr_pancreatic_archive、ictrp。"
+                - generic [ref=f2e273]:
+                  - generic [ref=f2e274]: ○
+                  - generic [ref=f2e275]:
+                    - generic [ref=f2e276]: ctv · NO_RESULTS · EMPTY_RESULT_SET
+                    - generic [ref=f2e277]: "该次有限查询无结果；不表示没有相关研究。来源返回记录 200 条 chinadrugtrials: 上游共 13 页、约 256 条记录，本次只取第 1-10 页；受控来源不进行大规模抓取，如需完整数据请运行 sync_chinadrugtrials。 chinadrugtrials: 结果可能被截断，未覆盖来源全部命中。 该查询中未成功覆盖来源：chictr_online、chictr_pancreatic_archive、ictrp。"
+                - generic [ref=f2e278]:
+                  - generic [ref=f2e279]: ✓
+                  - generic [ref=f2e280]:
+                    - generic [ref=f2e281]: ctv · SUCCESS · OK
+                    - generic [ref=f2e282]: "历史查询成功 3 次；来源相关成功记录共 200 条；这是采集时状态，不代表当前实时可用。来源返回记录 50 条 chinadrugtrials: 上游共 13 页、约 256 条记录，本次只取第 1-10 页；受控来源不进行大规模抓取，如需完整数据请运行 sync_chinadrugtrials。 chinadrugtrials: 结果可能被截断，未覆盖来源全部命中。 该查询中未成功覆盖来源：chictr_online、chictr_pancreatic_archive、ictrp。"
+                - generic [ref=f2e283]:
+                  - generic [ref=f2e284]: "!"
+                  - generic [ref=f2e285]:
+                    - generic [ref=f2e286]: ictrp · FAILED · UPSTREAM_UNKNOWN_ERROR
+                    - generic [ref=f2e287]: "失败：本地快照的历史采集终态；不计成功覆盖。来源返回记录 200 条 xyb_chinadrugtrials_archive: 已跳过 2 个不可用数据包：B7-H3_CD276_招募中（缺少 summary.json 清单，视为未完成的采集快照）；FG-M108（缺少 summary.json 清单，视为未完成的采集快照）。这些包内的记录未纳入本次检索。 xyb_chinadrugtrials_archive: 本数据包数据截止 2026-09-29，记录抓取时间跨度为 2026-08-14 至 2026-09-29；该日期之后登记的试验在包内不可见，零结果不能证明不存在。数据包由小胰宝社区共同维护，可用 doctor 查看并更新。 该查询中未成功覆盖来源：chictr_online、chictr_pancreatic_archive、ictrp。"
+                - generic [ref=f2e288]:
+                  - generic [ref=f2e289]: ○
+                  - generic [ref=f2e290]:
+                    - generic [ref=f2e291]: xyb_chinadrugtrials_archive · NO_RESULTS · EMPTY_RESULT_SET
+                    - generic [ref=f2e292]: "该次有限查询无结果；不表示没有相关研究。来源返回记录 200 条 xyb_chinadrugtrials_archive: 已跳过 2 个不可用数据包：B7-H3_CD276_招募中（缺少 summary.json 清单，视为未完成的采集快照）；FG-M108（缺少 summary.json 清单，视为未完成的采集快照）。这些包内的记录未纳入本次检索。 xyb_chinadrugtrials_archive: 本数据包数据截止 2026-09-29，记录抓取时间跨度为 2026-08-14 至 2026-09-29；该日期之后登记的试验在包内不可见，零结果不能证明不存在。数据包由小胰宝社区共同维护，可用 doctor 查看并更新。 该查询中未成功覆盖来源：chictr_online、chictr_pancreatic_archive、ictrp。"
+          - generic [ref=f2e294]:
+            - heading "第 3 段 · 分层证据示例" [level=2] [ref=f2e295]
+            - paragraph [ref=f2e296]: 以下条件为合成演示，不是注册库原文；宽口径线索排在最后并显式标注。
+          - article [ref=f2e297]:
+            - generic [ref=f2e298]:
+              - generic [ref=f2e299]:
+                - generic [ref=f2e300]:
+                  - generic [ref=f2e301]: 合成演示，不是真实登记记录
+                  - generic [ref=f2e302]: 结构化示例
+                  - generic [ref=f2e303]: 登记状态，未核实
+                - heading "抗 BCMA 方案用于复发/难治多发性骨髓瘤的研究线索" [level=3] [ref=f2e304]
+                - paragraph [ref=f2e305]: DEMO-MM-001 · 示例条件仅用于展示证据结构 · 不作资格判断
+              - button "查看证据" [ref=f2e306] [cursor=pointer]
+            - generic [ref=f2e307]:
+              - article [ref=f2e308]:
+                - generic [ref=f2e309]: 结构化命中 · 细胞遗传学
+                - paragraph [ref=f2e310]: 合成条件示例：需有指定细胞遗传学结果。
+                - text: t(11;14) 检出（已确认入库） · 档案字段：t(11;14) 检出（已确认入库） · FISH 报告（合成） · 2026-02-18
+              - article [ref=f2e311]:
+                - generic [ref=f2e312]: 文本命中 · 疾病名称
+                - paragraph [ref=f2e313]: 合成条件示例：档案诊断名称与标题中的疾病名称词项相同；文本命中不表示资格符合。
+                - text: 多发性骨髓瘤
+              - article [ref=f2e314]:
+                - generic [ref=f2e315]: 无法自动匹配 · 体能状态
+                - paragraph [ref=f2e316]: 合成条件示例：要求 ECOG 评分在指定范围；当前档案无该字段。
+                - text: 本地未建档体能状态评分，需人工核对。
+            - generic [ref=f2e317]:
+              - button "收藏线索" [ref=f2e318] [cursor=pointer]
+              - button "加入待问问题" [ref=f2e319] [cursor=pointer]
+              - generic [ref=f2e320]: 只作为待核线索
+          - article [ref=f2e321]:
+            - generic [ref=f2e322]:
+              - generic [ref=f2e323]:
+                - generic [ref=f2e324]:
+                  - generic [ref=f2e325]: 合成演示，不是真实登记记录
+                  - generic [ref=f2e326]: 文本命中示例
+                  - generic [ref=f2e327]: 登记状态，未核实
+                - heading "多发性骨髓瘤后线治疗的文本检索示例" [level=3] [ref=f2e328]
+                - paragraph [ref=f2e329]: DEMO-MM-002 · 示例条件仅用于展示证据结构 · 不作资格判断
+              - button "查看证据" [ref=f2e330] [cursor=pointer]
+            - generic [ref=f2e331]:
+              - article [ref=f2e332]:
+                - generic [ref=f2e333]: 文本命中 · 标题词
+                - paragraph [ref=f2e334]: 合成文本片段：“多发性骨髓瘤后线治疗研究”。仅展示词语命中，不代表条件符合。
+                - text: 多发性骨髓瘤、后线治疗
+              - article [ref=f2e335]:
+                - generic [ref=f2e336]: 无法自动匹配 · 治疗条件
+                - paragraph [ref=f2e337]: 合成示例条件：要求特定既往治疗；具体条件文本不可自动解析。
+                - text: 示例未提供可核验的结构化既往治疗条件。
+            - generic [ref=f2e338]:
+              - button "收藏线索" [ref=f2e339] [cursor=pointer]
+              - button "加入待问问题" [ref=f2e340] [cursor=pointer]
+              - generic [ref=f2e341]: 只作为待核线索
+          - article [ref=f2e342]:
+            - generic [ref=f2e343]:
+              - generic [ref=f2e344]:
+                - generic [ref=f2e345]:
+                  - generic [ref=f2e346]: 合成演示，不是真实登记记录
+                  - generic [ref=f2e347]: 宽口径线索 · 排在最后
+                  - generic [ref=f2e348]: 登记状态，未核实
+                - heading "浆细胞疾病篮子研究的宽口径检索示例" [level=3] [ref=f2e349]
+                - paragraph [ref=f2e350]: DEMO-MM-003 · 示例条件仅用于展示证据结构 · 不作资格判断
+              - button "查看证据" [ref=f2e351] [cursor=pointer]
+            - article [ref=f2e353]:
+              - generic [ref=f2e354]: 宽口径命中 · 宽口径词
+              - paragraph [ref=f2e355]: 合成宽口径示例：标题提到“浆细胞疾病”。此类线索不说明试验针对多发性骨髓瘤。
+              - text: 仅宽口径词语相近，需人工查看条件原文。
+            - generic [ref=f2e356]:
+              - button "收藏线索" [ref=f2e357] [cursor=pointer]
+              - button "加入待问问题" [ref=f2e358] [cursor=pointer]
+              - generic [ref=f2e359]: 只作为待核线索
+          - generic [ref=f2e360]:
+            - generic [ref=f2e361]:
+              - heading "第 4 段 · 收藏候选线索" [level=2] [ref=f2e362]
+              - paragraph [ref=f2e363]: 收藏只保存一条待核线索，不代表资格判断或参加建议。
+            - button "回看已收藏 →" [ref=f2e364] [cursor=pointer]
+          - generic [ref=f2e365]: 本工作台不输出资格或可入组结论。缺字段或缺少条件原文时，逐条写明“无法自动匹配”与原因。
+      - contentinfo [ref=f2e180]:
+        - generic [ref=f2e181]: 只记录、整理和准备沟通；不作诊断或治疗建议。
+        - generic [ref=f2e182]: 小浆宝 MyeloPal v0.1.0
+  - status

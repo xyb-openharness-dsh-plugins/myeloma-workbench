@@ -1,0 +1,1866 @@
+{
+ "url": "prototypes/v0.2/index.html",
+ "at": "2026-10-26T20:11:33.149Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.75,
+    0.74
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 1546,
+     "screens": 1.7,
+     "words": 157,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 2,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "✿"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "病程资料，慢慢理清。",
+     "words": 1,
+     "chars": 10,
+     "lines": 1,
+     "size": 26,
+     "vw": 1.8,
+     "font": "-apple-system",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 1.25,
+     "top": 148,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "病程资料，慢慢理清。",
+     "words": 1,
+     "lines": 1,
+     "size": 26,
+     "font": "-apple-system"
+    },
+    "headings": [],
+    "headingSummary": {
+     "count": 0,
+     "maxLines": 0,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "-apple-system",
+       "share": 0.98,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0.02,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      26,
+      27
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 27,
+      "vw": 1.9,
+      "font": "Georgia",
+      "text": "复查、治疗与生活，都留下一份可回看的记录。"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 3,
+     "microLabelShare": 0.026,
+     "microSamples": [
+      "记录原则",
+      "MYELOPAL · 患者自报",
+      "MYELOMA · 长期病程记录"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.03,
+     "smallText": 47
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f7f5f2",
+     "bodyBgHsl": {
+      "h": 36,
+      "s": 0.24,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#69656c",
+       "share": 0.3
+      },
+      {
+       "color": "#29272b",
+       "share": 0.29
+      },
+      {
+       "color": "#77717a",
+       "share": 0.16
+      },
+      {
+       "color": "#6b4e7a",
+       "share": 0.04
+      },
+      {
+       "color": "#51443e",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0000ee"
+     },
+     "lowContrast": [
+      {
+       "text": "只记录、整理和准备沟通；不作诊断或治疗建议。",
+       "ratio": 3.7,
+       "need": 4.5,
+       "size": 10,
+       "fg": "#837e84",
+       "bg": "#f7f5f2"
+      },
+      {
+       "text": "小浆宝 MyeloPal",
+       "ratio": 3.7,
+       "need": 4.5,
+       "size": 10,
+       "fg": "#837e84",
+       "bg": "#f7f5f2"
+      },
+      {
+       "text": "记录原则",
+       "ratio": 3.9,
+       "need": 4.5,
+       "size": 9,
+       "fg": "#8a788f",
+       "bg": "#fbfaf8"
+      },
+      {
+       "text": "记录主体",
+       "ratio": 4.2,
+       "need": 4.5,
+       "size": 9,
+       "fg": "#817a84",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "可见范围",
+       "ratio": 4.2,
+       "need": 4.5,
+       "size": 9,
+       "fg": "#817a84",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 6,
+     "radius": 10,
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "跳到主要内容",
+      "林 林先生的资料 68 岁 · 患者自报 ⌄",
+      "⌂ 看板",
+      "整理一份报告",
+      "看完整趋势 →"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 5,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.hero-card → linear-gradient(118deg, rgb(255, 255, 255) 0%, rgb(250, 247, 251) 64%, rgb(243, 237, 244) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "div.prototype-banner 1440px",
+      "aside.sidebar 248px",
+      "header.topbar 1192px",
+      "footer.app-footer 1192px"
+     ],
+     "outlinedBoxes": 14,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 14,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 1007
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 900,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 1546,
+    "margins": {
+     "left": 16,
+     "right": 35
+    },
+    "sections": [
+     {
+      "sel": "section.hero-card",
+      "tag": "section",
+      "top": 229,
+      "height": 228,
+      "words": 10,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "复查、治疗与生活，",
+       "size": 27,
+       "tag": "h2"
+      },
+      "left": 316,
+      "right": 632,
+      "textLeft": 316,
+      "textRight": 632,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.grid",
+      "tag": "div",
+      "top": 540,
+      "height": 384,
+      "words": 60,
+      "media": 0,
+      "middle": 123,
+      "heading": {
+       "text": "指标概览",
+       "size": 14,
+       "tag": "h2"
+      },
+      "left": 310,
+      "right": 71,
+      "textLeft": 310,
+      "textRight": 71,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.task-grid",
+      "tag": "div",
+      "top": 1007,
+      "height": 243,
+      "words": 13,
+      "media": 0,
+      "middle": 11,
+      "heading": null,
+      "left": 290,
+      "right": 42,
+      "textLeft": 305,
+      "textRight": 254,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.card.card-pad",
+      "tag": "section",
+      "top": 1333,
+      "height": 122,
+      "words": 8,
+      "media": 0,
+      "middle": 381,
+      "heading": null,
+      "left": 323,
+      "right": 297,
+      "textLeft": 323,
+      "textRight": 297,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "病程资料，慢慢理清。",
+      "size": 26,
+      "top": 148,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 290,
+      "n": 4
+     },
+     {
+      "x": 310,
+      "n": 3
+     },
+     {
+      "x": 330,
+      "n": 1
+     },
+     {
+      "x": 636,
+      "n": 1
+     },
+     {
+      "x": 965,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 10,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.14,
+    "voidBox": {
+     "x": 840,
+     "y": 180,
+     "w": 600,
+     "h": 300
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#f7f5f2",
+    "sidebar": {
+     "w": 248,
+     "tag": "aside",
+     "links": 11,
+     "share": 0.17
+    },
+    "topbar": null,
+    "canvas": {
+     "left": 42,
+     "right": 28
+    },
+    "hero": {
+     "text": "病程资料，慢慢理清。",
+     "words": 1,
+     "chars": 10,
+     "lines": 1,
+     "size": 26,
+     "vw": 1.8,
+     "font": "-apple-system",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 1.25,
+     "top": 148,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 1,
+    "layout": {
+     "panels": 11,
+     "firstScreen": 4,
+     "ragged": [],
+     "voids": [
+      {
+       "gap": 95,
+       "at": 809,
+       "panel": "病程中的节点"
+      }
+     ]
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 16,
+     "radii": [
+      [
+       14,
+       6
+      ],
+      [
+       16,
+       5
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       19,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 5,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "rgba(58, 41, 61, 0.055) 0px 8px 28px 0px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.87,
+     "tiny": 56,
+     "tinySamples": [
+      "MyeloPal · 多发性骨髓瘤 10px",
+      "68 岁 · 患者自报 10px",
+      "记录原则 9px",
+      "v0.1.0 10px"
+     ],
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      26,
+      27
+     ]
+    },
+    "title": {
+     "text": "病程资料，慢慢理清。",
+     "size": 26,
+     "top": 148
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.77,
+    0.72,
+    0.78
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 2077,
+     "screens": 2,
+     "words": 149,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 2,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "✿"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "病程资料，慢慢理清。",
+     "words": 1,
+     "chars": 10,
+     "lines": 1,
+     "size": 26,
+     "vw": 3.4,
+     "font": "-apple-system",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 1.25,
+     "top": 260,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "病程资料，慢慢理清。",
+     "words": 1,
+     "lines": 1,
+     "size": 26,
+     "font": "-apple-system"
+    },
+    "headings": [
+     {
+      "text": "病程资料，慢慢理清。",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "-apple-system",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 260,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "复查、治疗与生活， 都留下一份可回看的记录。",
+      "words": 2,
+      "chars": 22,
+      "lines": 2,
+      "size": 27,
+      "vw": 3.5,
+      "font": "Georgia",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1.58,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 392,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "-apple-system",
+       "share": 0.98,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0.02,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      26,
+      27
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 27,
+      "vw": 3.5,
+      "font": "Georgia",
+      "text": "复查、治疗与生活，都留下一份可回看的记录。"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.024,
+     "microSamples": [
+      "MYELOPAL · 患者自报",
+      "MYELOMA · 长期病程记录"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.03,
+     "smallText": 44
+    },
+    "eyebrows": [
+     {
+      "text": "MYELOPAL · 患者自报",
+      "above": "病程资料，慢慢理清。",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 231
+     },
+     {
+      "text": "MYELOMA · 长期病程记录",
+      "above": "复查、治疗与生活， 都留下一份可回看的记录。",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 364
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f7f5f2",
+     "bodyBgHsl": {
+      "h": 36,
+      "s": 0.24,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 651,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#29272b",
+       "share": 0.3
+      },
+      {
+       "color": "#69656c",
+       "share": 0.28
+      },
+      {
+       "color": "#77717a",
+       "share": 0.17
+      },
+      {
+       "color": "#6b4e7a",
+       "share": 0.04
+      },
+      {
+       "color": "#51443e",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0000ee"
+     },
+     "lowContrast": [
+      {
+       "text": "只记录、整理和准备沟通；不作诊断或治疗建议。",
+       "ratio": 3.7,
+       "need": 4.5,
+       "size": 10,
+       "fg": "#837e84",
+       "bg": "#f7f5f2"
+      },
+      {
+       "text": "小浆宝 MyeloPal",
+       "ratio": 3.7,
+       "need": 4.5,
+       "size": 10,
+       "fg": "#837e84",
+       "bg": "#f7f5f2"
+      },
+      {
+       "text": "记录主体",
+       "ratio": 4.2,
+       "need": 4.5,
+       "size": 9,
+       "fg": "#817a84",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "可见范围",
+       "ratio": 4.2,
+       "need": 4.5,
+       "size": 9,
+       "fg": "#817a84",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 4,
+     "radius": 10,
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "跳到主要内容",
+      "林 林先生的资料 68 岁 · 患者自报 ⌄",
+      "整理一份报告",
+      "看完整趋势 →"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 5,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.hero-card → linear-gradient(118deg, rgb(255, 255, 255) 0%, rgb(250, 247, 251) 64%, rgb(243, 237, 244) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "div.prototype-banner 768px",
+      "aside.sidebar 768px",
+      "header.topbar 768px",
+      "footer.app-footer 768px"
+     ],
+     "outlinedBoxes": 14,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 14,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 1421
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 39,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 2077,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "aside.sidebar",
+      "tag": "aside",
+      "top": 36,
+      "height": 124,
+      "words": 15,
+      "media": 0,
+      "middle": 18,
+      "heading": null,
+      "left": 16,
+      "right": 0,
+      "textLeft": 46,
+      "textRight": -58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.workspace",
+      "tag": "div",
+      "top": 160,
+      "height": 1917,
+      "words": 155,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "复查、治疗与生活，",
+       "size": 27,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": true,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "病程资料，慢慢理清。",
+      "size": 26,
+      "top": 260,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "交互原型 · 合成档案",
+      "side": "left",
+      "px": 14
+     },
+     {
+      "text": "本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。",
+      "side": "right",
+      "px": 14
+     }
+    ],
+    "edges": [
+     {
+      "x": 16,
+      "n": 4
+     },
+     {
+      "x": 36,
+      "n": 4
+     },
+     {
+      "x": 56,
+      "n": 1
+     },
+     {
+      "x": 410,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 10,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": false,
+    "ground": "#f7f5f2",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 16,
+     "right": 14
+    },
+    "hero": {
+     "text": "病程资料，慢慢理清。",
+     "words": 1,
+     "chars": 10,
+     "lines": 1,
+     "size": 26,
+     "vw": 3.4,
+     "font": "-apple-system",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 1.25,
+     "top": 260,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 1,
+    "layout": {
+     "panels": 10,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 14,
+     "radii": [
+      [
+       14,
+       6
+      ],
+      [
+       16,
+       5
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       19,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 5,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "rgba(58, 41, 61, 0.055) 0px 8px 28px 0px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.9,
+     "tiny": 65,
+     "tinySamples": [
+      "MyeloPal · 多发性骨髓瘤 10px",
+      "68 岁 · 患者自报 10px",
+      "指标趋势 10px",
+      "治疗线 10px"
+     ],
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      26,
+      27
+     ]
+    },
+    "title": {
+     "text": "病程资料，慢慢理清。",
+     "size": 26,
+     "top": 260
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.84,
+    0.85,
+    0.82,
+    0.64
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 2629,
+     "screens": 3.1,
+     "words": 149,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 2,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "✿"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "病程资料，慢慢理清。",
+     "words": 1,
+     "chars": 10,
+     "lines": 1,
+     "size": 22,
+     "vw": 5.6,
+     "font": "-apple-system",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 1.25,
+     "top": 267,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "病程资料，慢慢理清。",
+     "words": 1,
+     "lines": 1,
+     "size": 22,
+     "font": "-apple-system"
+    },
+    "headings": [
+     {
+      "text": "病程资料，慢慢理清。",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "-apple-system",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.7,
+      "top": 267,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "复查、治疗与生活， 都留下一份可回看的记录。",
+      "words": 2,
+      "chars": 22,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Georgia",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1.58,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 409,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "-apple-system",
+       "share": 0.98,
+       "mono": false
+      },
+      {
+       "family": "Georgia",
+       "share": 0.02,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      22
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": null,
+     "measureChars": null,
+     "max": {
+      "size": 22,
+      "vw": 5.6,
+      "font": "-apple-system",
+      "text": "病程资料，慢慢理清。"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 2,
+     "microLabelShare": 0.024,
+     "microSamples": [
+      "MYELOPAL · 患者自报",
+      "MYELOMA · 长期病程记录"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.03,
+     "smallText": 44
+    },
+    "eyebrows": [
+     {
+      "text": "MYELOPAL · 患者自报",
+      "above": "病程资料，慢慢理清。",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 238
+     },
+     {
+      "text": "MYELOMA · 长期病程记录",
+      "above": "复查、治疗与生活， 都留下一份可回看的记录。",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10,
+      "top": 380
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f7f5f2",
+     "bodyBgHsl": {
+      "h": 36,
+      "s": 0.24,
+      "l": 0.96
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 666,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#29272b",
+       "share": 0.3
+      },
+      {
+       "color": "#69656c",
+       "share": 0.28
+      },
+      {
+       "color": "#77717a",
+       "share": 0.17
+      },
+      {
+       "color": "#6b4e7a",
+       "share": 0.04
+      },
+      {
+       "color": "#51443e",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#29272b"
+     },
+     "lowContrast": [
+      {
+       "text": "只记录、整理和准备沟通；不作诊断或治疗建议。",
+       "ratio": 3.7,
+       "need": 4.5,
+       "size": 9,
+       "fg": "#837e84",
+       "bg": "#f7f5f2"
+      },
+      {
+       "text": "小浆宝 MyeloPal",
+       "ratio": 3.7,
+       "need": 4.5,
+       "size": 9,
+       "fg": "#837e84",
+       "bg": "#f7f5f2"
+      },
+      {
+       "text": "记录主体",
+       "ratio": 4.2,
+       "need": 4.5,
+       "size": 9,
+       "fg": "#817a84",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "可见范围",
+       "ratio": 4.2,
+       "need": 4.5,
+       "size": 9,
+       "fg": "#817a84",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 11,
+     "inHero": 4,
+     "radius": 14,
+     "height": 80,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "跳到主要内容",
+      "林 林先生的资料 68 岁 · 患者自报 ⌄",
+      "整理一份报告",
+      "看完整趋势 →"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 5,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "section.card.card-pad → rgba(58, 41, 61, 0.055) 0px 8px 28px 0px"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.hero-card → linear-gradient(118deg, rgb(255, 255, 255) 0%, rgb(250, 247, 251) 64%, rgb(243, 237, 244) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "div.prototype-banner 390px",
+      "aside.sidebar 390px",
+      "header.topbar 390px",
+      "footer.app-footer 390px"
+     ],
+     "outlinedBoxes": 14,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 14,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 39,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 2629,
+    "margins": {
+     "left": 12,
+     "right": 12
+    },
+    "sections": [
+     {
+      "sel": "aside.sidebar",
+      "tag": "aside",
+      "top": 47,
+      "height": 124,
+      "words": 15,
+      "media": 0,
+      "middle": 396,
+      "heading": null,
+      "left": 16,
+      "right": 0,
+      "textLeft": 46,
+      "textRight": -436,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.workspace",
+      "tag": "div",
+      "top": 171,
+      "height": 2458,
+      "words": 155,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "病程资料，慢慢理清。",
+       "size": 22,
+       "tag": "h1"
+      },
+      "left": 12,
+      "right": 12,
+      "textLeft": 12,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "病程资料，慢慢理清。",
+      "size": 22,
+      "top": 267,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "交互原型 · 合成档案",
+      "side": "left",
+      "px": 14
+     },
+     {
+      "text": "本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。",
+      "side": "left",
+      "px": 14
+     },
+     {
+      "text": "骨事件",
+      "side": "right",
+      "px": 3
+     },
+     {
+      "text": "小浆宝",
+      "side": "left",
+      "px": 12
+     },
+     {
+      "text": "病程资料，慢慢理清。",
+      "side": "left",
+      "px": 12
+     },
+     {
+      "text": "按治疗线、指标和重要事件整理。内容全部为合成演示，不包含真实患者信息。",
+      "side": "left",
+      "px": 12
+     },
+     {
+      "text": "最近的记录",
+      "side": "left",
+      "px": 12
+     },
+     {
+      "text": "看时间、看来源；不把单个数值当作结论。",
+      "side": "left",
+      "px": 12
+     }
+    ],
+    "edges": [
+     {
+      "x": 12,
+      "n": 4
+     },
+     {
+      "x": 31,
+      "n": 4
+     },
+     {
+      "x": 52,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 10,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": false,
+    "ground": "#f7f5f2",
+    "sidebar": null,
+    "topbar": {
+     "h": 47
+    },
+    "canvas": {
+     "left": 12,
+     "right": -359
+    },
+    "hero": {
+     "text": "病程资料，慢慢理清。",
+     "words": 1,
+     "chars": 10,
+     "lines": 1,
+     "size": 22,
+     "vw": 5.6,
+     "font": "-apple-system",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 1.25,
+     "top": 267,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 1,
+    "layout": {
+     "panels": 10,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 14,
+     "radii": [
+      [
+       14,
+       6
+      ],
+      [
+       16,
+       5
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       19,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 5,
+     "softShadows": 0,
+     "shadowSamples": [
+      "rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+      "rgba(58, 41, 61, 0.055) 0px 8px 28px 0px"
+     ],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.9,
+     "tiny": 70,
+     "tinySamples": [
+      "交互原型 · 合成档案 9px",
+      "本页不连接 DSH、在线检索或真实病历；试验线索 9px",
+      "MyeloPal · 多发性骨髓瘤 10px",
+      "68 岁 · 患者自报 10px"
+     ],
+     "sizes": [
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      22
+     ]
+    },
+    "title": {
+     "text": "病程资料，慢慢理清。",
+     "size": 22,
+     "top": 267
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "3 tiny uppercase letter-spaced labels (e.g. \"记录原则\", \"MYELOPAL · 患者自报\", \"MYELOMA · 长期病程记录\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label."
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ✿",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "1 gradient fill(s): section.hero-card → linear-gradient(118deg, rgb(255, 255, 255) 0%, rgb(250, 247, 251) 64%, rgb(243, 237, 244) 100%)",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #f7f5f2).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"只记录、整理和准备沟通；不作诊断或治疗建议。\" 3.7:1 needs 4.5:1; \"小浆宝 MyeloPal\" 3.7:1 needs 4.5:1; \"记录原则\" 3.9:1 needs 4.5:1; \"记录主体\" 4.2:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "heavy-shadow",
+   "width": 1440,
+   "message": "5 panel shadow(s) heavy enough to read as floating: rgba(58, 41, 61, 0.055) 0px 8px 28px 0px | rgba(58, 41, 61, 0.055) 0px 8px 28px 0px | rgba(58, 41, 61, 0.055) 0px 8px 28px 0px",
+   "fix": "Panels sit on the ground: separate them with a fill one step from the ground or a quiet 1px border. A shadow, if any, is under 8% black with a small blur. Real overlays (menus, dialogs, popovers) may float.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "radius-mix",
+   "width": 1440,
+   "message": "Panels use 4 corner radii (14, 16, 0, 12px).",
+   "fix": "One radius for panels, one for controls, full round only for pills and avatars."
+  },
+  {
+   "level": "FAIL",
+   "id": "tiny-text",
+   "width": 1440,
+   "message": "56 text blocks under 11px: MyeloPal · 多发性骨髓瘤 10px, 68 岁 · 患者自报 10px, 记录原则 9px, v0.1.0 10px.",
+   "fix": "Nothing below 11px; secondary text 12px, data 13–14px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "below-fold",
+   "width": 1440,
+   "message": "Only 4 of 11 blocks start on the first 1440px screen.",
+   "fix": "Every block the brief names shows its header and first rows on the first desktop screen: size the headline block to its question, cap long lists with \"View all\", and put time-sensitive blocks before long tables."
+  },
+  {
+   "level": "WARN",
+   "id": "panel-void",
+   "width": 1440,
+   "message": "1 card(s) hold a blank band inside: 95px in \"病程中的节点\".",
+   "fix": "A card stretches to its neighbour only when it has content to fill. Keep a legend or a note directly under its chart (only an action or a total may sit at a stretched card's foot), let a short card keep its own height (align-items: start), and let a filtered block shrink to its rows."
+  },
+  {
+   "level": "WARN",
+   "id": "no-data-hue",
+   "width": 1440,
+   "message": "The screen has a chart but no hue on any of its data (0.0% coloured pixels).",
+   "fix": "Put the style's one chart hue (or the brand's) on the screen's main data element: today's line, the booked bars, the current period, the cover margin. Keep the chrome neutral; the hue still stays under the style's colour budget.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "micro-label",
+   "width": 768,
+   "message": "2 tiny uppercase letter-spaced label(s): \"MYELOPAL · 患者自报\", \"MYELOMA · 长期病程记录\"",
+   "fix": "Prefer sentence case at body size.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 768,
+   "message": "2 text block(s) sit within 16px of the screen edge: \"交互原型 · 合成档案\" (14px from the left); \"本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否\" (14px from the right)",
+   "fix": "Keep text inside the page margin (16–32px or more). Only display type deliberately bled past the edge may touch it.",
+   "alsoAt": [
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/qinxiaoqiang/Downloads/myeloma-workbench/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/Users/qinxiaoqiang/Downloads/myeloma-workbench/.taste-skill/before/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/qinxiaoqiang/Downloads/myeloma-workbench/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/Users/qinxiaoqiang/Downloads/myeloma-workbench/.taste-skill/before/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/qinxiaoqiang/Downloads/myeloma-workbench/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/Users/qinxiaoqiang/Downloads/myeloma-workbench/.taste-skill/before/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+[ 1216013ms] ReferenceError: row is not defined
+    at http://127.0.0.1:4173/app.js:151:26
+    at Array.map (<anonymous>)
+    at http://127.0.0.1:4173/app.js:131:45
+    at Array.map (<anonymous>)
+    at renderSourceStatuses (http://127.0.0.1:4173/app.js:130:46)
+    at matchView (http://127.0.0.1:4173/app.js:209:924)
+    at trialsView (http://127.0.0.1:4173/app.js:216:47)
+    at render (http://127.0.0.1:4173/app.js:228:35)
+    at activateView (http://127.0.0.1:4173/app.js:242:5)
+    at HTMLElement.actionHandler (http://127.0.0.1:4173/app.js:305:28)
+[ 1256581ms] Identifier 'warnings' has already been declared

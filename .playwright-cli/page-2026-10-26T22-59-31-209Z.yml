@@ -1,0 +1,100 @@
+- generic [ref=e1]:
+  - link "跳到主要内容" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e3]:
+    - strong [ref=e4]: 交互原型 · 合成档案
+    - generic [ref=e5]: 本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。
+  - generic [ref=e6]:
+    - complementary "工作台导航" [ref=e7]:
+      - button "切换演示档案" [active] [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: 陈
+        - generic [ref=e15]:
+          - generic [ref=e16]: 陈女士的资料
+          - generic [ref=e17]: 74 岁 · 女儿代记
+        - generic [aria-hidden] [ref=e18]: ⌄
+      - navigation "主要功能" [ref=e19]:
+        - button "⌂ 看板" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: ⌂
+          - text: 看板
+        - button "⌁ 指标趋势" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: ⌁
+          - text: 指标趋势
+        - button "▦ 病程日历" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: ▦
+          - text: 病程日历
+        - button "↻ 治疗线" [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: ↻
+          - text: 治疗线
+        - button "◉ 移植档案" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: ◉
+          - text: 移植档案
+        - button "◇ 骨事件" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: ◇
+          - text: 骨事件
+        - button "＋ 感染与疫苗" [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]: ＋
+          - text: 感染与疫苗
+        - button "◎ 照护支持" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: ◎
+          - text: 照护支持
+        - button "▤ 复诊准备" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: ▤
+          - text: 复诊准备
+        - button "⌕ 临床试验" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: ⌕
+          - text: 临床试验
+        - button "▧ 资料核对" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: ▧
+          - text: 资料核对
+    - generic [ref=e44]:
+      - banner [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]: 小浆宝
+          - generic [ref=e48]: v0.1.0
+        - generic [ref=e50]:
+          - button "大字 Aa" [ref=e51] [cursor=pointer]
+          - button "关于" [ref=e52] [cursor=pointer]
+      - main [ref=e53]:
+        - generic [ref=e1404]:
+          - generic [ref=e1405]:
+            - generic [ref=e1406]:
+              - generic [ref=e1407]: ✿
+              - text: MYELOPAL · 女儿代记
+            - heading "资料核对" [level=1] [ref=e1408]
+            - paragraph [ref=e1409]: 只有逐项核对并确认入库的字段，才会出现在临床线索档案中。
+          - button "AI 辅助整理" [ref=e1410] [cursor=pointer]
+        - generic [ref=e1411]:
+          - strong [ref=e1412]: 确认状态会影响临床线索。
+          - text: 候选字段未确认之前，不参与结构化匹配；拒收候选不改变现有档案。手工保存与 AI 候选均为本机演示状态。
+        - generic [ref=e1413]:
+          - button "AI 辅助整理" [ref=e1414] [cursor=pointer]
+          - button "手工补一条" [ref=e1415] [cursor=pointer]
+          - generic [ref=e1416]: AI 与手工共用逐项核对；最多 6 个手工字段。
+        - generic [ref=e1418]:
+          - heading "基因 / 病理 / IHC 字段" [level=2] [ref=e1419]
+          - paragraph [ref=e1420]: 字段必须附原报告和日期
+        - generic [ref=e1421]:
+          - generic [ref=e1423]:
+            - generic [ref=e1424]:
+              - generic [ref=e1425]:
+                - generic [ref=e1426]: 病理
+                - generic [ref=e1427]: 待核对候选
+              - heading "病理类型 · 轻链型（报告原文待核）" [level=3] [ref=e1428]
+              - paragraph [ref=e1429]: 骨髓报告导入候选（合成） · 2026-01-30
+            - button "逐项核对" [ref=e1430] [cursor=pointer]
+          - generic [ref=e1433]:
+            - generic [ref=e1434]:
+              - generic [ref=e1435]: 基因/细胞遗传
+              - generic [ref=e1436]: 未记录
+            - heading "细胞遗传学 · 未记录" [level=3] [ref=e1437]
+            - paragraph [ref=e1438]: 暂无已确认报告
+          - generic [ref=e1441]:
+            - generic [ref=e1442]:
+              - generic [ref=e1443]: IHC
+              - generic [ref=e1444]: 未记录
+            - heading "IHC · 未记录" [level=3] [ref=e1445]
+            - paragraph [ref=e1446]: 暂无已确认报告
+      - contentinfo [ref=e212]:
+        - generic [ref=e213]: 只记录、整理和准备沟通；不作诊断或治疗建议。
+        - generic [ref=e214]: 小浆宝 MyeloPal v0.1.0
+  - status: 已切换演示档案；资料和确认状态按档案分别保存于本次页面内存。

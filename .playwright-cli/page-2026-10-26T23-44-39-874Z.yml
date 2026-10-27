@@ -1,0 +1,127 @@
+- generic [active] [ref=f1e1]:
+  - link "跳到主要内容" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f1e3]:
+    - strong [ref=f1e4]: 交互原型 · 合成档案
+    - generic [ref=f1e5]: 本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。
+  - generic [ref=f1e6]:
+    - complementary "工作台导航" [ref=f1e7]:
+      - button "切换演示档案" [ref=f1e8] [cursor=pointer]:
+        - generic [ref=f1e9]: 林
+        - generic [ref=f1e10]:
+          - generic [ref=f1e11]: 林先生的资料
+          - generic [ref=f1e12]: 68 岁 · 患者自报
+        - generic [aria-hidden] [ref=f1e13]: ⌄
+      - navigation "主要功能" [ref=f1e14]:
+        - button "⌂ 看板" [ref=f1e15] [cursor=pointer]:
+          - generic [ref=f1e16]: ⌂
+          - text: 看板
+        - button "⌁ 指标趋势" [ref=f1e17] [cursor=pointer]:
+          - generic [ref=f1e18]: ⌁
+          - text: 指标趋势
+        - button "▦ 病程日历" [ref=f1e19] [cursor=pointer]:
+          - generic [ref=f1e20]: ▦
+          - text: 病程日历
+        - button "↻ 治疗线" [ref=f1e21] [cursor=pointer]:
+          - generic [ref=f1e22]: ↻
+          - text: 治疗线
+        - button "◉ 移植档案" [ref=f1e23] [cursor=pointer]:
+          - generic [ref=f1e24]: ◉
+          - text: 移植档案
+        - button "◇ 骨事件" [ref=f1e25] [cursor=pointer]:
+          - generic [ref=f1e26]: ◇
+          - text: 骨事件
+        - button "＋ 感染与疫苗" [ref=f1e27] [cursor=pointer]:
+          - generic [ref=f1e28]: ＋
+          - text: 感染与疫苗
+        - button "◎ 照护支持" [ref=f1e29] [cursor=pointer]:
+          - generic [ref=f1e30]: ◎
+          - text: 照护支持
+        - button "▤ 复诊准备" [ref=f1e31] [cursor=pointer]:
+          - generic [ref=f1e32]: ▤
+          - text: 复诊准备
+        - button "⌕ 临床试验" [ref=f1e33] [cursor=pointer]:
+          - generic [ref=f1e34]: ⌕
+          - text: 临床试验
+        - button "▧ 资料核对" [ref=f1e35] [cursor=pointer]:
+          - generic [ref=f1e36]: ▧
+          - text: 资料核对
+    - generic [ref=f1e37]:
+      - banner [ref=f1e38]:
+        - generic [ref=f1e39]:
+          - generic [ref=f1e40]: 小浆宝
+          - generic [ref=f1e41]: v0.1.0
+        - generic [ref=f1e42]:
+          - button "大字 Aa" [ref=f1e43] [cursor=pointer]
+          - button "关于" [ref=f1e44] [cursor=pointer]
+      - main [ref=f1e45]:
+        - generic [ref=f1e272]:
+          - generic [ref=f1e273]:
+            - generic [ref=f1e274]:
+              - generic [ref=f1e275]: ✿
+              - text: MYELOPAL · 患者自报
+            - heading "治疗线时间轴" [level=1] [ref=f1e276]
+            - paragraph [ref=f1e277]: 按治疗阶段日期回顾原始记录；日期范围和方案均待以原件核对。
+          - button "示例：整理治疗记录" [ref=f1e278] [cursor=pointer]
+        - generic [ref=f1e279]: 阶段条带按档案中已有起止日期绘制；周期描述不会被扩展为每日给药安排。每条阶段保留项目规定的五块折叠详情。
+        - generic [ref=f1e280]:
+          - generic [ref=f1e281]:
+            - heading "治疗阶段" [level=2] [ref=f1e282]
+            - paragraph [ref=f1e283]: 2 条演示记录 · 按记录日期排列
+          - button "⋯ 更多 · 手工补一条" [ref=f1e284] [cursor=pointer]
+        - generic [ref=f1e285]:
+          - generic [ref=f1e289]:
+            - generic [ref=f1e290]:
+              - time [ref=f1e291]: 2026-02-20
+              - generic [ref=f1e292]: —
+              - time [ref=f1e293]: 2026-06-20
+            - generic [ref=f1e294]:
+              - generic [ref=f1e295]: 第 1 线 · 诱导治疗
+              - generic [ref=f1e296]: VRd 方案记录；周期日期以治疗记录为准。
+            - group [ref=f1e297]:
+              - generic "第 1 线 · 诱导治疗 · 2026-02-20—2026-06-20 VRd 方案记录；周期日期以治疗记录为准。" [ref=f1e298] [cursor=pointer]:
+                - generic [ref=f1e299]:
+                  - strong [ref=f1e300]: 第 1 线 · 诱导治疗 · 2026-02-20—2026-06-20
+                  - generic [ref=f1e301]: VRd 方案记录；周期日期以治疗记录为准。
+                - generic [aria-hidden] [ref=f1e302]: ⌄
+              - text: · · · · · · · · · · · ·
+          - generic [ref=f1e306]:
+            - generic [ref=f1e307]:
+              - time [ref=f1e308]: 2026-07-15
+              - generic [ref=f1e309]: —
+              - time [ref=f1e310]: 至今
+            - generic [ref=f1e311]:
+              - generic [ref=f1e312]: 第 2 线 · 移植后维持
+              - generic [ref=f1e313]: 移植后维持阶段；下次评估日期待医生记录。
+            - group [ref=f1e314]:
+              - generic "第 2 线 · 移植后维持 · 2026-07-15—至今 移植后维持阶段；下次评估日期待医生记录。" [ref=f1e315] [cursor=pointer]:
+                - generic [ref=f1e316]:
+                  - strong [ref=f1e317]: 第 2 线 · 移植后维持 · 2026-07-15—至今
+                  - generic [ref=f1e318]: 移植后维持阶段；下次评估日期待医生记录。
+                - generic [aria-hidden] [ref=f1e319]: ⌄
+              - text: · · · · · · · · · ·
+        - generic [ref=f1e321]:
+          - heading "计划与实际记录" [level=2] [ref=f1e322]
+          - paragraph [ref=f1e323]: 只对照档案已有信息，不自动补齐缺失周期。
+        - table [ref=f1e325]:
+          - rowgroup [ref=f1e326]:
+            - row [ref=f1e327]:
+              - columnheader "阶段" [ref=f1e328]
+              - columnheader "计划记录" [ref=f1e329]
+              - columnheader "实际记录" [ref=f1e330]
+              - columnheader "来源状态" [ref=f1e331]
+          - rowgroup [ref=f1e332]:
+            - row [ref=f1e333]:
+              - cell "第 1 线 · 诱导治疗" [ref=f1e334]
+              - cell "按医生记录核对" [ref=f1e335]
+              - cell "2026-02-20—2026-06-20" [ref=f1e336]
+              - cell "演示记录" [ref=f1e337]
+            - row [ref=f1e339]:
+              - cell "第 2 线 · 移植后维持" [ref=f1e340]
+              - cell "按医生记录核对" [ref=f1e341]
+              - cell "2026-07-15—至今" [ref=f1e342]
+              - cell "演示记录" [ref=f1e343]
+      - contentinfo [ref=f1e204]:
+        - generic [ref=f1e205]: 只记录、整理和准备沟通；不作诊断或治疗建议。
+        - generic [ref=f1e206]: 小浆宝 MyeloPal v0.1.0
+  - status

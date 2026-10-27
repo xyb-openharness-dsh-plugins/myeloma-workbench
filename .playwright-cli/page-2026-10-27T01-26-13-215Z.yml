@@ -1,0 +1,444 @@
+- generic [ref=f1e1]:
+  - link "跳到主要内容" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f1e3]:
+    - strong [ref=f1e4]: 交互原型 · 合成档案
+    - generic [ref=f1e5]: 本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。
+  - generic [ref=f1e6]:
+    - complementary "工作台导航" [ref=f1e7]:
+      - generic [ref=f1e8]:
+        - generic [aria-hidden] [ref=f1e9]: 浆
+        - generic [ref=f1e10]:
+          - strong [ref=f1e11]: 小浆宝
+          - generic [ref=f1e12]: MyeloPal · 多发性骨髓瘤
+      - button "切换演示档案" [ref=f1e13] [cursor=pointer]:
+        - generic [ref=f1e14]: 林
+        - generic [ref=f1e15]:
+          - generic [ref=f1e16]: 林先生的资料
+          - generic [ref=f1e17]: 68 岁 · 患者自报
+        - generic [aria-hidden] [ref=f1e18]: ⌄
+      - navigation "主要功能" [ref=f1e19]:
+        - button "⌂ 看板" [ref=f1e20] [cursor=pointer]:
+          - generic [ref=f1e21]: ⌂
+          - text: 看板
+        - button "⌁ 指标趋势" [ref=f1e22] [cursor=pointer]:
+          - generic [ref=f1e23]: ⌁
+          - text: 指标趋势
+        - button "▦ 病程日历" [ref=f1e24] [cursor=pointer]:
+          - generic [ref=f1e25]: ▦
+          - text: 病程日历
+        - button "↻ 治疗线" [ref=f1e26] [cursor=pointer]:
+          - generic [ref=f1e27]: ↻
+          - text: 治疗线
+        - button "◉ 移植档案" [ref=f1e28] [cursor=pointer]:
+          - generic [ref=f1e29]: ◉
+          - text: 移植档案
+        - button "◇ 骨事件" [ref=f1e30] [cursor=pointer]:
+          - generic [ref=f1e31]: ◇
+          - text: 骨事件
+        - button "＋ 感染与疫苗" [ref=f1e32] [cursor=pointer]:
+          - generic [ref=f1e33]: ＋
+          - text: 感染与疫苗
+        - button "◎ 照护支持" [ref=f1e34] [cursor=pointer]:
+          - generic [ref=f1e35]: ◎
+          - text: 照护支持
+        - button "▤ 复诊准备" [ref=f1e36] [cursor=pointer]:
+          - generic [ref=f1e37]: ▤
+          - text: 复诊准备
+        - button "⌕ 临床试验" [ref=f1e38] [cursor=pointer]:
+          - generic [ref=f1e39]: ⌕
+          - text: 临床试验
+        - button "▧ 资料核对" [ref=f1e40] [cursor=pointer]:
+          - generic [ref=f1e41]: ▧
+          - text: 资料核对
+      - generic [ref=f1e42]:
+        - text: 记录原则
+        - paragraph [ref=f1e43]: 患者自报与家属代记并列；确认前的内容仍是候选。
+    - generic [ref=f1e44]:
+      - banner [ref=f1e45]:
+        - generic [ref=f1e46]:
+          - generic [ref=f1e47]: 小浆宝
+          - generic [ref=f1e48]: v0.1.0
+        - paragraph [ref=f1e49]: 把病程资料放在一起，复诊时更容易找到。
+        - generic [ref=f1e50]:
+          - button "疾病概要：定义、指南、治疗全景与发展趋势" [ref=f1e51] [cursor=pointer]: "?"
+          - button "大字 Aa" [ref=f1e52] [cursor=pointer]
+          - button "关于" [ref=f1e53] [cursor=pointer]
+      - main [ref=f1e54]:
+        - generic [ref=f1e55]:
+          - generic [ref=f1e56]:
+            - generic [ref=f1e57]:
+              - generic [ref=f1e58]: ✿
+              - text: MYELOPAL · 患者自报
+            - heading "病程资料，慢慢理清。" [level=1] [ref=f1e59]
+            - paragraph [ref=f1e60]: 按治疗线、指标和重要事件整理。内容全部为合成演示，不包含真实患者信息。
+          - button "整理一份报告" [ref=f1e61] [cursor=pointer]
+        - region "病程状态摘要" [ref=f1e62]:
+          - button "当前治疗线 第 2 线 · 移植后维持 2026-07-15 · 原文与来源待核" [ref=f1e63] [cursor=pointer]:
+            - generic [ref=f1e64]: 当前治疗线
+            - generic [ref=f1e65]: 第 2 线 · 移植后维持
+            - generic [ref=f1e66]: 2026-07-15 · 原文与来源待核
+          - button "档案核对 3 项已确认 未确认候选不会参与试验线索对照" [ref=f1e67] [cursor=pointer]:
+            - generic [ref=f1e68]: 档案核对
+            - generic [ref=f1e69]: 3 项已确认
+            - generic [ref=f1e70]: 未确认候选不会参与试验线索对照
+          - button "已登记日历事项 19 条 尚无已登记预约" [ref=f1e71] [cursor=pointer]:
+            - generic [ref=f1e72]: 已登记日历事项
+            - generic [ref=f1e73]: 19 条
+            - generic [ref=f1e74]: 尚无已登记预约
+        - generic [ref=f1e75]:
+          - generic [ref=f1e76]:
+            - generic [ref=f1e77]: ✿
+            - text: MYELOMA · 长期病程记录
+          - heading "复查、治疗与生活， 都留下一份可回看的记录。" [level=2] [ref=f1e78]: 复查、治疗与生活，都留下一份可回看的记录。
+          - paragraph [ref=f1e79]: 患者自己记，家人也可以代记。每条内容都会保留来源与记录者；确认前，它仍是一条候选。
+          - generic [ref=f1e80]:
+            - generic [ref=f1e81]: 68 岁
+            - generic [ref=f1e82]: 患者自报
+            - generic [ref=f1e83]: 本地演示档案
+        - generic [ref=f1e84]:
+          - generic [ref=f1e85]:
+            - generic [ref=f1e86]:
+              - generic [ref=f1e87]: ✿
+              - text: 疾病概要 · 公共背景
+            - heading "多发性骨髓瘤是什么？" [level=2] [ref=f1e88]
+            - paragraph [ref=f1e89]: 用四段了解疾病定义、医学资料与指南、治疗全景，以及本项目已记录的资料。内容是公开信息整理，不用于判断个人病情。
+            - generic [ref=f1e90]:
+              - generic [ref=f1e91]: 定义
+              - generic [ref=f1e92]: 指南与资料
+              - generic [ref=f1e93]: 治疗全景
+              - generic [ref=f1e94]: 发展趋势
+          - generic [ref=f1e95]:
+            - button "打开病程日历" [ref=f1e96] [cursor=pointer]: 打开病程日历 →
+            - button "疾病概要：多发性骨髓瘤是什么？" [ref=f1e97] [cursor=pointer]
+        - generic [ref=f1e98]:
+          - generic [ref=f1e99]:
+            - heading "最近的记录" [level=2] [ref=f1e100]
+            - paragraph [ref=f1e101]: 看时间、看来源；不把单个数值当作结论。
+          - button "看完整趋势 →" [ref=f1e102] [cursor=pointer]
+        - generic [ref=f1e103]:
+          - generic [ref=f1e104]:
+            - generic [ref=f1e105]:
+              - generic [ref=f1e106]:
+                - heading "指标概览" [level=2] [ref=f1e107]
+                - paragraph [ref=f1e108]: 报告日期与检测结果并列
+              - generic [ref=f1e109]: 记录视图
+            - generic [ref=f1e110]:
+              - generic [ref=f1e111]:
+                - generic [ref=f1e112]:
+                  - generic [ref=f1e113]:
+                    - heading "M 蛋白" [level=2] [ref=f1e114]
+                    - paragraph [ref=f1e115]: 演示记录 · 单位 g/L
+                  - generic [ref=f1e116]: 5 次
+                - generic [ref=f1e117]:
+                  - generic [ref=f1e118]: 8.1 g/L
+                  - generic [ref=f1e119]: 2026-10-08
+                - img "M 蛋白示例曲线，单位 g/L" [ref=f1e120]
+                - paragraph [ref=f1e127]: 仅并列同一示例方法的记录；不据此判断复发或疗效。
+                - group [ref=f1e128]:
+                  - generic "查看日期与来源" [ref=f1e129]
+              - generic [ref=f1e130]:
+                - generic [ref=f1e131]:
+                  - generic [ref=f1e132]:
+                    - heading "游离轻链 κ/λ" [level=2] [ref=f1e133]
+                    - paragraph [ref=f1e134]: 演示记录 · 单位 比值
+                  - generic [ref=f1e135]: 5 次
+                - generic [ref=f1e136]:
+                  - generic [ref=f1e137]: 18 比值
+                  - generic [ref=f1e138]: 2026-10-08
+                - img "游离轻链 κ/λ示例曲线，单位 比值" [ref=f1e139]
+                - paragraph [ref=f1e146]: 单位与检测方法需以原始报告为准。
+                - group [ref=f1e147]:
+                  - generic "查看日期与来源" [ref=f1e148]
+          - generic [ref=f1e149]:
+            - generic [ref=f1e150]:
+              - generic [ref=f1e151]:
+                - heading "病程中的节点" [level=2] [ref=f1e152]
+                - paragraph [ref=f1e153]: 治疗线和支持事件分开记录
+              - generic [ref=f1e154]: 慢性循环
+            - generic [ref=f1e155]:
+              - generic [ref=f1e156]:
+                - generic [ref=f1e157]: 2026-10-08
+                - generic [ref=f1e158]: ●
+                - generic [ref=f1e159]:
+                  - generic [ref=f1e160]: M 蛋白记录 · 8.1 g/L
+                  - generic [ref=f1e161]: 来源日期 · 合成演示档案
+              - generic [ref=f1e162]:
+                - generic [ref=f1e163]: 2026-10-08
+                - generic [ref=f1e164]: ●
+                - generic [ref=f1e165]:
+                  - generic [ref=f1e166]: 游离轻链记录 · 18 比值
+                  - generic [ref=f1e167]: 请核对检测方法与单位
+              - generic [ref=f1e168]:
+                - generic [ref=f1e169]: 2026-07-15
+                - generic [ref=f1e170]: ●
+                - generic [ref=f1e171]:
+                  - generic [ref=f1e172]: 第 2 线 · 移植后维持
+                  - generic [ref=f1e173]: 治疗阶段记录 · 日期待核原件
+            - button "打开治疗线" [ref=f1e174] [cursor=pointer]
+        - generic [ref=f1e176]:
+          - heading "从这里继续" [level=2] [ref=f1e177]
+          - paragraph [ref=f1e178]: 按眼前要做的事进入，完成后可回到看板。
+        - generic [ref=f1e179]:
+          - button "↻ 治疗线时间轴 按日期查看阶段和原始记录" [ref=f1e180] [cursor=pointer]:
+            - generic [ref=f1e181]: ↻
+            - generic [ref=f1e182]: 治疗线时间轴
+            - generic [ref=f1e183]: 按日期查看阶段和原始记录
+          - button "▦ 病程日历 仅显示档案中已登记的日期" [ref=f1e184] [cursor=pointer]:
+            - generic [ref=f1e185]: ▦
+            - generic [ref=f1e186]: 病程日历
+            - generic [ref=f1e187]: 仅显示档案中已登记的日期
+          - button "◉ 移植旅程 采集、回输、植入与出院节点" [ref=f1e188] [cursor=pointer]:
+            - generic [ref=f1e189]: ◉
+            - generic [ref=f1e190]: 移植旅程
+            - generic [ref=f1e191]: 采集、回输、植入与出院节点
+          - button "◇ 骨事件与骨保护 事件、用药和牙科事实记录" [ref=f1e192] [cursor=pointer]:
+            - generic [ref=f1e193]: ◇
+            - generic [ref=f1e194]: 骨事件与骨保护
+            - generic [ref=f1e195]: 事件、用药和牙科事实记录
+          - button "＋ 感染与疫苗 感染、Ig 指标和既往接种记录" [ref=f1e196] [cursor=pointer]:
+            - generic [ref=f1e197]: ＋
+            - generic [ref=f1e198]: 感染与疫苗
+            - generic [ref=f1e199]: 感染、Ig 指标和既往接种记录
+          - button "▤ 复诊准备 整理记录摘要与待问医生的问题" [ref=f1e200] [cursor=pointer]:
+            - generic [ref=f1e201]: ▤
+            - generic [ref=f1e202]: 复诊准备
+            - generic [ref=f1e203]: 整理记录摘要与待问医生的问题
+          - button "⌕ 临床试验线索 查看来源、快照和可追溯证据" [ref=f1e204] [cursor=pointer]:
+            - generic [ref=f1e205]: ⌕
+            - generic [ref=f1e206]: 临床试验线索
+            - generic [ref=f1e207]: 查看来源、快照和可追溯证据
+        - generic [ref=f1e209]:
+          - heading "记录由谁提供" [level=2] [ref=f1e210]
+          - paragraph [ref=f1e211]: 自报和代报是两种视角，并列保留。
+        - generic [ref=f1e213]:
+          - generic [ref=f1e214]:
+            - generic [ref=f1e215]: 记录主体
+            - generic [ref=f1e216]: 患者自报
+            - generic [ref=f1e217]: 女儿（照护者代记） · 陪同复诊观察
+          - generic [ref=f1e218]:
+            - generic [ref=f1e219]: 可见范围
+            - generic [ref=f1e220]: 患者可见范围待确认
+            - generic [ref=f1e221]: 原型不模拟真实权限保存；未确认的私密内容不进入复诊摘要。
+      - contentinfo [ref=f1e222]:
+        - generic [ref=f1e223]: 只记录、整理和准备沟通；不作诊断或治疗建议。
+        - generic [ref=f1e224]: 小浆宝 MyeloPal v0.1.0
+  - dialog [ref=f1e225]:
+    - banner [ref=f1e226]:
+      - button "← 返回" [ref=f1e227] [cursor=pointer]
+      - generic [ref=f1e228]:
+        - text: 看板 › 病情概要
+        - heading "病情介绍" [level=2] [ref=f1e229]
+      - button "关闭并回到看板" [ref=f1e230] [cursor=pointer]
+    - generic [ref=f1e232]:
+      - banner [ref=f1e233]:
+        - generic [ref=f1e234]:
+          - generic [ref=f1e235]: ✿
+          - text: MYELOPAL · 疾病公共背景
+        - heading "多发性骨髓瘤是什么？" [level=1] [ref=f1e236]
+        - paragraph [ref=f1e237]: 这里整理疾病定义、医学资料来源、治疗类别与已经记录的公开事实，帮助读懂病程资料；不用于判断个人病情。
+        - generic [ref=f1e238]:
+          - generic [ref=f1e239]: 最后更新：2026-10-26
+          - generic [ref=f1e240]: 四段内容 · 公开资料摘要
+          - generic [ref=f1e241]: 版本与原件状态逐项注明
+      - navigation "疾病概要章节" [ref=f1e242]:
+        - button "定义" [ref=f1e243] [cursor=pointer]
+        - button "指南与资料" [ref=f1e244] [cursor=pointer]
+        - button "治疗全景" [ref=f1e245] [cursor=pointer]
+        - button "发展趋势" [ref=f1e246] [cursor=pointer]
+      - generic [ref=f1e247]:
+        - strong [ref=f1e248]: 这是疾病背景资料，不是个人诊断或治疗建议。
+        - text: 指南版本、原件获取状态和统计口径都在本页标明；资料缺失时不做推断。
+      - generic [ref=f1e249]:
+        - generic [ref=f1e250]:
+          - generic [ref=f1e251]: 01 · DISEASE
+          - heading "定义" [level=2] [ref=f1e252]
+          - paragraph [ref=f1e253]: 多发性骨髓瘤（MM）是以克隆性浆细胞增殖为特征的浆细胞肿瘤。
+        - generic [ref=f1e254]:
+          - paragraph [ref=f1e255]: 浆细胞属于免疫系统中的 B 细胞谱系，主要位于骨髓。异常浆细胞增殖并产生单克隆免疫球蛋白或其片段（M 蛋白）；疾病可涉及一个或多个骨髓部位，也可能出现溶骨性病灶。多发性骨髓瘤属于浆细胞疾病谱，常需与意义未明的单克隆丙种球蛋白病（MGUS）、冒烟型骨髓瘤（SMM）及浆细胞瘤等分类区分。分类与诊断需依据完整检查和临床团队记录，本台不自行判断。
+          - generic [ref=f1e256]:
+            - article [ref=f1e257]:
+              - generic [ref=f1e258]: 疾病分类
+              - paragraph [ref=f1e259]: WHO 第 5 版造血与淋巴组织肿瘤分类将浆细胞骨髓瘤列于淋巴浆细胞及浆细胞肿瘤相关层级。完整分类原文未纳入本项目。
+            - article [ref=f1e260]:
+              - generic [ref=f1e261]: 常见分泌类型
+              - paragraph [ref=f1e262]: 可见 IgG、IgA 等重链类型，也有轻链型。轻链型的记录可能需要单独查看血清游离轻链（FLC）；不能只凭单一检测推断病情。
+            - article [ref=f1e263]:
+              - generic [ref=f1e264]: 诊断相关框架
+              - paragraph [ref=f1e265]: CRAB 涵盖高钙血症、肾功能损害、贫血和骨病变；SLiM 还涉及骨髓克隆性浆细胞比例、游离轻链比值和 MRI 病灶等定义事件。
+            - article [ref=f1e266]:
+              - generic [ref=f1e267]: 分期与细胞遗传
+              - paragraph [ref=f1e268]: ISS / R-ISS 分期与细胞遗传学结果相关但不是可互换字段。del(17p)、t(4;14) 等信息不由本台自动换算成个人风险结论。
+          - generic [ref=f1e269]:
+            - generic [ref=f1e270]: 人群统计例子
+            - generic [ref=f1e271]: 美国 SEER 2019–2023 数据报告诊断中位年龄为 69 岁；这是美国人群层面的统计，不代表其他地区分布或个人情况。
+            - link "查看 SEER 统计口径 ↗" [ref=f1e272] [cursor=pointer]:
+              - /url: https://seer.cancer.gov/statfacts/html/mulmy.html
+        - paragraph [ref=f1e273]:
+          - generic [ref=f1e274]: 来源状态
+          - text: 部分二次来源已链接；分类原件未取得，版本与页码仍需逐条核实。 · 来源包括 WHO/IARC 分类入口、IMF 托管的 IMWG 诊断标准摘要、NCI PDQ 与 SEER 人群统计。
+      - generic [ref=f1e275]:
+        - generic [ref=f1e276]:
+          - generic [ref=f1e277]: 02 · SOURCES
+          - heading "医学资料规范和指南情况" [level=2] [ref=f1e278]
+          - paragraph [ref=f1e279]: 指南、共识、分类和患者信息来源分开标记。点击链接可打开来源页面；链接可访问不代表本项目已取得或审阅其全文。
+        - generic [ref=f1e280]:
+          - article [ref=f1e281]:
+            - generic [ref=f1e282]:
+              - generic [ref=f1e283]: NCCN
+              - generic [ref=f1e284]: 在线文件版本未核实
+            - 'heading "Guidelines for Patients: Multiple Myeloma" [level=3] [ref=f1e285]'
+            - paragraph [ref=f1e286]: 患者版疾病与治疗信息入口；本页不引用未核实版本中的具体条文。
+            - link "打开 NCCN 患者指南 PDF ↗" [ref=f1e287] [cursor=pointer]:
+              - /url: https://www.nccn.org/patients/guidelines/content/PDF/myeloma-patient.pdf
+            - generic [ref=f1e288]: 官方 PDF 地址；当前未逐页核对 PDF 版本。
+          - article [ref=f1e289]:
+            - generic [ref=f1e290]:
+              - generic [ref=f1e291]: NCCN
+              - generic [ref=f1e292]: 在线索引可见 Version 2.2027；本台未核原文
+            - 'heading "NCCN Clinical Practice Guidelines in Oncology: Multiple Myeloma" [level=3] [ref=f1e293]'
+            - paragraph [ref=f1e294]: 专业指南入口；需在引用前确认正文版本和更新日期。
+            - link "打开 NCCN 指南目录 ↗" [ref=f1e295] [cursor=pointer]:
+              - /url: https://www.nccn.org/guidelines/category_1
+            - generic [ref=f1e296]: 官方目录可访问；专业指南正文可能需要登录。
+          - article [ref=f1e297]:
+            - generic [ref=f1e298]:
+              - generic [ref=f1e299]: IMWG
+              - generic [ref=f1e300]: IMF 公共摘要；所引原始标准发表于 2014 年
+            - heading "Criteria for the Diagnosis of Multiple Myeloma" [level=3] [ref=f1e301]
+            - paragraph [ref=f1e302]: CRAB、SLiM 与相关浆细胞疾病诊断框架入口。
+            - link "打开 IMF 的 IMWG 标准摘要 ↗" [ref=f1e303] [cursor=pointer]:
+              - /url: https://www.myeloma.org/international-myeloma-working-group-imwg-criteria-diagnosis-multiple-myeloma
+            - generic [ref=f1e304]: 公开二次摘要，不等于原始指南全文；页面更新日期未见。
+          - article [ref=f1e305]:
+            - generic [ref=f1e306]:
+              - generic [ref=f1e307]: IMWG
+              - generic [ref=f1e308]: "2014"
+            - heading "International Myeloma Working Group diagnostic criteria（Lancet Oncology）" [level=3] [ref=f1e309]
+            - paragraph [ref=f1e310]: 用于追溯 2014 年诊断标准论文；不是当前版本状态的证明。
+            - link "打开 2014 年论文 DOI ↗" [ref=f1e311] [cursor=pointer]:
+              - /url: https://doi.org/10.1016/S1470-2045(14)70442-5
+            - generic [ref=f1e312]: 原始论文出版方入口；全文可能需要订阅或机构权限。
+          - article [ref=f1e313]:
+            - generic [ref=f1e314]:
+              - generic [ref=f1e315]: IMWG
+              - generic [ref=f1e316]: 原始论文 2014；在线摘要页版本未标注
+            - heading "Consensus recommendations for risk stratification in multiple myeloma" [level=3] [ref=f1e317]
+            - paragraph [ref=f1e318]: 用于理解风险分层资料来源；不据此推导个人风险。
+            - link "打开 IMF 的风险分层摘要 ↗" [ref=f1e319] [cursor=pointer]:
+              - /url: https://www.myeloma.org/imwg/imwg-consensus-risk-stratification-multiple-myeloma
+            - generic [ref=f1e320]: 公开二次摘要；原始论文为 Leukemia 2014。
+          - article [ref=f1e321]:
+            - generic [ref=f1e322]:
+              - generic [ref=f1e323]: CSCO
+              - generic [ref=f1e324]: 订购信息页面发布于 2026-05-06
+            - heading "CSCO 指南订购 / 2025 指南汇编信息" [level=3] [ref=f1e325]
+            - paragraph [ref=f1e326]: 仅作为指南获取入口，不引用未取得原件的具体条文。
+            - link "打开 CSCO 指南汇编信息 ↗" [ref=f1e327] [cursor=pointer]:
+              - /url: https://www.csco.org.cn/cn/ncontent.aspx?oid=9038
+            - generic [ref=f1e328]: 官方汇编与获取信息；未提供本页所列骨髓瘤指南全文。
+          - article [ref=f1e329]:
+            - generic [ref=f1e330]:
+              - generic [ref=f1e331]: CSCO
+              - generic [ref=f1e332]: 2025 会议回放
+            - heading "CSCO 骨髓瘤指南更新解读（会议回放）" [level=3] [ref=f1e333]
+            - paragraph [ref=f1e334]: 说明存在更新解读入口，不作为指南原件。
+            - link "打开 CSCO 骨髓瘤指南更新解读回放 ↗" [ref=f1e335] [cursor=pointer]:
+              - /url: https://reg2023.csco.org.cn/wap/resource/36?type=2
+            - generic [ref=f1e336]: 官方会议回放列表；解读视频不等于指南全文。
+          - article [ref=f1e337]:
+            - generic [ref=f1e338]:
+              - generic [ref=f1e339]: WHO / IARC
+              - generic [ref=f1e340]: WHO 第 5 版，Volume 11；2024
+            - 'heading "WHO Classification of Tumours Online: Haematolymphoid Tumours" [level=3] [ref=f1e341]'
+            - paragraph [ref=f1e342]: 疾病分类入口，不是治疗指南。
+            - link "打开 WHO/IARC 在线分类 ↗" [ref=f1e343] [cursor=pointer]:
+              - /url: https://whobluebooks.iarc.who.int/structures/haematolymphoid/
+            - generic [ref=f1e344]: 可查看分类层级；完整出版内容通过图书或订阅服务获取。
+          - article [ref=f1e345]:
+            - generic [ref=f1e346]:
+              - generic [ref=f1e347]: WHO / IARC
+              - generic [ref=f1e348]: 第 5 版，Volume 11；2024
+            - heading "Haematolymphoid Tumours" [level=3] [ref=f1e349]
+            - paragraph [ref=f1e350]: 核对分类书目与版本信息。
+            - link "打开 WHO/IARC 出版信息 ↗" [ref=f1e351] [cursor=pointer]:
+              - /url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Haematolymphoid-Tumours-2024
+            - generic [ref=f1e352]: 官方出版物信息；完整内容需通过图书或在线服务访问。
+          - article [ref=f1e353]:
+            - generic [ref=f1e354]:
+              - generic [ref=f1e355]: NCI / SEER
+              - generic [ref=f1e356]: 诊断年龄统计期 2019–2023
+            - 'heading "SEER Cancer Stat Facts: Myeloma" [level=3] [ref=f1e357]'
+            - paragraph [ref=f1e358]: 仅作为人群统计示例，不能外推到个人或中国患者。
+            - link "打开 SEER 人群统计 ↗" [ref=f1e359] [cursor=pointer]:
+              - /url: https://seer.cancer.gov/statfacts/html/mulmy.html
+            - generic [ref=f1e360]: 公开美国人群统计；页面报告诊断中位年龄 69 岁。
+          - article [ref=f1e361]:
+            - generic [ref=f1e362]:
+              - generic [ref=f1e363]: NCI
+              - generic [ref=f1e364]: 最近更新 2025-04-25
+            - heading "Myeloma Treatment (PDQ), Health Professional Version" [level=3] [ref=f1e365]
+            - paragraph [ref=f1e366]: 补充疾病背景与治疗类别的二次资料；个别内容仍需以原指南核对。
+            - link "打开 NCI PDQ 专业版 ↗" [ref=f1e367] [cursor=pointer]:
+              - /url: https://www.cancer.gov/types/myeloma/hp/myeloma-treatment-pdq
+            - generic [ref=f1e368]: 公开专业信息摘要；美国语境，非本地指南替代品。
+        - generic [ref=f1e369]: 未取得指南原件的项目，只记文件入口与用途，不引用具体条文、推荐等级或剂量。NCCN 专业版可能需要登录；CSCO 页面是获取/会议解读入口；WHO/IARC 在线分类可见分类层级，完整出版内容受访问方式限制。
+        - paragraph [ref=f1e370]:
+          - generic [ref=f1e371]: 来源状态
+          - text: 入口已搜索并核对页面类型；NCCN PDF 的具体版次未能从 PDF 正文确认。 · IMWG 页面有公开二次摘要与可追溯论文入口；CSCO 链接不是指南全文；WHO 第五版书目为 2024。
+      - generic [ref=f1e372]:
+        - generic [ref=f1e373]:
+          - generic [ref=f1e374]: 03 · TREATMENT LANDSCAPE
+          - heading "目前治疗全景概要" [level=2] [ref=f1e375]
+          - paragraph [ref=f1e376]: 以下按治疗阶段列出常见类别，帮助识别术语；不是方案比较、治疗顺序建议或适用性判断。
+        - generic [ref=f1e377]:
+          - article [ref=f1e378]:
+            - generic [ref=f1e379]: 初治阶段
+            - heading "诱导治疗" [level=3] [ref=f1e380]
+            - paragraph [ref=f1e381]: 方案可能涉及蛋白酶体抑制剂、免疫调节剂、抗 CD38 单抗及糖皮质激素等药物类别，组合因指南版本和临床背景而异。
+          - article [ref=f1e382]:
+            - generic [ref=f1e383]: 部分患者的治疗环节
+            - heading "自体造血干细胞移植" [level=3] [ref=f1e384]
+            - paragraph [ref=f1e385]: 围绕干细胞动员、采集、预处理、回输及恢复随访等环节。本工作台仅记录日期和原始资料，不评估是否适合移植。
+          - article [ref=f1e386]:
+            - generic [ref=f1e387]: 治疗后阶段
+            - heading "巩固与维持" [level=3] [ref=f1e388]
+            - paragraph [ref=f1e389]: 可包含巩固治疗及维持治疗类别；方案与持续时间以医生记录和当前指南原文为准。
+          - article [ref=f1e390]:
+            - generic [ref=f1e391]: 疾病复发或难治阶段
+            - heading "后线治疗与研究" [level=3] [ref=f1e392]
+            - paragraph [ref=f1e393]: 可见不同药物类别、细胞治疗及临床研究等信息。批准状态、适应症和地区可及性须另查现行官方资料。
+          - article [ref=f1e394]:
+            - generic [ref=f1e395]: 全程支持
+            - heading "骨骼、感染与器官支持" [level=3] [ref=f1e396]
+            - paragraph [ref=f1e397]: 包括骨健康、感染预防和疫苗记录、肾功能与贫血等支持管理类别；本台不生成个体处置建议。
+          - article [ref=f1e398]:
+            - generic [ref=f1e399]: 贯穿全程
+            - heading "复查与病程记录" [level=3] [ref=f1e400]
+            - paragraph [ref=f1e401]: M 蛋白、游离轻链、血常规、血钙、肌酐和影像等检查依临床安排。记录页保留日期、单位、来源与方法，不自动判断进展。
+        - paragraph [ref=f1e402]:
+          - text: 以上是文献与指南里列出的手段，按病期与线序排列，
+          - strong [ref=f1e403]: 不代表任何一项适合你
+          - text: 。选哪一个，这一句需要问你的医生。
+        - paragraph [ref=f1e404]:
+          - generic [ref=f1e405]: 来源状态
+          - text: 治疗类别摘要，原件未取得。 · NCCN 官方患者指南入口、NCI PDQ 二次资料与 CSCO 汇编信息页；未引用剂量、比较结果或个体选择条件。
+      - generic [ref=f1e406]:
+        - generic [ref=f1e407]:
+          - generic [ref=f1e408]: 04 · DATED FACTS
+          - heading "发展趋势" [level=2] [ref=f1e409]
+          - paragraph [ref=f1e410]: 此处只列带日期和来源的已记录事实；没有整理的事项明确留空。
+        - generic [ref=f1e411]:
+          - generic [ref=f1e412]: 快照日期 · 2026-10-25
+          - generic [ref=f1e413]: 257 条
+          - strong [ref=f1e414]: 指定检索式命中的登记记录
+          - paragraph [ref=f1e415]: 来自单一平台与六个中英文检索词：多发性骨髓瘤、骨髓瘤、浆细胞瘤、multiple myeloma、myeloma、plasma cell myeloma。不是全量统计；临床试验阶段分布未统计；登记状态未核实；快照不含足以做条件对照的纳入/排除条件。
+          - generic [ref=f1e416]: 来源：本项目 research/myeloma-cancer/manifest.json，采集工具 unified_search_trials。
+        - generic [ref=f1e417]:
+          - generic [ref=f1e418]: 本台尚未整理
+          - generic [ref=f1e419]: 指南版本的逐次更替、监管批件变化、分类体系后续更新和试验阶段分布，目前没有完成可追溯的逐项核验。
+        - paragraph [ref=f1e420]:
+          - generic [ref=f1e421]: 来源状态
+          - text: 登记快照为本项目一手采集记录；指南与批件趋势未整理。 · 登记状态未核实，不代表当前招募状态、研究质量或可入组性。
+      - contentinfo [ref=f1e422]: 最后更新 2026-10-26 · 内容仅整理公共背景和已注明来源的事实 · 与个人有关的诊断或治疗判断，请咨询血液科团队。
+  - status

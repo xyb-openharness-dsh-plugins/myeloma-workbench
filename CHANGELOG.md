@@ -4,6 +4,8 @@
 
 ## 0.1.1-rc.2 · 2026-10-27（本地候选，未发布）
 
+- 装机界面补齐（评审反馈：装了只有骨架）：把 `prototypes/v0.2` 提升为 `public/` 并随包发出（`files += public`）；新增 `dsh/server.js`（只从 public/ 出文件，`..`/符号链接逃逸一律 404）与 `/api/myeloma-workbench/ui/` 前缀路由；`lib/client.js` 改为 iframe 装 public，原骨架降为加载失败兜底。
+
 - 36 号 v2 引入（指南可点 + 状态卡）：新增 `prototypes/v0.2/primer-data.js`（四段 `definition → evidence → landscape → trend`）与 starter 模式层 `primer.js` / `primer.css`；原型顶栏「?」与看板疾病概要卡均打开四段整页浮窗。
 - 指南链接 12 条候选入口逐条用 `verify-links.mjs` 实测：9 个唯一 URL 为 OK 并写入数据（19 个链接位），覆盖 NCCN 指南目录、IMWG、CSCO、WHO/IARC、NCI PDQ 与 SEER；NCCN 患者版 PDF 直链与 IMWG 2014 原始论文 DOI 实测仅返回二进制（THIN），未采用，相关行改标「未取得可核对原件，据二次来源」。未编 URL、未引用指南条文。
 - 看板首卡按 §2.6 增加 D+N 状态卡四件：eyebrow、按锚点日（移植回输日 Day 0 / 诱导 D1）派生的大字天数、现状行、主按钮 + 「疾病概要：多发性骨髓瘤是什么？」副按钮；无锚点时显示「待初始化」并给出三步向导。

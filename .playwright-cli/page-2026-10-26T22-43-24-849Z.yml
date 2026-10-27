@@ -1,0 +1,143 @@
+- generic [active] [ref=e1]:
+  - link "跳到主要内容" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e3]:
+    - strong [ref=e4]: 交互原型 · 合成档案
+    - generic [ref=e5]: 本页不连接 DSH、在线检索或真实病历；试验线索不能判断是否可入组。
+  - generic [ref=e6]:
+    - complementary "工作台导航" [ref=e7]:
+      - button "切换演示档案" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: 林
+        - generic [ref=e15]:
+          - generic [ref=e16]: 林先生的资料
+          - generic [ref=e17]: 68 岁 · 患者自报
+        - generic [aria-hidden] [ref=e18]: ⌄
+      - navigation "主要功能" [ref=e19]:
+        - button "⌂ 看板" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: ⌂
+          - text: 看板
+        - button "⌁ 指标趋势" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: ⌁
+          - text: 指标趋势
+        - button "▦ 病程日历" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: ▦
+          - text: 病程日历
+        - button "↻ 治疗线" [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: ↻
+          - text: 治疗线
+        - button "◉ 移植档案" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: ◉
+          - text: 移植档案
+        - button "◇ 骨事件" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: ◇
+          - text: 骨事件
+        - button "＋ 感染与疫苗" [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]: ＋
+          - text: 感染与疫苗
+        - button "◎ 照护支持" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: ◎
+          - text: 照护支持
+        - button "▤ 复诊准备" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: ▤
+          - text: 复诊准备
+        - button "⌕ 临床试验" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: ⌕
+          - text: 临床试验
+        - button "▧ 资料核对" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: ▧
+          - text: 资料核对
+    - generic [ref=e44]:
+      - banner [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]: 小浆宝
+          - generic [ref=e48]: v0.1.0
+        - generic [ref=e50]:
+          - button "大字 Aa" [ref=e51] [cursor=pointer]
+          - button "关于" [ref=e52] [cursor=pointer]
+      - main [ref=e53]:
+        - generic [ref=e1271]:
+          - generic [ref=e1272]:
+            - generic [ref=e1273]:
+              - generic [ref=e1274]: ✿
+              - text: MYELOPAL · 患者自报
+            - heading "资料核对" [level=1] [ref=e1275]
+            - paragraph [ref=e1276]: 只有逐项核对并确认入库的字段，才会出现在临床线索档案中。
+          - button "AI 辅助整理" [ref=e1277] [cursor=pointer]
+        - generic [ref=e1278]:
+          - strong [ref=e1279]: 确认状态会影响临床线索。
+          - text: 候选字段未确认之前，不参与结构化匹配；拒收候选不改变现有档案。手工保存与 AI 候选均为本机演示状态。
+        - generic [ref=e1280]:
+          - button "AI 辅助整理" [ref=e1281] [cursor=pointer]
+          - button "手工补一条" [ref=e1282] [cursor=pointer]
+          - generic [ref=e1283]: AI 与手工共用逐项核对；最多 6 个手工字段。
+        - generic [ref=e1284]:
+          - generic [ref=e1285]:
+            - generic [ref=e1286]:
+              - heading "手工补充资料" [level=2] [ref=e1287]
+              - paragraph [ref=e1288]: 按原文抄录来源与日期，不做医学解释。
+            - button "收起" [ref=e1289] [cursor=pointer]
+          - generic [ref=e1290]:
+            - generic [ref=e1291]:
+              - text: 记录类别
+              - combobox "记录类别" [ref=e1292]:
+                - option "病理/细胞遗传/IHC" [selected]
+                - option "治疗记录"
+                - option "检查记录"
+                - option "其他病程资料"
+            - generic [ref=e1293]:
+              - text: 字段名称
+              - textbox "字段名称" [ref=e1294]:
+                - /placeholder: 例如：报告项目
+            - generic [ref=e1295]:
+              - text: 记录内容
+              - textbox "记录内容" [ref=e1296]:
+                - /placeholder: 照抄报告或记录原文
+            - generic [ref=e1297]:
+              - text: 来源名称
+              - textbox "来源名称" [ref=e1298]:
+                - /placeholder: 报告或病历名称
+            - generic [ref=e1299]:
+              - text: 来源日期
+              - textbox "来源日期" [ref=e1300]
+            - generic [ref=e1301]:
+              - text: 记录者
+              - combobox "记录者" [ref=e1302]:
+                - option "患者自报" [selected]
+                - option "照护者代记"
+            - paragraph [ref=e1303]: 最多 6 项；保存到本次原型的演示档案内存，刷新后清除。临床试验线索只读取已确认、带来源和日期的字段。
+            - button "保存为待核对" [ref=e1304] [cursor=pointer]
+            - button "取消" [ref=e1305] [cursor=pointer]
+        - generic [ref=e1307]:
+          - heading "基因 / 病理 / IHC 字段" [level=2] [ref=e1308]
+          - paragraph [ref=e1309]: 字段必须附原报告和日期
+        - generic [ref=e1310]:
+          - generic [ref=e1313]:
+            - generic [ref=e1314]:
+              - generic [ref=e1315]: 病理
+              - generic [ref=e1316]: 已确认入库
+            - heading "病理类型 · IgG-κ 型浆细胞肿瘤" [level=3] [ref=e1317]
+            - paragraph [ref=e1318]: 骨髓病理报告（合成） · 2026-02-18
+          - generic [ref=e1321]:
+            - generic [ref=e1322]:
+              - generic [ref=e1323]: 基因/细胞遗传
+              - generic [ref=e1324]: 已确认入库
+            - heading "细胞遗传学 · t(11;14) 检出" [level=3] [ref=e1325]
+            - paragraph [ref=e1326]: FISH 报告（合成） · 2026-02-18
+          - generic [ref=e1329]:
+            - generic [ref=e1330]:
+              - generic [ref=e1331]: IHC
+              - generic [ref=e1332]: 已确认入库
+            - heading "IHC · CD138 阳性（原报告记录）" [level=3] [ref=e1333]
+            - paragraph [ref=e1334]: 骨髓病理报告（合成） · 2026-02-18
+          - generic [ref=e1336]:
+            - generic [ref=e1337]:
+              - generic [ref=e1338]:
+                - generic [ref=e1339]: 基因/细胞遗传
+                - generic [ref=e1340]: 待核对候选
+              - heading "del(17p) · 待核对原报告" [level=3] [ref=e1341]
+              - paragraph [ref=e1342]: 导入候选（合成） · 2026-02-18
+            - button "逐项核对" [ref=e1343] [cursor=pointer]
+      - contentinfo [ref=e212]:
+        - generic [ref=e213]: 只记录、整理和准备沟通；不作诊断或治疗建议。
+        - generic [ref=e214]: 小浆宝 MyeloPal v0.1.0
+  - status
