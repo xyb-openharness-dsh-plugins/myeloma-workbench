@@ -1,6 +1,6 @@
 {
   "name": "@xyb-community/myeloma-workbench",
-  "version": "0.1.0",
+  "version": "0.1.1-rc.2",
   "description": "面向多发性骨髓瘤患者与照护者的本机病程资料、M 蛋白与游离轻链监测、治疗线循环、自体移植档案、骨事件与骨保护、感染与疫苗工作台设计项目",
   "private": true,
   "type": "module",
@@ -20,7 +20,7 @@
     "NOTICE.md"
   ],
   "scripts": {
-    "check": "node --check dsh/index.js && node --check lib/client.js && node scripts/check-workbench-package.mjs . && node scripts/check-trial-matching.mjs .",
+    "check": "node --check dsh/index.js && node --check lib/client.js && node scripts/check-workbench-package.mjs . && node scripts/check-trial-matching.mjs . && node scripts/check-primer-links.mjs",
     "test": "node --test test/*.test.mjs",
     "audit": "node scripts/check-conformance.mjs .",
     "release:check": "npm run check && npm run test && npm run audit",

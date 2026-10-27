@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const APP = window.MYELOPAL;
-  const state = { profileIndex: 0, view: 'home', trialTab: 'profile', query: '', trialSource: 'all', saved: [], questions: [], confirmedByProfile: {}, manualMarkersByProfile: {}, pageStack: [], pageScroll: 0, trigger: null, font: 0, calendarMonth: '', calendarDate: '', maintenanceMode: '', maintenanceText: '', candidateSeq: 0, candidateLabel: '', candidateValue: '', candidateSource: '', candidateDate: '' };
+  const state = { profileIndex: 0, view: 'home', trialTab: 'profile', query: '', trialSource: 'all', saved: [], questions: [], confirmedByProfile: {}, manualMarkersByProfile: {}, pageStack: [], pageScroll: 0, trigger: null, font: 0, calendarMonth: '', calendarDate: '', maintenanceMode: '', maintenanceText: '', candidateSeq: 0, candidateLabel: '', candidateValue: '', candidateSource: '', candidateDate: '', dplusGuide: false };
   const EVIDENCE_TIERS = ['结构化命中', '文本命中', '无法自动匹配', '宽口径命中'];
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
@@ -97,6 +97,47 @@
       <section class="card card-pad calendar-card"><div class="calendar-toolbar"><button class="button secondary" data-action="calendar-shift" data-delta="-1" aria-label="上一个月">上个月</button><h2>${year} 年 ${month} 月</h2><button class="button secondary" data-action="calendar-shift" data-delta="1" aria-label="下一个月">下个月</button></div><div class="calendar-grid calendar-weekdays">${['一','二','三','四','五','六','日'].map((day) => `<b>${day}</b>`).join('')}</div><div class="calendar-grid">${cells}</div></section>
       <section class="card card-pad calendar-details">${cardHead(state.calendarDate || `${year}-${String(month).padStart(2, '0')}`, '档案已登记事件', tag(`${selected.length} 条`, 'plum'))}${selected.length ? selected.map((event) => `<div class="calendar-detail-row"><time>${esc(event.date)}</time><div><b>${esc(event.title)}</b><p>${esc(event.detail)}</p><small>${esc(event.kind)} · 来源：${esc(event.source)}</small></div></div>`).join('') : '<div class="empty-state"><b>这个日期没有已登记事项</b>空白表示档案没有记录，不代表没有发生。</div>'}</section>`;
   }
+  /* 36 号 §2.6 看板首卡：eyebrow / 锚点派生大字天数 / 现状行 / 出口按钮排。
+     数字一律由锚点日派生；没有锚点时整卡显示「待初始化」并给出三步向导，不手填。 */
+  function dplusAnchor(profile) {
+    const transplant = (profile.transplant || []).filter((event) => /回输/.test(event.name || '')).sort((a, b) => a.date.localeCompare(b.date))[0] || (profile.transplant || []).slice().sort((a, b) => a.date.localeCompare(b.date))[0];
+    if (transplant?.date) return { date: transplant.date, kind: '移植', label: '自体移植回输日 · Day 0' };
+    const induction = (profile.lines || []).find((line) => /诱导/.test(line.phase || ''));
+    if (induction?.start) return { date: induction.start, kind: '诱导', label: '诱导治疗第 1 天 · D1' };
+    return null;
+  }
+  function dplusDays(dateText) {
+    const start = new Date(`${dateText}T00:00:00`);
+    if (Number.isNaN(start.getTime())) return null;
+    const now = new Date();
+    const startUtc = Date.UTC(start.getFullYear(), start.getMonth(), start.getDate());
+    const nowUtc = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    return Math.floor((nowUtc - startUtc) / 86400000);
+  }
+  function statusCard() {
+    const profile = P();
+    const anchor = dplusAnchor(profile);
+    const elapsed = anchor ? dplusDays(anchor.date) : null;
+    const dayNumber = elapsed == null ? null : anchor.kind === '移植' ? elapsed : elapsed + 1;
+    const lines = (profile.lines || []).slice().sort((a, b) => String(a.start).localeCompare(String(b.start)));
+    const line = lines.at(-1);
+    const stage = line?.phase || '尚未记录治疗线';
+    const stageState = line ? (line.end === '至今' ? '进行中' : `已结束 · ${line.end}`) : '待初始化';
+    const nextAppointment = collectCalendarEvents(profile).find((event) => event.kind === '预约');
+    const nextText = nextAppointment ? `${nextAppointment.date}（${nextAppointment.title}）` : '待登记（复诊日期未录入）';
+    const bigDay = dayNumber == null ? '待初始化' : `第 ${dayNumber} 天`;
+    const anchorNote = anchor ? `${anchor.label} · ${anchor.date}（合成演示）` : '尚未记录锚点日';
+    const primary = anchor
+      ? '<button class="button primary" data-view="treatment">看治疗线时间轴 →</button>'
+      : `<button class="button primary" data-action="dplus-guide" aria-expanded="${state.dplusGuide ? 'true' : 'false'}">开始三步初始化 →</button>`;
+    const guide = anchor ? '' : `<div class="dplus-guide"${state.dplusGuide ? '' : ' hidden'}><b>三步初始化</b><ol><li>记录锚点日：自体移植回输日 = Day 0，或诱导治疗第 1 天 = D1。</li><li>选择当前阶段：诱导 / 移植 / 维持 / 复发后线 / 观察。</li><li>登记下一次复查日期与事项。</li></ol><p>完成前不显示天数，也不推测阶段。</p></div>`;
+    return `<section class="dplus-card" aria-label="病程状态卡">
+      <div class="dplus-head"><span class="dplus-eyebrow">D+N 状态卡 · 距下一次复查</span><span class="dplus-anchor">${esc(anchorNote)}</span></div>
+      <div class="dplus-main"><strong class="dplus-day">${esc(bigDay)}</strong><div class="dplus-current"><b>${esc(stage)}</b><span>${esc(stageState)} · 下次：${esc(nextText)}</span></div></div>
+      <div class="dplus-actions">${primary}<button class="button secondary" data-primer-open aria-label="疾病概要：定义、医学资料与指南情况、治疗全景、发展趋势">疾病概要：多发性骨髓瘤是什么？</button></div>
+      ${guide}
+    </section>`;
+  }
   function homeView() {
     const m = P().metrics;
     const ml = latestMetric(m[0]), flc = latestMetric(m[1]);
@@ -111,13 +152,14 @@
     const statusLabel = line ? esc(line.phase) : '尚未记录治疗线';
     const nextAppointment = calendarEvents.find((event) => event.kind === '预约');
     return `${pageHead('病程资料，慢慢理清。','按治疗线、指标和重要事件整理。内容全部为合成演示，不包含真实患者信息。', '<button class="button primary" data-action="prompt" data-prompt="帮我把最近一份骨髓瘤检查报告整理成待核对记录。保留原文、日期、单位和来源，不要判断病情。">整理一份报告</button>')}
+      ${statusCard()}
       <section class="status-capsules" aria-label="病程状态摘要">
         <button class="status-capsule" data-view="treatment"><span>当前治疗线</span><b>${statusLabel}</b><small>${esc(line?.start || '日期待核对')} · 原文与来源待核</small></button>
         <button class="status-capsule" data-view="records"><span>档案核对</span><b>${confirmedCount} 项已确认</b><small>未确认候选不会参与试验线索对照</small></button>
         <button class="status-capsule" data-view="calendar"><span>已登记日历事项</span><b>${calendarEvents.length} 条</b><small>${nextAppointment ? `预约记录：${esc(nextAppointment.date)}` : '尚无已登记预约'}</small></button>
       </section>
       <section class="hero-card"><div class="eyebrow-line"><span class="flower">✿</span>MYELOMA · 长期病程记录</div><h2>复查、治疗与生活，<br>都留下一份可回看的记录。</h2><p>患者自己记，家人也可以代记。每条内容都会保留来源与记录者；确认前，它仍是一条候选。</p><div class="hero-meta">${tag(`${P().age} 岁`, 'plum')}${tag(P().role, 'plum')}${tag('本地演示档案', 'synth')}</div></section>
-      <section class="primer-entry-card"><div class="primer-entry-copy"><span class="eyebrow-line"><span class="flower">✿</span>疾病概要 · 公共背景</span><h2>多发性骨髓瘤是什么？</h2><p>用四段了解疾病定义、医学资料与指南、治疗全景，以及本项目已记录的资料。内容是公开信息整理，不用于判断个人病情。</p><div class="primer-entry-sections"><span>定义</span><span>指南与资料</span><span>治疗全景</span><span>发展趋势</span></div></div><div class="primer-entry-actions"><button class="button orange" data-action="calendar-shortcut" aria-label="打开病程日历">打开病程日历 →</button><button class="button secondary" data-action="primer">疾病概要：多发性骨髓瘤是什么？</button></div></section>
+      <section class="primer-entry-card"><div class="primer-entry-copy"><span class="eyebrow-line"><span class="flower">✿</span>疾病概要 · 公共背景</span><h2>多发性骨髓瘤是什么？</h2><p>用四段了解疾病定义、医学资料与指南、治疗全景，以及本项目已记录的资料。内容是公开信息整理，不用于判断个人病情。</p><div class="primer-entry-sections"><span>定义</span><span>指南与资料</span><span>治疗全景</span><span>发展趋势</span></div></div><div class="primer-entry-actions"><button class="button orange" data-action="calendar-shortcut" aria-label="打开病程日历">打开病程日历 →</button><button class="button secondary" data-primer-open aria-label="疾病概要：定义、医学资料与指南情况、治疗全景、发展趋势">疾病概要：多发性骨髓瘤是什么？</button></div></section>
       <div class="section-heading"><div><h2>最近的记录</h2><p>看时间、看来源；不把单个数值当作结论。</p></div><button class="button ghost small" data-view="metrics">看完整趋势 →</button></div>
       <div class="grid"><section class="card card-pad col-7">${cardHead('指标概览','报告日期与检测结果并列',tag('记录视图','plum'))}<div class="two-col">${metricPanel(m[0])}${metricPanel(m[1])}</div></section>
       <section class="card card-pad col-5">${cardHead('病程中的节点','治疗线和支持事件分开记录',tag('慢性循环',''))}<div class="timeline-mini">${next.map((x) => `<div class="timeline-row"><span class="timeline-date">${esc(x.date)}</span><span class="timeline-node">●</span><span class="timeline-copy"><b>${esc(x.title)}</b><small>${esc(x.sub)}</small></span></div>`).join('')}</div><button class="button secondary small" data-view="treatment">打开治疗线</button></section></div>
@@ -438,6 +480,7 @@
     const action = el.dataset.action;
     if (action === 'prompt') { state.maintenanceMode = 'ai'; state.view = 'records'; render(); notify('示例已打开资料核对演示流程；没有真实 AI 或发送操作。'); return; }
     if (action === 'primer') { primerView(el); return; }
+    if (action === 'dplus-guide') { state.dplusGuide = !state.dplusGuide; render(); return; }
     if (action === 'calendar-shortcut') { activateView('calendar'); return; }
     if (el.dataset.primerSection) { $('#pageViewBody').querySelector(`#${el.dataset.primerSection}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
     if (action === 'maintenance-open') { state.maintenanceMode = el.dataset.mode || 'manual'; state.candidateSeq = 0; state.maintenanceText = ''; render(); return; }
@@ -502,7 +545,6 @@
   });
   $('#profileSwitch').addEventListener('click', () => { state.profileIndex = (state.profileIndex + 1) % APP.data.profiles.length; state.maintenanceMode = ''; state.candidateSeq = 0; state.candidateLabel = ''; state.candidateValue = ''; state.candidateSource = ''; state.candidateDate = ''; render(); notify('已切换演示档案；资料和确认状态按档案分别保存于本次页面内存。'); });
   $('#fontToggle').addEventListener('click', (event) => { state.font = (state.font + 1) % 3; document.body.dataset.font = ['normal','large','larger'][state.font]; event.currentTarget.setAttribute('aria-pressed', String(state.font > 0)); event.currentTarget.textContent = ['大字 Aa','更大字 A+','标准字 Aa'][state.font]; });
-  $('#primerButton').addEventListener('click', (event) => primerView(event.currentTarget));
   $('#aboutButton').addEventListener('click', () => openAboutPage(false));
   $('#pageBack').addEventListener('click', () => backPage());
     $('#pageClose').addEventListener('click', () => closePageView());

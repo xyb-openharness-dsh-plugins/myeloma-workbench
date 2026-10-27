@@ -7,6 +7,7 @@
 <link rel="icon" href="data:,">
 <title>小浆宝 MyeloPal · 多发性骨髓瘤患者工作台原型</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="primer.css">
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要内容</a>
@@ -41,7 +42,7 @@
       <div class="top-brand"><b>小浆宝</b><span id="versionTop" class="version-chip">v0.1.0</span></div>
       <p class="top-context" id="topContext">把病程资料放在一起，复诊时更容易找到。</p>
       <div class="top-actions">
-        <button class="quiet-button primer-shortcut" id="primerButton" type="button" data-primer-open aria-haspopup="dialog" aria-controls="pageView" aria-label="疾病概要：定义、指南、治疗全景与发展趋势">?</button>
+        <button class="quiet-button primer-shortcut" id="primerButton" type="button" data-primer-open aria-haspopup="dialog" aria-controls="disease-primer" aria-label="疾病概要：定义、医学资料与指南情况、治疗全景、发展趋势">?</button>
         <button class="quiet-button" id="fontToggle" aria-pressed="false" type="button">大字 Aa</button>
         <button class="quiet-button" id="aboutButton" type="button">关于</button>
       </div>
@@ -62,6 +63,8 @@
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="demo-data.js"></script>
+<script src="primer-data.js"></script>
 <script src="app.js"></script>
+<script src="primer.js"></script>
 </body>
 </html>

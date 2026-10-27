@@ -29,3 +29,21 @@ body{font-size:17px;line-height:1.62}
 @media(max-width:900px){.primer-entry-card{grid-template-columns:minmax(0,1fr);gap:14px}.primer-entry-actions{justify-content:flex-start}.primer-treatment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.primer-demography{grid-template-columns:minmax(0,1fr)}.primer-demography>a{justify-self:start}}
 @media(max-width:600px){.primer-entry-card{margin:17px 0;padding:17px;border-radius:16px}.primer-entry-copy h2{font-size:22px}.primer-entry-copy>p{font-size:14px}.primer-entry-actions{display:grid;grid-template-columns:minmax(0,1fr);width:100%}.primer-entry-actions .button{width:100%;text-align:left}.primer-hero{padding:18px 16px;border-radius:15px}.primer-hero>p{font-size:14px}.primer-hero-meta{font-size:11px}.primer-toc{margin-inline:-2px;padding:6px}.primer-toc a{padding-inline:10px;font-size:13px}.primer-toc button{padding-inline:10px;font-size:13px}.primer-section{padding:16px 14px;border-radius:14px}.primer-section-heading h2{font-size:21px}.primer-section-heading>p{font-size:14px}.primer-section-body>p{font-size:15px}.primer-fact-grid,.primer-source-grid,.primer-treatment-grid{grid-template-columns:minmax(0,1fr)}.primer-source-top{flex-wrap:wrap}.primer-source-status{text-align:left}.primer-snapshot-card>b{font-size:28px}.primer-snapshot-card>strong{font-size:14px}.primer-uncollected{display:grid}}
 
+
+/* 36 号 §2.6 看板首卡（D+N 状态卡） */
+.dplus-card{margin:16px 0;padding:18px 20px;background:linear-gradient(135deg,var(--plum-wash),var(--surface) 70%);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.dplus-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.dplus-eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--plum-deep)}
+.dplus-anchor{font-size:12px;color:var(--muted)}
+.dplus-main{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:10px 0 14px}
+.dplus-day{font-size:34px;line-height:1.1;color:var(--plum-deep);font-variant-numeric:tabular-nums}
+.dplus-current{display:flex;flex-direction:column;gap:2px;min-width:0}
+.dplus-current b{font-size:15px}
+.dplus-current span{font-size:13px;color:var(--muted)}
+.dplus-actions{display:flex;gap:10px;flex-wrap:wrap}
+.dplus-guide{margin-top:12px;padding:12px 14px;background:var(--surface);border:1px dashed var(--line);border-radius:12px;font-size:13px}
+.dplus-guide b{display:block;margin-bottom:6px}
+.dplus-guide ol{margin:0 0 6px;padding-left:20px}
+.dplus-guide p{margin:0;color:var(--muted)}
+.dplus-guide[hidden]{display:none}
+@media(max-width:600px){.dplus-day{font-size:29px}.dplus-actions .button{width:100%;text-align:left}}
