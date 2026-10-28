@@ -2,6 +2,22 @@
 
 只增不删；每条写清"改了什么 + 为什么 + 用户可见结果"。版本号与 VERSION、package.json 三处必须一致。
 
+## 0.1.1-rc.4 · 2026-10-28（本地候选，未发布）
+
+- **修「装了整页空白」**：`dsh/index.js` 原先用带尾斜杠的 `UI_PREFIX`
+  （`/api/myeloma-workbench/ui/`）当 `kind:'prefix'` 的注册路径。宿主
+  `dsh-host-webserver` 的命中判据是 `pathname === prefix || pathname.startsWith(prefix + '/')`
+  且**不重写 `req.url`**，于是只有 `/ui/` 本身命中，`/ui/app.js`、`/ui/style.css`
+  落到宿主 SPA 兜底（返回 index.html）→ 浏览器把 HTML 当 JS/CSS 解析 → 业务区整片空白。
+  新增 `UI_ROUTE = UI_PREFIX.replace(/\/+$/, '')` 专供注册；静态层新增
+  `stripMountPrefix()`，剥前缀时带/不带尾斜杠两种形态都认。iframe 入口仍用带斜杠的 `UI_PREFIX`。
+- 本地路由探针：`/api/myeloma-workbench/ui/` 200 `text/html`、`/ui/app.js` 200
+  `text/javascript`、`/ui/style.css` 200 `text/css`、无尾斜杠形态 200、`..`/绝对路径逃逸 404、
+  HEAD 200 空体。
+- AI 会话面板（customFrame / Panel 接 conversation / 顶栏「AI 对话」/ aside 常挂载 /
+  1px 分隔线 + 11px 热区 / 25%–45% 默认 35% 步进 2% / localStorage / 键盘 / 窄屏抽屉 /
+  悬停品牌色发光 + ⠿ + 拖动遮罩）由 `scripts/check-ai-pane.mjs` 逐条断言，29/29 通过。
+
 ## 0.1.1-rc.2 · 2026-10-27（本地候选，未发布）
 
 - 装机界面补齐（评审反馈：装了只有骨架）：把 `prototypes/v0.2` 提升为 `public/` 并随包发出（`files += public`）；新增 `dsh/server.js`（只从 public/ 出文件，`..`/符号链接逃逸一律 404）与 `/api/myeloma-workbench/ui/` 前缀路由；`lib/client.js` 改为 iframe 装 public，原骨架降为加载失败兜底。
