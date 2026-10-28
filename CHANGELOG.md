@@ -2,7 +2,7 @@
 
 只增不删；每条写清"改了什么 + 为什么 + 用户可见结果"。版本号与 VERSION、package.json 三处必须一致。
 
-## 0.1.1-rc.4 · 2026-10-28（本地候选，未发布）
+## 0.1.1-rc.4 · 2026-10-28
 
 - **修「装了整页空白」**：`dsh/index.js` 原先用带尾斜杠的 `UI_PREFIX`
   （`/api/myeloma-workbench/ui/`）当 `kind:'prefix'` 的注册路径。宿主
@@ -17,6 +17,8 @@
 - AI 会话面板（customFrame / Panel 接 conversation / 顶栏「AI 对话」/ aside 常挂载 /
   1px 分隔线 + 11px 热区 / 25%–45% 默认 35% 步进 2% / localStorage / 键盘 / 窄屏抽屉 /
   悬停品牌色发光 + ⠿ + 拖动遮罩）由 `scripts/check-ai-pane.mjs` 逐条断言，29/29 通过。
+- 发布：tag `v0.1.1-rc.4`；Release 资产 `xyb-community-myeloma-workbench-0.1.1-rc.4.tgz` 与
+  `SHA256SUMS-0.1.1-rc.4`，下载后可用 `shasum -a 256 -c` 校验。
 
 ## 0.1.1-rc.2 · 2026-10-27（本地候选，未发布）
 
@@ -27,6 +29,7 @@
 - 看板首卡按 §2.6 增加 D+N 状态卡四件：eyebrow、按锚点日（移植回输日 Day 0 / 诱导 D1）派生的大字天数、现状行、主按钮 + 「疾病概要：多发性骨髓瘤是什么？」副按钮；无锚点时显示「待初始化」并给出三步向导。
 - 装机层 `lib/client.js` 内联同一份四段数据，加入「?」入口、返回/关闭/Esc、焦点回收与缺链接红标；`package.json.files` 已含 `lib`。
 - 新增 `scripts/check-primer-links.mjs` 并接入 `npm run check`；新增 `scripts/probe-disease-primer.mjs`。原型探针 10/10，`npm run check` 通过。
+- 本地候选 tarball 共 30 个文件，SHA-256 `40ad8a2ef29e10fea13d5d6795ba56a92c276969fee7cf445b537e6884725c94`；已重装到 DSH Desktop 0.12.0 app-owned `profiles/web`，安装副本 30/30 文件逐字节一致。旧同版本副本缺少 `dsh/server.js` 与 `public/`，通过卸载再安装修复。客户端注册与服务端静态路由 smoke test 通过；Desktop UI 因未重启目标应用仍待手动重启后核验。当前包仍为接入骨架，不含业务流程。未发布、未提交。
 
 ## 0.1.1-rc.1 · 2026-10-27（本地候选，未发布）
 

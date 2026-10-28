@@ -57,6 +57,18 @@ ISS / R-ISS 是分期框架；细胞遗传学结果与分期相关，但不是�
 - 已明确选择布局：business-first。business-first 使用 customFrame；模板不创建会话或复制聊天。需要 AI 协助时按官方合同接入原生 conversation 和会话管理。
 - 无业务数据库、无演示患者、无真实密钥；所有业务页按确认 spec 逐项实现。
 
+## 当前版本与安装包
+
+- 当前版本：**v0.1.1-rc.4**（2026-10-28，候选版）
+- 安装包：[xyb-community-myeloma-workbench-0.1.1-rc.4.tgz](https://github.com/xyb-openharness-dsh-plugins/myeloma-workbench/releases/download/v0.1.1-rc.4/xyb-community-myeloma-workbench-0.1.1-rc.4.tgz)
+- 校验：同目录 `SHA256SUMS-0.1.1-rc.4`，下载后 `shasum -a 256 -c SHA256SUMS-0.1.1-rc.4`
+
+```bash
+corepack pnpm add -w --save-exact file:/绝对路径/xyb-community-myeloma-workbench-0.1.1-rc.4.tgz
+```
+
+本版修的是「装上后整页空白」：UI 前缀改为不带尾斜杠注册（宿主 prefix 判据以 `prefix + '/'` 匹配子路径），静态层两种形态都认；同时补齐自建 AI 会话面板与 1px 分隔线（11px 热区）。
+
 ## 开发与本地验收
 
 需要 Node.js 22+、Git、包管理器和可用 DSH Desktop；采用 SQLite 时另核验 node:sqlite 版本条件。宿主 peers 的范围仅是模板基线，请与目标 Desktop 实际依赖核对。
