@@ -10,7 +10,7 @@
 | M3 | schema 冻结（sha256+判读列断言） | ⏳ 未开始 | G3；原型确认前不冻结 schema |
 | M4 | 2026 试验采集与快照核验 | 🟡 原始版失败；修正版字段核验通过 | 原目录 `research/myeloma-cancer/` 保留 49 条 sponsor 映射错误；新目录 `research/myeloma-cancer-20261027-corrected/` 从原 JSONL 修复 SQLite 映射，257/257、36 状态、全字段检查 PASS；非重采集 |
 | M5 | 七步移植 + MinerU + apiBase + check + HVT | ⏳ 未开始 | 依赖 G2 + G3；当前未满足 |
-| M6 | 装机（改包必升版→四要素→pnpm→先新建会话）；真机截图刷新 README | 🟡 包已安装；真机 UI 待重启验证 | Desktop 0.12.0 app-owned `profiles/web` 已登记 `0.1.1-rc.1`；22/22 安装文件与 tarball 相同；GUI 未能附着，未重启 Desktop；且当前产品仅有接入骨架，M6 业务验收未完成 |
+| M6 | 装机（改包必升版→四要素→pnpm→先新建会话）；真机截图刷新 README | 🟡 RC2 已重装；真机 UI 待重启验证 | Desktop 0.12.0 app-owned `profiles/web` 已登记 `0.1.1-rc.2`；旧副本曾缺少 `dsh/server.js` 与 `public/`，卸载后重装；30/30 安装文件与 RC2 tarball 逐字节一致，客户端/服务端入口 smoke test 通过；GUI 未能附着且未重启 Desktop，实际切换器与面板渲染待核验；当前仍为接入骨架，M6 业务验收未完成 |
 | M7 | 发布 | ⏸ 受限 | 本轮明确不发布；须另有授权 |
 | M8 | BACKLOG 外部状态回填 | ⏸ 受限 | 本轮明确不做外部投稿/PR |
 | M9 | 经验回流到项目与 starter | 🟡 本地回流已做；里程碑未关闭 | 检查器、回归夹具、规则与 Lesson 已写；Starter 测试 66/66、`npm run check` 与 `check-starter` 204 项均通过；本地改动清单见 HANDOFF；尚未提交，commit 条件未完成 |
@@ -26,6 +26,6 @@
 
 ## 进入条件
 
-M6 当前只完成 tarball 构建与 Desktop `profiles/web` 磁盘登记。目标 Desktop 未由本机 Agent 重启，未观察宿主 UI；用户重启后再核验入口与健康接口骨架。因 M5 业务页面尚未实现，本次不构成业务链验收。
+M6 当前已将 RC2 tarball 重装到 Desktop app-owned `profiles/web`，并确认 30/30 文件与发行包逐字节一致、客户端注册与服务端静态路由 smoke test 通过。目标 Desktop 未由本机 Agent 重启，实际宿主切换器与面板尚未观察；用户手动完整退出并重开后再核验入口和健康接口骨架。因 M5 业务页面尚未实现，本次不构成业务链验收。
 
 M2 完成需：路径范围完成签认；原型可直接打开并通过关键交互/窄宽/版本可见性检查；治疗折叠五块完整；临床四段链路与来源状态符合 35 号；记录实际预览及用户确认版本/hash/范围；X1–X4 逐项有证据；独立设计评审结论入档。当前这些项目未全部完成，故 M2 保持进行中。

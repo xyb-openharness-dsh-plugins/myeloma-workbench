@@ -1,9 +1,9 @@
 # 验收记录
 
-代码版本/commit/dirty 状态：`0.1.1-rc.1` / 当前 `main` 工作树未提交；Starter `1.10.0-rc.2` 工作树亦有未提交修改
-包名称/版本/tgz/SHA-256：`@xyb-community/myeloma-workbench@0.1.1-rc.1` / `release/xyb-community-myeloma-workbench-0.1.1-rc.1.tgz` / `817a3c30be3a3e1a966ee024a6cab0570dff2fe86d94508508edb4c26e7226f9`
-Desktop 版本/OS/架构/Node：DSH Desktop 0.12.0 / macOS arm64 / Node v22.19.0；profile pnpm 10.34.5
-安装入口/实际 profile/执行位置：`dsh plugin --profile web add -w --save-exact file:/Users/qinxiaoqiang/Downloads/myeloma-workbench/release/xyb-community-myeloma-workbench-0.1.1-rc.1.tgz` / app-owned Harness `profiles/web`
+代码版本/commit/dirty 状态：`0.1.1-rc.2` / 当前 `main` 工作树未提交；Starter `1.10.0-rc.2` 工作树亦有未提交修改
+包名称/版本/tgz/SHA-256：`@xyb-community/myeloma-workbench@0.1.1-rc.2` / `release/xyb-community-myeloma-workbench-0.1.1-rc.2.tgz` / `40ad8a2ef29e10fea13d5d6795ba56a92c276969fee7cf445b537e6884725c94`
+Desktop 版本/OS/架构/Node：DSH Desktop 0.12.0 / macOS arm64 / Node v22.19.0；app-owned profile pnpm 10.34.5
+安装入口/实际 profile/执行位置：设置 `DSH_HOME="$HOME/Library/Application Support/dsh-desktop/harness"`，将 `$DSH_HOME/.desktop-bin` 放到 PATH，再用 `dsh plugin --profile web remove -w @xyb-community/myeloma-workbench` 和 `dsh plugin --profile web add -w --save-exact file:/Users/qinxiaoqiang/Downloads/myeloma-workbench/release/xyb-community-myeloma-workbench-0.1.1-rc.2.tgz` / app-owned Harness `profiles/web`
 Agent 是否运行在目标 Desktop 内：未能附着至运行中 Desktop；未重启目标应用
 
 | ID | 层级 | 操作和预期 | 真实结果 | 证据文件/命令 | 通过/失败/未验证/不适用 |
@@ -11,8 +11,8 @@ Agent 是否运行在目标 Desktop 内：未能附着至运行中 Desktop；未
 | ACC-00 | 静态 | `dsh-wb-cli audit` 无 fail；warn 逐条给结论 | 项目 `npm run audit` 为 21/30，8 fail / 1 warn：缺少 M5 版本模块、layout、DIFF-MATRIX 等目标项目工件，检查链模板也未识别当前扩展检查命令；未达到审计通过 | `npm run release:check`，2026-10-27 | 失败（尚不具备发布条件） |
 | ACC-01 | 静态 | 语法/类型/包合同/清单 | `npm run check`、`npm test` 通过；项目检查器 staticPass=true、errors=[]；保留 config.root 与发行物/桌面验证两条警告 | `npm run check`、`npm test`，2026-10-27 | 通过（静态与测试范围） |
 | ACC-02 | 集成 | 代表业务链与迁移/主体隔离 | 当前包仍为健康接口和接入骨架，生产业务流程尚未实现 | `dsh/index.js`、`lib/client.js` | 未验证（业务未实现） |
-| ACC-03 | 包 | 从实际 tgz 安装，版本/hash 一致 | 22/22 文件均与安装副本字节一致；依赖登记为项目 release tarball，版本 `0.1.1-rc.1`；包不含 research/、JSONL 或 SQLite | `shasum -a 256 release/xyb-community-myeloma-workbench-0.1.1-rc.1.tgz`=`817a3c30be3a3e1a966ee024a6cab0570dff2fe86d94508508edb4c26e7226f9`；`node scripts/check-install.mjs`，2026-10-27 | 通过（包与 profile 磁盘状态） |
-| ACC-04 | UI | 已安装列表→左侧入口→业务页 | profile 命令列表显示 `@xyb-community/myeloma-workbench@0.1.1-rc.1`；无法附着正在运行的 Desktop，且未重启目标应用，界面入口/业务页未观察 | `dsh plugin --profile web list`；`agent-browser --auto-connect tab` 返回无可连接 Chrome 实例，2026-10-27 | 未验证（需用户完整退出并重开 Desktop） |
+| ACC-03 | 包 | 从实际 tgz 安装，版本/hash 一致 | RC2 tarball 的 30/30 文件与 app-owned `profiles/web/node_modules/@xyb-community/myeloma-workbench` 逐字节一致；profile dependency 指向该 tarball，`dsh.profile.bundles` 含包名；安装副本含 `dsh/server.js` 和 `public/index.html`。排查确认此前同版安装保留了旧目录：安装目录 manifest 虽为 RC2，却缺少 `server.js`/`public/`，tarball 生成时间晚于该次安装；对 app-owned profile 卸载再添加后修复。 | RC2 SHA-256 `40ad8a2ef29e10fea13d5d6795ba56a92c276969fee7cf445b537e6884725c94`；30 个成员逐文件与 tarball 对照；`DSH_HOME=... PATH=... dsh plugin --profile web list`，2026-10-27 | 通过（包、profile 登记与安装副本） |
+| ACC-04 | UI | 已安装列表→左侧入口→业务页 | app-owned profile CLI 列表显示 `@xyb-community/myeloma-workbench@0.1.1-rc.2`；安装副本执行 smoke test：客户端 `ModuleLoader` ID 与包名一致并成功调用 `desktopWorkbenches.register()`；服务端注册 2 条路由，健康接口 200、UI 首页 200、缺失文件返回 404。DSH Desktop 的当前 active 仍为 ANCA；浏览器控制没有 Desktop 页面，且未重启应用，未验证实际切换器入口与面板渲染。 | 安装副本 Node smoke test；Desktop `harness.log` 最近只记录 2026-10-27 09:32:14Z 的 HMR，未见 Myeloma 错误；`agent-browser` controlled/user tabs 均为空，2026-10-27 | 磁盘/入口 smoke test 通过；Desktop 运行界面未验证（需用户完整退出并重开后打开 Myeloma） |
 | ACC-05 | UI | 无会话可用，所选布局和原生会话 | 包客户端为注册骨架；宿主加载和布局行为未在真机观察 | `lib/client.js`；未重启 Desktop | 未验证 |
 | ACC-06 | UI | 一级/二级页与配置弹窗逐项对照 | 生产业务页面尚未实现 | 当前包内容 | 不适用（M5 未开始） |
 | ACC-07 | UI | 窄容器/大字/翻面/趋势/键盘 | 生产业务页面及对应控件尚未实现 | 当前包内容 | 不适用（M5 未开始） |
@@ -23,7 +23,7 @@ Agent 是否运行在目标 Desktop 内：未能附着至运行中 Desktop；未
 | ACC-33 | 回流 | Starter 快照检查器回归及完整自检 | Starter `npm test`：66/66 通过；`npm run check` 的 204 项检查与 `check-starter` 均通过、errors=[]；Starter 当前版本 `1.10.0-rc.2`，工作树保留既有未提交修改 | Starter 本地工作区检查，2026-10-27 | 本地自检通过；M9 因未提交仍未关闭 |
 
 附官方规范第 8 节每条适用项的责任、证据与结果，不适用写理由。只跑静态不能把 ACC-04 以后勾通过。
-peer 安装警告：DSH Desktop profile 提示 `cordis`、`dsh-client-connection`、`dsh-host-webserver`、`schemastery` peer 缺失及两个 peer 冲突；这同时出现在既有工作台列表中。当前仅确认 tarball 与登记状态，是否影响宿主实际加载要在 Desktop 重启后核验。目标 Desktop 需由用户手动完整退出并重开；本机 Agent 未重启应用。原始 M4 快照保留 49 条 sponsor 映射差异；修正版旁路副本通过字段核验。M1/G1、M2/G2 未签认，M5 业务 UI 未实现。无提交、推送、发布或外部投稿。
+peer 安装警告：Desktop profile 仍提示 `cordis`、`dsh-client-connection`、`dsh-host-webserver`、`schemastery` peer 缺失及两个 peer 冲突；该提示也存在于既有工作台。新包的入口和静态 UI 本机 smoke test 通过，当前日志没有 Myeloma 专属失败记录；Desktop 当前 active 为 ANCA，浏览器自动化未能连接应用页面，实际切换器与面板渲染仍待验证。目标 Desktop 需由用户手动完整退出并重开，再切换到 Myeloma；本机 Agent 未重启应用。原始 M4 快照保留 49 条 sponsor 映射差异；修正版旁路副本通过字段核验。M1/G1、M2/G2 未签认，M5 生产业务 UI 未实现。无提交、推送、发布或外部投稿。
 
 ## 设计与混合数据补充
 
@@ -51,9 +51,9 @@ peer 安装警告：DSH Desktop profile 提示 `cordis`、`dsh-client-connection
 
 | ID | 操作与预期 | 结果/证据 | 状态 |
 | --- | --- | --- | --- |
-| ACC-24 | 记录本机安装 / Git 推送 / GitHub Release / 市场PR分别完成到哪一步；未授权项为不适用 | 本机 tarball 已装到 Desktop app-owned `profiles/web`；未推送、未建 GitHub Release、未投稿市场 | 本机安装通过；其余未执行 |
+| ACC-24 | 记录本机安装 / Git 推送 / GitHub Release / 市场PR分别完成到哪一步；未授权项为不适用 | RC2 tarball 已经目标 app-owned profile CLI 卸载旧副本后重新安装，30/30 文件匹配；未推送、未建 GitHub Release、未投稿市场 | 本机包安装通过；Desktop UI 待手动重启和切换确认；其余未执行 |
 | ACC-25 | 市场安装来源与条目一致；Release只有在YAML显式tarball时才是所选来源，否则按目录协议使用源码或npm | | 未验证 |
-| ACC-26 | 包版本、客户端版本、实际安装副本、tar hash一致；Desktop运行界面加载单独确认 | package / VERSION / demo 数据显示 `0.1.1-rc.1`；安装目录 22/22 文件与 tgz 字节一致，tar SHA-256 见 ACC-03；Desktop 运行界面未重启观察 | 包与磁盘副本通过；运行时 UI 未验证 |
+| ACC-26 | 包版本、客户端版本、实际安装副本、tar hash一致；Desktop运行界面加载单独确认 | package / VERSION / demo 数据显示 `0.1.1-rc.2`；安装目录 30/30 文件与 tgz 字节一致，tar SHA-256 见 ACC-03；Desktop active 仍是 ANCA，未重启或打开 Myeloma | 包与磁盘副本通过；运行时 UI 未验证 |
 | ACC-27 | 真实市场PR URL、最新检查、合并状态、目录可见和市场可安装分别记录；不得把PR提交称为已上架 | | 未验证 |
 
 ## DSH 原生 Agent 对话

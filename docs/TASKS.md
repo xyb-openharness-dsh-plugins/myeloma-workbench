@@ -1,6 +1,6 @@
 # 实施任务与当前交接
 
-规格版本：SPEC v0.1 草案；原型版本：M2 v0.2 草案；当前分支：main；包版本：0.1.1-rc.1。Starter 当前候选：1.10.0-rc.2（仅本地，未发布）。
+规格版本：SPEC v0.1 草案；原型版本：M2 v0.2 草案；当前分支：main；包版本：0.1.1-rc.2。Starter 当前候选：1.10.0-rc.2（仅本地，未发布）。
 
 | ID | 业务单元 | 前置依赖 | 拥有文件/模块 | 实施/检查要求 | 证据 | 状态 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -12,12 +12,12 @@
 | M3-01 | 数据/API 合同 | M2 对应模块用户确认 | SCHEMA、API-CONTRACT、schema | 领域事实/来源/revision 稳定；页面读模型分离；sha256 冻结前复核 | 待 G3 | 待开始 |
 | M4-01 | 试验快照核验 | unified-trial-mcp | 原快照、新版副本、CLINICAL-DATA-2026、scripts/check-trial-snapshot.mjs | 原快照只读核验；修正版落新目录，逐字段对照，原件不覆盖 | 原目录仍复现 49 条 sponsor 为空；`research/myeloma-cancer-20261027-corrected/`：257/257、36 状态、全字段/hash/integrity PASS；未重新检索 | 修正版核验通过；原始归档缺陷保留并注明 |
 | M5-01 | 正式系统开发 | G2 + G3 | dsh/lib/schema/assets | HTML parity >98%；业务数据/API/错误恢复；临床在线查询接入真实 MCP | 未开始 | 待开始 |
-| M6-01 | 装机与业务验收 | M5 V1 | 包 / Desktop Profile / ACCEPTANCE | 版本、实际加载、主流程三层证据 | `0.1.1-rc.1` 已安装到 Desktop 0.12.0 app-owned `profiles/web`；22/22 文件字节一致；UI 未验证，产品仍是接入骨架 | 包安装通过；真机验收受阻 |
+| M6-01 | 装机与业务验收 | M5 V1 | 包 / Desktop Profile / ACCEPTANCE | 版本、实际加载、主流程三层证据 | RC2 已经 app-owned profile 的 DSH CLI 卸载旧副本后重装，30/30 文件逐字节一致；客户端注册和服务端健康/UI 路由 smoke test 通过。Desktop active 仍是 ANCA，真机 UI 未验证；生产业务仍未实现 | 包与入口 smoke test 通过；需用户手动完整退出并重开 Desktop 后切换确认 |
 | M9-01 | 临床快照核验经验回流 | M4 差异定位 | Starter 模板/提示词/Lessons/Changelog；项目检查器与验收文档 | 逐主键逐字段只读对照；发现差异后保护原快照；复用回归夹具 | Starter `npm test` 66/66、`npm run check` 和 `check-starter` 204 项均通过；项目检查器对旧目录报告 49 条、修正版 PASS | 本地实现与自检通过；M9 未关闭（未提交） |
 
 ## 当前状态
 
-- M0 完成；M1/G1 未签认；M2 原型调整进行中；M4 原始归档有 49 条 sponsor 字段映射差异，旁路修正版逐字段核验通过；M6 包已装入 Desktop profile，但真机 UI 尚未验证；M9 本地经验回流已实现并通过自检，未提交所以未关闭。
+- M0 完成；M1/G1 未签认；M2 原型调整进行中；M4 原始归档有 49 条 sponsor 字段映射差异，旁路修正版逐字段核验通过；M6 RC2 已正确重装至 Desktop app-owned profile，30/30 文件与客户端/服务端入口 smoke test 通过；Desktop 当前 active 仍是 ANCA，真机 UI 待用户手动重启后切换核验；M9 本地经验回流已实现并通过自检，未提交所以未关闭。
 - M2 临床原型仅可显示真实快照字段与明确标注的合成匹配示例。在线来源若为静态演示必须写明未发起实时查询。
 - 当前 HTML 评审草案已在 Playwright 本地打开；病情概要于 390/768/1280px 下无页面横向溢出，来源链接、章节内滚动、Esc/浏览器返回、焦点与非零首页滚动恢复已走查。临床三页、快照筛选、手工待核候选创建与主体切换此前已走查；浏览器确认对话被取消，未改变演示事实。
 - 当前文件哈希和已完成/未完成检查记入 `docs/PROTOTYPE-REVIEW.md`。完整 X1–X4、月历/键盘/打印核对、独立评审对准最新哈希和用户确认仍未完成；未确认项不进入正式业务代码。
@@ -25,4 +25,4 @@
 
 ## 下一步具体动作
 
-后续先由用户确认具体原型版本与范围，完成尚缺的 M2/X1–X4 与独立评审后再进入 G2；G1/G2 未签认前不冻结生产 schema。Desktop 包已登记到 app-owned `profiles/web`，重启后核验 UI 和加载状态仍待用户手动执行；业务流程待 M5 开发。M4 原始快照保持不变，修正版副本已通过检查。M9 Starter 本地测试 66/66、自检 204 项通过；回流提交清单仍待授权提交。
+后续先由用户确认具体原型版本与范围，完成尚缺的 M2/X1–X4 与独立评审后再进入 G2；G1/G2 未签认前不冻结生产 schema。Desktop RC2 已通过 app-owned profile 的 DSH CLI 重装，30/30 文件匹配且入口 smoke test 通过；实际 Desktop 切换器和面板渲染需用户手动完整退出并重开后核验；生产业务流程待 M5 开发。M4 原始快照保持不变，修正版副本已通过检查。M9 Starter 本地测试 66/66、自检 204 项通过；回流提交清单仍待授权提交。
