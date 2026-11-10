@@ -44,8 +44,8 @@ check(/display: paneVisible \? 'flex' : 'none'/.test(source), 'aside 常挂载�
 check(/'aria-label': 'AI 对话'/.test(source), 'aside aria-label="AI 对话"')
 check(/'aria-label': `AI 对话：\$\{agentLabel\}`/.test(source), '顶栏 AI 对话按钮带 aria-label')
 check(/disabled: connecting \|\| !canOpenSession/.test(source), '无能力/连接中按钮禁用')
-check(/canOpenSession[\s\S]{0,160}?ensureSession/.test(source), '能力判定来自 ensureSession')
-check(/ensureSession/.test(source), '点击打开/复用归属会话（ensureSession）')
+check(/canOpenSession[\s\S]{0,200}?newSession/.test(source), '能力判定来自 newSession（2026-11-11 契约：ensureSession 不再作为判定）')
+check(/newSession/.test(source) && /defaultWorkspace/.test(source), '点击创建会话走 defaultWorkspace + newSession')
 check(/setDraft/.test(source) && !/input\.submit/.test(source), '开场白只进草稿，不自动发送')
 check(/inject: \['desktopWorkbenches', 'sessions'\]/.test(source), '注入 sessions 以写原生草稿')
 
