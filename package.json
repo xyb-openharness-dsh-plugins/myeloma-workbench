@@ -1,6 +1,6 @@
 {
   "name": "@xyb-community/myeloma-workbench",
-  "version": "0.1.1-rc.5",
+  "version": "0.1.2-rc.1",
   "description": "面向多发性骨髓瘤患者与照护者的本机病程资料、M 蛋白与游离轻链监测、治疗线循环、自体移植档案、骨事件与骨保护、感染与疫苗工作台设计项目",
   "private": true,
   "type": "module",
@@ -18,11 +18,12 @@
     "cordis.patch.yml",
     "README.md",
     "NOTICE.md",
-    "public"
+    "public",
+    "schema"
   ],
   "scripts": {
     "build:demo": "node demo/build-demo-data.mjs",
-    "check": "node --check dsh/index.js && node --check lib/client.js && node --check scripts/fetch-myeloma-trials-2026.mjs && node --check scripts/trial-snapshot-storage.mjs && node --check scripts/copy-corrected-trial-snapshot.mjs && node scripts/check-workbench-package.mjs . && node scripts/check-trial-snapshot.mjs research/myeloma-cancer-20261027-corrected && node scripts/check-trial-matching.mjs . && node scripts/check-primer-links.mjs && node scripts/check-ai-pane.mjs && node scripts/check-agent-pane-contract.mjs .",
+    "check": "node --check dsh/index.js && node --check lib/client.js && node scripts/check-version.mjs . && node scripts/check-data-dir.mjs . && node scripts/check-trial-chain.mjs . && node scripts/check-patient-create.mjs . && node --check scripts/fetch-myeloma-trials-2026.mjs && node --check scripts/trial-snapshot-storage.mjs && node --check scripts/copy-corrected-trial-snapshot.mjs && node scripts/check-workbench-package.mjs . && node scripts/check-trial-snapshot.mjs research/myeloma-cancer-20261027-corrected && node scripts/check-trial-matching.mjs . && node scripts/check-primer-links.mjs && node scripts/check-ai-pane.mjs && node scripts/check-agent-pane-contract.mjs . && node --test test/*.test.mjs",
     "test": "node --test test/*.test.mjs",
     "audit": "node scripts/check-conformance.mjs .",
     "release:check": "npm run check && npm run test && npm run audit",

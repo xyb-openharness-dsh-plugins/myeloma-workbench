@@ -543,6 +543,59 @@
     const marker = { id: `manual-${Date.now()}`, type: markerTypeFor(String(form.get('kind') || '')), label, value, source, date, author: String(form.get('author') || P().role), status: 'candidate' };
     manualMarkers().push(marker); state.maintenanceMode = ''; render(); notify('已保存为待核对候选；确认后才会参与临床线索对照。');
   });
+  /* ---------- 新建患者档案（demo 之外的真实记录，落本机 sqlite） ---------- */
+  const API_BASE = '/api/myeloma-workbench/api'
+  $('#profileCreate').addEventListener('click', () => {
+    if ($('#profile-create-dialog')) return
+    const dlg = document.createElement('dialog')
+    dlg.id = 'profile-create-dialog'
+    dlg.innerHTML = '<form method="dialog" style="min-width:320px;display:flex;flex-direction:column;gap:10px">' +
+      '<h3 style="margin:0">新建我的档案</h3>' +
+      '<p class="small-note">只填名字（可以是昵称）。演示档案不会被改动；新档案从空记录开始，保存在本机数据库。</p>' +
+      '<label>档案名<input id="npc-name" maxlength="40" placeholder="例：我自己 / 妈妈"></label>' +
+      '<label>一句说明（可选）<input id="npc-meta" maxlength="40" placeholder="例：确诊 2025-03 · 随访中"></label>' +
+      '<p id="npc-err" class="small-note" style="color:#a33" hidden></p>' +
+      '<div style="display:flex;gap:8px"><button class="primary" id="npc-save" type="submit">保存并切换</button>' +
+      '<button type="button" id="npc-cancel">取消</button></div></form>'
+    document.body.appendChild(dlg)
+    dlg.showModal()
+    $('#npc-cancel').addEventListener('click', () => dlg.close())
+    dlg.addEventListener('submit', async (event) => {
+      event.preventDefault()
+      const name = ($('#npc-name') || {}).value?.trim() || ''
+      const meta = ($('#npc-meta') || {}).value?.trim() || ''
+      const err = $('#npc-err')
+      try {
+        const rsp = await fetch(API_BASE + '/subjects', { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ name, meta }) })
+        const body = await rsp.json().catch(() => ({}))
+        if (!rsp.ok) throw new Error(body.error || ('HTTP ' + rsp.status))
+        const list = await fetch(API_BASE + '/subjects', { credentials: 'same-origin' }).then((r) => r.json())
+        const rows = (list.records || []).filter((r) => !r.isDemo)
+        const proto = APP.data.profiles[0] || {}
+        const made = rows.map((r) => {
+          const o = {}
+          Object.keys(proto).forEach((k) => {
+            if (k === 'id' || k === 'name') return
+            const v = proto[k]
+            o[k] = Array.isArray(v) ? [] : (v && typeof v === 'object' ? {} : (typeof v === 'number' ? 0 : ''))
+          })
+          o.id = r.profileKey; o.name = r.name; o.role = '患者自报'
+          if (r.meta) o.tag = r.meta
+          o.isDemo = false
+          return o
+        })
+        const demoKept = APP.data.profiles.filter((p) => String(p.id || '').startsWith('profile-'))
+        APP.data.profiles = demoKept.concat(made)
+        const idx = APP.data.profiles.findIndex((p) => p.id === body.profileKey)
+        state.profileIndex = idx >= 0 ? idx : APP.data.profiles.length - 1
+        state.maintenanceMode = ''; state.candidateSeq = 0
+        dlg.close(); render()
+        notify('已新建并切换到「' + name + '」；演示档案没有被改动。记录将保存在本机数据库。')
+      } catch (error) {
+        if (err) { err.hidden = false; err.textContent = '新建失败：' + ((error && error.message) || error) }
+      }
+    })
+  })
   $('#profileSwitch').addEventListener('click', () => { state.profileIndex = (state.profileIndex + 1) % APP.data.profiles.length; state.maintenanceMode = ''; state.candidateSeq = 0; state.candidateLabel = ''; state.candidateValue = ''; state.candidateSource = ''; state.candidateDate = ''; render(); notify('已切换演示档案；资料和确认状态按档案分别保存于本次页面内存。'); });
   $('#fontToggle').addEventListener('click', (event) => { state.font = (state.font + 1) % 3; document.body.dataset.font = ['normal','large','larger'][state.font]; event.currentTarget.setAttribute('aria-pressed', String(state.font > 0)); event.currentTarget.textContent = ['大字 Aa','更大字 A+','标准字 Aa'][state.font]; });
   $('#aboutButton').addEventListener('click', () => openAboutPage(false));
